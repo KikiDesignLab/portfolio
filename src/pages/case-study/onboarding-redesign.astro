@@ -18,8 +18,28 @@ import "../../styles/global.css";
         />
     </head>
     <body>
+        <script>
+            // Dark mode initialization script
+            (function () {
+                const savedTheme = localStorage.getItem("theme");
+                if (
+                    savedTheme === "dark" ||
+                    (!savedTheme &&
+                        window.matchMedia("(prefers-color-scheme: dark)")
+                            .matches)
+                ) {
+                    document.documentElement.classList.add("dark");
+                    document.documentElement.classList.remove("light");
+                } else {
+                    document.documentElement.classList.add("light");
+                    document.documentElement.classList.remove("dark");
+                }
+            })();
+        </script>
         <!-- Header -->
-        <header class="bg-white dark:bg-gray-800 py-4 px-6 md:px-12 sticky top-0 z-50 transition-colors duration-300">
+        <header
+            class="bg-white dark:bg-gray-800 py-4 px-6 md:px-12 sticky top-0 z-50 transition-colors duration-300"
+        >
             <div class="container mx-auto flex justify-between items-center">
                 <div class="text-xl font-bold text-gray-800 dark:text-gray-100">
                     <a href="../../">Fátima Rodrigues</a>
@@ -36,27 +56,46 @@ import "../../styles/global.css";
         </header>
 
         <!-- Hero Section -->
-        <section class="py-20 bg-gray-100 dark:bg-gradient-to-r dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300">
+        <section
+            class="py-20 bg-gray-100 dark:bg-gradient-to-r dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300"
+        >
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                    <h1
+                        class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-gray-100"
+                    >
                         Onboarding Redesign
                     </h1>
                     <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
-                        Designing a new onboarding experience for a Scanner app to increase user adoption and conversion rates
+                        Designing a new onboarding experience for a Scanner app
+                        to increase user adoption and conversion rates
                     </p>
                     <div class="flex flex-wrap justify-center gap-4 text-sm">
-                        <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full">UX Research</span>
-                        <span class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full">UI Design</span>
-                        <span class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full">User Testing</span>
-                        <span class="bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 px-3 py-1 rounded-full">Mobile Design</span>
+                        <span
+                            class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full"
+                            >UX Research</span
+                        >
+                        <span
+                            class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full"
+                            >UI Design</span
+                        >
+                        <span
+                            class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full"
+                            >User Testing</span
+                        >
+                        <span
+                            class="bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 px-3 py-1 rounded-full"
+                            >Mobile Design</span
+                        >
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Case Study Content -->
-        <section class="py-16 bg-white dark:bg-gray-800 transition-colors duration-300">
+        <section
+            class="py-16 bg-white dark:bg-gray-800 transition-colors duration-300"
+        >
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto">
                     <!-- Project Image -->
@@ -71,50 +110,99 @@ import "../../styles/global.css";
                     <!-- Project Overview -->
                     <div class="grid md:grid-cols-3 gap-8 mb-16">
                         <div>
-                            <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">Duration</h3>
-                            <p class="text-gray-600 dark:text-gray-400">3 months</p>
+                            <h3
+                                class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100"
+                            >
+                                Duration
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                3 months
+                            </p>
                         </div>
                         <div>
-                            <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">Team</h3>
-                            <p class="text-gray-600 dark:text-gray-400">1 Designer, 2 Developers, 1 PM</p>
+                            <h3
+                                class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100"
+                            >
+                                Team
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                1 Designer, 2 Developers, 1 PM
+                            </p>
                         </div>
                         <div>
-                            <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">My Role</h3>
-                            <p class="text-gray-600 dark:text-gray-400">Lead UX/UI Designer</p>
+                            <h3
+                                class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100"
+                            >
+                                My Role
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                Lead UX/UI Designer
+                            </p>
                         </div>
                     </div>
 
                     <!-- Challenge -->
                     <div class="mb-16">
-                        <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">The Challenge</h2>
-                        <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                            The existing scanner app had a complex onboarding process that was causing high drop-off rates.
-                            Users were struggling to understand the core features and value proposition, leading to low
-                            conversion rates from trial to paid subscriptions.
+                        <h2
+                            class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100"
+                        >
+                            The Challenge
+                        </h2>
+                        <p
+                            class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6"
+                        >
+                            The existing scanner app had a complex onboarding
+                            process that was causing high drop-off rates. Users
+                            were struggling to understand the core features and
+                            value proposition, leading to low conversion rates
+                            from trial to paid subscriptions.
                         </p>
-                        <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                            The challenge was to redesign the onboarding flow to better communicate the app's value
-                            while reducing cognitive load and improving user engagement.
+                        <p
+                            class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
+                        >
+                            The challenge was to redesign the onboarding flow to
+                            better communicate the app's value while reducing
+                            cognitive load and improving user engagement.
                         </p>
                     </div>
 
                     <!-- Research -->
                     <div class="mb-16">
-                        <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">Research & Discovery</h2>
+                        <h2
+                            class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100"
+                        >
+                            Research & Discovery
+                        </h2>
                         <div class="grid md:grid-cols-2 gap-8 mb-8">
                             <div>
-                                <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">User Interviews</h3>
-                                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                                    Conducted 15 user interviews to understand pain points and motivations.
-                                    Key insights revealed users needed clearer feature explanations and
-                                    immediate value demonstration.
+                                <h3
+                                    class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100"
+                                >
+                                    User Interviews
+                                </h3>
+                                <p
+                                    class="text-gray-600 dark:text-gray-300 leading-relaxed"
+                                >
+                                    Conducted 15 user interviews to understand
+                                    pain points and motivations. Key insights
+                                    revealed users needed clearer feature
+                                    explanations and immediate value
+                                    demonstration.
                                 </p>
                             </div>
                             <div>
-                                <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Analytics Review</h3>
-                                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                                    Analyzed user behavior data showing 68% drop-off rate during onboarding,
-                                    with most users abandoning at the feature explanation screens.
+                                <h3
+                                    class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100"
+                                >
+                                    Analytics Review
+                                </h3>
+                                <p
+                                    class="text-gray-600 dark:text-gray-300 leading-relaxed"
+                                >
+                                    Analyzed user behavior data showing 68%
+                                    drop-off rate during onboarding, with most
+                                    users abandoning at the feature explanation
+                                    screens.
                                 </p>
                             </div>
                         </div>
@@ -127,13 +215,24 @@ import "../../styles/global.css";
 
                     <!-- Solution -->
                     <div class="mb-16">
-                        <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">The Solution</h2>
-                        <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                            I redesigned the onboarding experience focusing on progressive disclosure and
-                            immediate value demonstration. The new flow includes:
+                        <h2
+                            class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100"
+                        >
+                            The Solution
+                        </h2>
+                        <p
+                            class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8"
+                        >
+                            I redesigned the onboarding experience focusing on
+                            progressive disclosure and immediate value
+                            demonstration. The new flow includes:
                         </p>
-                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 mb-8">
-                            <li>Simplified 3-step onboarding instead of 7 steps</li>
+                        <ul
+                            class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 mb-8"
+                        >
+                            <li>
+                                Simplified 3-step onboarding instead of 7 steps
+                            </li>
                             <li>Interactive feature demonstrations</li>
                             <li>Personalized content based on user needs</li>
                             <li>Clear value propositions at each step</li>
@@ -147,29 +246,57 @@ import "../../styles/global.css";
 
                     <!-- Results -->
                     <div class="mb-16">
-                        <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">Results & Impact</h2>
+                        <h2
+                            class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100"
+                        >
+                            Results & Impact
+                        </h2>
                         <div class="grid md:grid-cols-3 gap-8 mb-8">
                             <div class="text-center">
-                                <div class="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">23%</div>
-                                <p class="text-gray-600 dark:text-gray-300">Increase in conversion rates</p>
+                                <div
+                                    class="text-3xl font-bold text-green-600 dark:text-green-400 mb-2"
+                                >
+                                    23%
+                                </div>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Increase in conversion rates
+                                </p>
                             </div>
                             <div class="text-center">
-                                <div class="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">45%</div>
-                                <p class="text-gray-600 dark:text-gray-300">Reduction in drop-off rates</p>
+                                <div
+                                    class="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2"
+                                >
+                                    45%
+                                </div>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Reduction in drop-off rates
+                                </p>
                             </div>
                             <div class="text-center">
-                                <div class="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">4.2</div>
-                                <p class="text-gray-600 dark:text-gray-300">User satisfaction score</p>
+                                <div
+                                    class="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2"
+                                >
+                                    4.2
+                                </div>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    User satisfaction score
+                                </p>
                             </div>
                         </div>
-                        <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                            The redesigned onboarding flow significantly improved user engagement and conversion rates.
-                            Post-launch user feedback highlighted the clearer value communication and intuitive flow.
+                        <p
+                            class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
+                        >
+                            The redesigned onboarding flow significantly
+                            improved user engagement and conversion rates.
+                            Post-launch user feedback highlighted the clearer
+                            value communication and intuitive flow.
                         </p>
                     </div>
 
                     <!-- Navigation -->
-                    <div class="border-t border-gray-200 dark:border-gray-700 pt-8">
+                    <div
+                        class="border-t border-gray-200 dark:border-gray-700 pt-8"
+                    >
                         <div class="flex justify-between items-center">
                             <a
                                 href="../../"
@@ -190,7 +317,9 @@ import "../../styles/global.css";
         </section>
 
         <!-- Footer -->
-        <footer class="bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-300 py-12 transition-colors duration-300">
+        <footer
+            class="bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-300 py-12 transition-colors duration-300"
+        >
             <div class="container mx-auto px-6 text-center">
                 <p>&copy; 2025 Fátima Rodrigues</p>
             </div>

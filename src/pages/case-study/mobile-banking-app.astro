@@ -18,8 +18,28 @@ import "../../styles/global.css";
         />
     </head>
     <body>
+        <script>
+            // Dark mode initialization script
+            (function () {
+                const savedTheme = localStorage.getItem("theme");
+                if (
+                    savedTheme === "dark" ||
+                    (!savedTheme &&
+                        window.matchMedia("(prefers-color-scheme: dark)")
+                            .matches)
+                ) {
+                    document.documentElement.classList.add("dark");
+                    document.documentElement.classList.remove("light");
+                } else {
+                    document.documentElement.classList.add("light");
+                    document.documentElement.classList.remove("dark");
+                }
+            })();
+        </script>
         <!-- Header -->
-        <header class="bg-white dark:bg-gray-800 py-4 px-6 md:px-12 sticky top-0 z-50 transition-colors duration-300">
+        <header
+            class="bg-white dark:bg-gray-800 py-4 px-6 md:px-12 sticky top-0 z-50 transition-colors duration-300"
+        >
             <div class="container mx-auto flex justify-between items-center">
                 <div class="text-xl font-bold text-gray-800 dark:text-gray-100">
                     <a href="../../">Fátima Rodrigues</a>
@@ -36,27 +56,46 @@ import "../../styles/global.css";
         </header>
 
         <!-- Hero Section -->
-        <section class="py-20 bg-gray-100 dark:bg-gradient-to-r dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300">
+        <section
+            class="py-20 bg-gray-100 dark:bg-gradient-to-r dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300"
+        >
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                    <h1
+                        class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-gray-100"
+                    >
                         Mobile Banking App
                     </h1>
                     <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
-                        Designing an accessible and intuitive mobile banking experience for enhanced user engagement
+                        Designing an accessible and intuitive mobile banking
+                        experience for enhanced user engagement
                     </p>
                     <div class="flex flex-wrap justify-center gap-4 text-sm">
-                        <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full">Accessibility</span>
-                        <span class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full">Mobile Design</span>
-                        <span class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full">User Research</span>
-                        <span class="bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 px-3 py-1 rounded-full">Financial Services</span>
+                        <span
+                            class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full"
+                            >Accessibility</span
+                        >
+                        <span
+                            class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full"
+                            >Mobile Design</span
+                        >
+                        <span
+                            class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full"
+                            >User Research</span
+                        >
+                        <span
+                            class="bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 px-3 py-1 rounded-full"
+                            >Financial Services</span
+                        >
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Case Study Content -->
-        <section class="py-16 bg-white dark:bg-gray-800 transition-colors duration-300">
+        <section
+            class="py-16 bg-white dark:bg-gray-800 transition-colors duration-300"
+        >
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto">
                     <!-- Project Image -->
@@ -71,49 +110,99 @@ import "../../styles/global.css";
                     <!-- Project Overview -->
                     <div class="grid md:grid-cols-3 gap-8 mb-16">
                         <div>
-                            <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">Duration</h3>
-                            <p class="text-gray-600 dark:text-gray-400">6 months</p>
+                            <h3
+                                class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100"
+                            >
+                                Duration
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                6 months
+                            </p>
                         </div>
                         <div>
-                            <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">Team</h3>
-                            <p class="text-gray-600 dark:text-gray-400">2 Designers, 4 Developers, 1 PM</p>
+                            <h3
+                                class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100"
+                            >
+                                Team
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                2 Designers, 4 Developers, 1 PM
+                            </p>
                         </div>
                         <div>
-                            <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">My Role</h3>
-                            <p class="text-gray-600 dark:text-gray-400">Senior UX Designer</p>
+                            <h3
+                                class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100"
+                            >
+                                My Role
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                Senior UX Designer
+                            </p>
                         </div>
                     </div>
 
                     <!-- Challenge -->
                     <div class="mb-16">
-                        <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">The Challenge</h2>
-                        <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                            The bank's existing mobile app had low engagement rates and poor accessibility scores.
-                            Users, particularly those with disabilities and older demographics, were struggling to
-                            complete basic banking tasks efficiently.
+                        <h2
+                            class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100"
+                        >
+                            The Challenge
+                        </h2>
+                        <p
+                            class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6"
+                        >
+                            The bank's existing mobile app had low engagement
+                            rates and poor accessibility scores. Users,
+                            particularly those with disabilities and older
+                            demographics, were struggling to complete basic
+                            banking tasks efficiently.
                         </p>
-                        <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                            The goal was to redesign the mobile banking experience with accessibility and simplicity
-                            at its core, while maintaining security and comprehensive functionality.
+                        <p
+                            class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
+                        >
+                            The goal was to redesign the mobile banking
+                            experience with accessibility and simplicity at its
+                            core, while maintaining security and comprehensive
+                            functionality.
                         </p>
                     </div>
 
                     <!-- Research -->
                     <div class="mb-16">
-                        <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">Research & Discovery</h2>
+                        <h2
+                            class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100"
+                        >
+                            Research & Discovery
+                        </h2>
                         <div class="grid md:grid-cols-2 gap-8 mb-8">
                             <div>
-                                <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Accessibility Audit</h3>
-                                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                                    Conducted comprehensive accessibility testing revealing multiple WCAG violations
-                                    and usability barriers for users with visual, motor, and cognitive impairments.
+                                <h3
+                                    class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100"
+                                >
+                                    Accessibility Audit
+                                </h3>
+                                <p
+                                    class="text-gray-600 dark:text-gray-300 leading-relaxed"
+                                >
+                                    Conducted comprehensive accessibility
+                                    testing revealing multiple WCAG violations
+                                    and usability barriers for users with
+                                    visual, motor, and cognitive impairments.
                                 </p>
                             </div>
                             <div>
-                                <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">User Studies</h3>
-                                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                                    Interviewed 25 users across different age groups and abilities, identifying
-                                    key pain points in task completion and navigation complexity.
+                                <h3
+                                    class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100"
+                                >
+                                    User Studies
+                                </h3>
+                                <p
+                                    class="text-gray-600 dark:text-gray-300 leading-relaxed"
+                                >
+                                    Interviewed 25 users across different age
+                                    groups and abilities, identifying key pain
+                                    points in task completion and navigation
+                                    complexity.
                                 </p>
                             </div>
                         </div>
@@ -126,17 +215,39 @@ import "../../styles/global.css";
 
                     <!-- Solution -->
                     <div class="mb-16">
-                        <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">The Solution</h2>
-                        <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                            I led the design of a completely reimagined mobile banking experience that prioritizes
-                            accessibility and user-centered design principles:
+                        <h2
+                            class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100"
+                        >
+                            The Solution
+                        </h2>
+                        <p
+                            class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8"
+                        >
+                            I led the design of a completely reimagined mobile
+                            banking experience that prioritizes accessibility
+                            and user-centered design principles:
                         </p>
-                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 mb-8">
-                            <li>Redesigned information architecture for clearer navigation</li>
-                            <li>Implemented WCAG 2.1 AA compliance throughout the app</li>
-                            <li>Simplified transaction flows with fewer steps</li>
-                            <li>Enhanced visual hierarchy and contrast ratios</li>
-                            <li>Added voice navigation and screen reader optimization</li>
+                        <ul
+                            class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 mb-8"
+                        >
+                            <li>
+                                Redesigned information architecture for clearer
+                                navigation
+                            </li>
+                            <li>
+                                Implemented WCAG 2.1 AA compliance throughout
+                                the app
+                            </li>
+                            <li>
+                                Simplified transaction flows with fewer steps
+                            </li>
+                            <li>
+                                Enhanced visual hierarchy and contrast ratios
+                            </li>
+                            <li>
+                                Added voice navigation and screen reader
+                                optimization
+                            </li>
                         </ul>
                         <img
                             src="https://picsum.photos/seed/banking-solution/700/400"
@@ -147,30 +258,66 @@ import "../../styles/global.css";
 
                     <!-- Key Features -->
                     <div class="mb-16">
-                        <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">Key Features</h2>
+                        <h2
+                            class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100"
+                        >
+                            Key Features
+                        </h2>
                         <div class="grid md:grid-cols-2 gap-8">
-                            <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg">
-                                <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">Accessible Dashboard</h3>
+                            <div
+                                class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg"
+                            >
+                                <h3
+                                    class="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100"
+                                >
+                                    Accessible Dashboard
+                                </h3>
                                 <p class="text-gray-600 dark:text-gray-300">
-                                    Clean, high-contrast dashboard with customizable font sizes and voice navigation support.
+                                    Clean, high-contrast dashboard with
+                                    customizable font sizes and voice navigation
+                                    support.
                                 </p>
                             </div>
-                            <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg">
-                                <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">Simplified Transfers</h3>
+                            <div
+                                class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg"
+                            >
+                                <h3
+                                    class="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100"
+                                >
+                                    Simplified Transfers
+                                </h3>
                                 <p class="text-gray-600 dark:text-gray-300">
-                                    Streamlined money transfer process reduced from 8 steps to 3 with clear visual feedback.
+                                    Streamlined money transfer process reduced
+                                    from 8 steps to 3 with clear visual
+                                    feedback.
                                 </p>
                             </div>
-                            <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg">
-                                <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">Smart Notifications</h3>
+                            <div
+                                class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg"
+                            >
+                                <h3
+                                    class="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100"
+                                >
+                                    Smart Notifications
+                                </h3>
                                 <p class="text-gray-600 dark:text-gray-300">
-                                    Contextual notifications with multiple delivery options for different user preferences.
+                                    Contextual notifications with multiple
+                                    delivery options for different user
+                                    preferences.
                                 </p>
                             </div>
-                            <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg">
-                                <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">Biometric Security</h3>
+                            <div
+                                class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg"
+                            >
+                                <h3
+                                    class="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100"
+                                >
+                                    Biometric Security
+                                </h3>
                                 <p class="text-gray-600 dark:text-gray-300">
-                                    Enhanced security features with multiple authentication options for different abilities.
+                                    Enhanced security features with multiple
+                                    authentication options for different
+                                    abilities.
                                 </p>
                             </div>
                         </div>
@@ -178,30 +325,58 @@ import "../../styles/global.css";
 
                     <!-- Results -->
                     <div class="mb-16">
-                        <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">Results & Impact</h2>
+                        <h2
+                            class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100"
+                        >
+                            Results & Impact
+                        </h2>
                         <div class="grid md:grid-cols-3 gap-8 mb-8">
                             <div class="text-center">
-                                <div class="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">40%</div>
-                                <p class="text-gray-600 dark:text-gray-300">Increase in daily active users</p>
+                                <div
+                                    class="text-3xl font-bold text-green-600 dark:text-green-400 mb-2"
+                                >
+                                    40%
+                                </div>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Increase in daily active users
+                                </p>
                             </div>
                             <div class="text-center">
-                                <div class="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">65%</div>
-                                <p class="text-gray-600 dark:text-gray-300">Faster task completion</p>
+                                <div
+                                    class="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2"
+                                >
+                                    65%
+                                </div>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Faster task completion
+                                </p>
                             </div>
                             <div class="text-center">
-                                <div class="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">AA</div>
-                                <p class="text-gray-600 dark:text-gray-300">WCAG 2.1 compliance achieved</p>
+                                <div
+                                    class="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2"
+                                >
+                                    AA
+                                </div>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    WCAG 2.1 compliance achieved
+                                </p>
                             </div>
                         </div>
-                        <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                            The redesigned app received overwhelmingly positive feedback from users, with particular
-                            praise for its accessibility features and intuitive design. The bank saw a significant
-                            increase in mobile app adoption across all demographic groups.
+                        <p
+                            class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
+                        >
+                            The redesigned app received overwhelmingly positive
+                            feedback from users, with particular praise for its
+                            accessibility features and intuitive design. The
+                            bank saw a significant increase in mobile app
+                            adoption across all demographic groups.
                         </p>
                     </div>
 
                     <!-- Navigation -->
-                    <div class="border-t border-gray-200 dark:border-gray-700 pt-8">
+                    <div
+                        class="border-t border-gray-200 dark:border-gray-700 pt-8"
+                    >
                         <div class="flex justify-between items-center">
                             <a
                                 href="../onboarding-redesign/"
@@ -222,7 +397,9 @@ import "../../styles/global.css";
         </section>
 
         <!-- Footer -->
-        <footer class="bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-300 py-12 transition-colors duration-300">
+        <footer
+            class="bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-300 py-12 transition-colors duration-300"
+        >
             <div class="container mx-auto px-6 text-center">
                 <p>&copy; 2025 Fátima Rodrigues</p>
             </div>
