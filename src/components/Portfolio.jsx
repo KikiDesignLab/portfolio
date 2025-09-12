@@ -12,7 +12,9 @@ const Portfolio = () => {
       setIsDarkMode(savedTheme === "dark");
     } else {
       // Check system preference
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)",
+      ).matches;
       setIsDarkMode(prefersDark);
     }
   }, []);
@@ -124,7 +126,7 @@ const Portfolio = () => {
                   an increase on conversion rates by 23%.
                 </p>
                 <a
-                  href="/case-study/onboarding-redesign"
+                  href="./case-study/onboarding-redesign/"
                   className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
                 >
                   View Case Study →
@@ -148,7 +150,7 @@ const Portfolio = () => {
                   daily active users.
                 </p>
                 <a
-                  href="/case-study/mobile-banking-app"
+                  href="./case-study/mobile-banking-app/"
                   className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
                 >
                   View Case Study →
