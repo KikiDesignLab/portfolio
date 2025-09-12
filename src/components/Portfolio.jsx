@@ -1,21 +1,39 @@
 import React, { useState, useEffect } from "react";
 
 const Portfolio = () => {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+
+  // Initialize theme from localStorage or system preference
+  useEffect(() => {
+    setIsClient(true);
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      setIsDarkMode(savedTheme === "dark");
+    } else {
+      // Check system preference
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      setIsDarkMode(prefersDark);
+    }
+  }, []);
 
   const toggleTheme = () => {
     setIsDarkMode((prevMode) => !prevMode);
   };
 
   useEffect(() => {
+    if (!isClient) return;
+
     if (isDarkMode) {
       document.documentElement.classList.add("dark");
       document.documentElement.classList.remove("light");
+      localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.add("light");
       document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
     }
-  }, [isDarkMode]);
+  }, [isDarkMode, isClient]);
 
   return (
     <>
@@ -106,7 +124,7 @@ const Portfolio = () => {
                   an increase on conversion rates by 23%.
                 </p>
                 <a
-                  href="#"
+                  href="/case-study/onboarding-redesign"
                   className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
                 >
                   View Case Study →
@@ -130,7 +148,7 @@ const Portfolio = () => {
                   daily active users.
                 </p>
                 <a
-                  href="#"
+                  href="/case-study/mobile-banking-app"
                   className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
                 >
                   View Case Study →
