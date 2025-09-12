@@ -1,0 +1,2 @@
+# This file tells GitHub Pages to not process this as a Jekyll site
+# This allows files with underscores (like _astro/*) to be served correctly
