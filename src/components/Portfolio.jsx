@@ -180,8 +180,8 @@ const Portfolio = () => {
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
               My main driver is tackling challenges where I can think deeply
-              about a topic and come up with an efficient and pleasing solution
-              to solve it, having people’s experience at the forefront.
+              about a topic and come up with an efficient and pleasing solution,
+              having people’s experience at the forefront.
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
               In my free time, you'll find me painting in watercolour, devouring
