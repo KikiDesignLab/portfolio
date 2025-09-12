@@ -152,16 +152,20 @@ const Portfolio = () => {
               About Me
             </h2>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-              I specialize in creating user-centered solutions that balance
-              business goals with user needs. I believe in the power of
+              An HR Specialist turned Product Designer, I bring a unique blend
+              of human-centered skills and design expertise to every challenge I
+              tackle. I specialize in creating user-centered solutions that
+              balance business goals with user needs. I believe in the power of
               collaboration and continuous learning to drive innovation.
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-              I’m eager to work in a field where I can think deeply about a
-              topic and come up with an efficient and pleasing solution to solve
-              it, having people’s experience at the forefront. I enjoy painting
-              in watercolour, I’m an avid reader and appreciate long walks with
-              some music on.
+              My main driver is tackling challenges where I can think deeply
+              about a topic and come up with an efficient and pleasing solution
+              to solve it, having people’s experience at the forefront.
+            </p>
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+              In my free time, you'll find me painting in watercolour, devouring
+              a book or having long walks with some music on.
             </p>
             <button className="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-white font-medium py-3 px-8 rounded-full transition duration-300">
               Download Resume
@@ -218,7 +222,7 @@ const Portfolio = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
-              <p>&copy; 2025 Fátima Rodrigues. All rights reserved.</p>
+              <p>&copy; 2025 Fátima Rodrigues</p>
             </div>
             <div className="flex space-x-6">
               <a
