@@ -115,7 +115,7 @@ const Portfolio = () => {
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
                   Designed the new onboarding for a Scanner app to help users
                   quickly familiarize with core features of the app leading to
-                  an increase on conversion rates by 23%.
+                  an increase on conversion rates.
                 </p>
                 <a
                   href="./case-study/onboarding-redesign/"
