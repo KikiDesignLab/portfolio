@@ -128,7 +128,7 @@ const Portfolio = () => {
             {/* Project 2 */}
             <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
               <img
-                src="https://picsum.photos/seed/project2/400/250"
+                src="/portfolio/images/projects/mobile-banking-app.png"
                 alt="Mobile Banking App"
                 className="w-full h-48 object-cover"
               />
@@ -137,9 +137,7 @@ const Portfolio = () => {
                   Mobile Banking App
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  Designed a new mobile banking experience focusing on
-                  accessibility and simplicity, resulting in a 40% increase in
-                  daily active users.
+                  Designed a new mobile banking experience that helps people demystify financial insecurities, empowering them to take full ownership of their finances.
                 </p>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
                   Coming Soon
