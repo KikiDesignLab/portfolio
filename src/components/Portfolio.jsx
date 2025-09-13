@@ -45,9 +45,9 @@ const Portfolio = () => {
           <div className="text-xl font-bold text-gray-800 dark:text-gray-100">
             Fátima Rodrigues
           </div>
-          <div className="flex items-center space-x-8">
+          <div className="flex items-center space-x-4 sm:space-x-6 md:space-x-8 ml-4 sm:ml-6">
             <nav>
-              <ul className="flex space-x-8">
+              <ul className="flex space-x-4 sm:space-x-6 md:space-x-8">
                 <li>
                   <a
                     href="#works"
