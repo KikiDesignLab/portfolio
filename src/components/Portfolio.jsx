@@ -139,15 +139,12 @@ const Portfolio = () => {
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
                   Designed a new mobile banking experience that helps people demystify financial insecurities, empowering them to take full ownership of their finances.
                 </p>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  Coming Soon
-                </p>
-                {/* <a
+                 <a
                   href="./case-study/mobile-banking-app/"
                   className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
                 >
                   View Case Study →
-                </a> */}
+                </a>
               </div>
             </div>
           </div>
