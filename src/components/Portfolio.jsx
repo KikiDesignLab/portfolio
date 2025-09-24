@@ -41,7 +41,7 @@ const Portfolio = () => {
     <>
       {/* Header */}
       <header className="bg-white dark:bg-gray-800 py-4 px-6 md:px-12 sticky top-0 z-50 transition-colors duration-300">
-        <div className="container mx-auto flex justify-between items-center">
+        <div className="container mx-auto max-w-5xl flex justify-between items-center">
           <div className="text-xl font-bold text-gray-800 dark:text-gray-100">
             Fátima Rodrigues
           </div>
@@ -90,7 +90,6 @@ const Portfolio = () => {
           </p>
         </div>
       </section>
-
       {/* Case Studies Section */}
       <section
         id="works"
@@ -100,9 +99,9 @@ const Portfolio = () => {
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-gray-100">
             Selected Projects
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Project 1 */}
-            <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+            <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 max-w-[600px]">
               <img
                 src="/portfolio/images/projects/onboarding-redesign.png"
                 alt="Onboarding"
@@ -126,7 +125,7 @@ const Portfolio = () => {
               </div>
             </div>
             {/* Project 2 */}
-            <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+            <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 max-w-[600px]">
               <img
                 src="/portfolio/images/projects/mobile-banking-app.png"
                 alt="Mobile Banking App"
@@ -186,7 +185,7 @@ const Portfolio = () => {
 
       {/* Footer */}
       <footer className="bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 py-12 transition-colors duration-300">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto max-w-5xl px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
               <p>&copy; 2025 Fátima Rodrigues</p>
