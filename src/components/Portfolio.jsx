@@ -165,12 +165,13 @@ const Portfolio = () => {
               An HR Specialist turned Product Designer, I bring a unique blend
               of human-centered skills and design expertise to every challenge I
               tackle. I specialize in creating user-centered solutions that
-              balance business goals with user needs. I believe in the power of
-              collaboration and continuous learning to drive innovation.
+              balance business goals with user needs. 
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-              My main driver is tackling challenges where I can think deeply
-              about a topic and merge aesthetics with functionality, crafting clear, purposeful experiences.
+              I've been actively exploring the intersection of design and development through personal projects, such as this little corner of the web, and discovering the power of "vibe coding" – that intuitive approach to rapidly prototyping and refining user experiences directly in code. This hands-on exploration has strengthened my understanding of design systems and the developer experience, making me more effective when collaborating with engineering teams.
+            </p>
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+              I'm drawn to challenges where I can think deeply about a topic and merge aesthetics with functionality to craft clear, purposeful experiences.
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
               In my free time, you'll find me painting in watercolour, devouring
