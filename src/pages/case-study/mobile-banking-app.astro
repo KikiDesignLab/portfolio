@@ -4,303 +4,291 @@ import "../../styles/global.css";
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Mobile Banking App - Case Study | Fátima Rodrigues</title>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
-        <script>
-            // Dark mode initialization script
-            (function () {
-                const savedTheme = localStorage.getItem("theme");
-                if (
-                    savedTheme === "dark" ||
-                    (!savedTheme &&
-                        window.matchMedia("(prefers-color-scheme: dark)")
-                            .matches)
-                ) {
-                    document.documentElement.classList.add("dark");
-                    document.documentElement.classList.remove("light");
-                } else {
-                    document.documentElement.classList.add("light");
-                    document.documentElement.classList.remove("dark");
-                }
-            })();
-        </script>
-    </head>
-    <body>
-        <!-- Header -->
-        <header
-            class="bg-white dark:bg-gray-800 py-4 px-6 md:px-12 sticky top-0 z-50 transition-colors duration-300"
-        >
-            <div class="container mx-auto flex justify-between items-center">
-                <div class="text-xl font-bold text-gray-800 dark:text-gray-100">
-                    <a href="../../">Fátima Rodrigues</a>
-                </div>
-                <nav>
-                    <a
-                        href="../../"
-                        class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition duration-300"
-                    >
-                        ← Back to Portfolio
-                    </a>
-                </nav>
-            </div>
-        </header>
 
-        <!-- Hero Section -->
-        <section
-            class="py-20 bg-gray-100 dark:bg-gradient-to-r dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300"
-        >
-            <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto text-center">
-                    <h1
-                        class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-gray-100"
-                    >
-                       moey! - A Mobile Banking App
-                    </h1>
-                    <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
-                        A 360° digital campaign to empower young people with their finances and improve E2E conversion rates.
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Banking App - Case Study | Fátima Rodrigues</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <script>
+        // Dark mode initialization script
+        (function () {
+            const savedTheme = localStorage.getItem("theme");
+            if (
+                savedTheme === "dark" ||
+                (!savedTheme &&
+                    window.matchMedia("(prefers-color-scheme: dark)")
+                        .matches)
+            ) {
+                document.documentElement.classList.add("dark");
+                document.documentElement.classList.remove("light");
+            } else {
+                document.documentElement.classList.add("light");
+                document.documentElement.classList.remove("dark");
+            }
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-white dark:bg-gray-800 py-4 px-6 md:px-12 sticky top-0 z-50 transition-colors duration-300">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-xl font-bold text-gray-800 dark:text-gray-100">
+                <a href="../../">Fátima Rodrigues</a>
+            </div>
+            <nav>
+                <a href="../../"
+                    class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition duration-300">
+                    ← Back to Portfolio
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+        class="py-20 bg-gray-100 dark:bg-gradient-to-r dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                    moey! - A Mobile Banking App
+                </h1>
+                <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
+                    A 360° digital campaign to empower young people with their finances and improve E2E conversion
+                    rates.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 text-sm">
+                    <span
+                        class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full">User
+                        Interface</span>
+                    <span
+                        class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full">Mobile
+                        Design</span>
+                    <span
+                        class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full">User
+                        Research</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Content -->
+    <section class="py-16 bg-white dark:bg-gray-800 transition-colors duration-300">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <!-- Project Image -->
+                <div class="mb-12">
+                    <img src="/portfolio/images/case-studies/banking/hero.png" alt="Mobile Banking App Mockup"
+                        class="w-full rounded-lg shadow-lg" />
+                </div>
+
+                <!-- Project Overview -->
+                <div class="grid md:grid-cols-3 gap-8 mb-16">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">
+                            Duration
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            1 month
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">
+                            Team
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            4 Designers, 4 Marketing Specialists, 1 PM
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">
+                            My Role
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            UX/UI Designer
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Challenge -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        The Challenge
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        Despite a growing user base of 200,000 downloads — 85% within the past year — moey! was
+                        struggling to connect emotionally with its core audience: people aged 25–34. Being a rather
+                        newly formed online bank, moey! also faced challenges with conversion, particularly within the
+                        identity validation steps when creating a new account.
                     </p>
-                    <div class="flex flex-wrap justify-center gap-4 text-sm">
-                        <span
-                            class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full"
-                            >User Interface</span
-                        >
-                        <span
-                            class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full"
-                            >Mobile Design</span
-                        >
-                        <span
-                            class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full"
-                            >User Research</span
-                        >
-                    </div>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                        Our mission was to improve the onboarding experience and redefine the bank's tone of voice to
+                        better resonate with young adults.
+                    </p>
                 </div>
-            </div>
-        </section>
 
-        <!-- Case Study Content -->
-        <section
-            class="py-16 bg-white dark:bg-gray-800 transition-colors duration-300"
-        >
-            <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto">
-                    <!-- Project Image -->
-                    <div class="mb-12">
-                        <img
-                            src="/portfolio/images/case-studies/banking/hero.png"
-                            alt="Mobile Banking App Mockup"
-                            class="w-full rounded-lg shadow-lg"
-                        />
-                    </div>
+                <!-- Research -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        Research & Discovery
+                    </h2>
 
-                    <!-- Project Overview -->
-                    <div class="grid md:grid-cols-3 gap-8 mb-16">
-                        <div>
-                            <h3
-                                class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100"
-                            >
-                                Duration
-                            </h3>
-                            <p class="text-gray-600 dark:text-gray-400">
-                                1 month
-                            </p>
-                        </div>
-                        <div>
-                            <h3
-                                class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100"
-                            >
-                                Team
-                            </h3>
-                            <p class="text-gray-600 dark:text-gray-400">
-                                4 Designers, 4 Marketing Specialists, 1 PM
-                            </p>
-                        </div>
-                        <div>
-                            <h3
-                                class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100"
-                            >
-                                My Role
-                            </h3>
-                            <p class="text-gray-600 dark:text-gray-400">
-                                UX/UI Designer
-                            </p>
-                        </div>
-                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+                        Methods
+                    </h3>
+                    <ul class="text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
+                        <li>8 Competitors analised</li>
+                        <li>25 user interviews</li>
+                        <li>150 survey responses</li>
+                    </ul>
 
-                    <!-- Challenge -->
-                    <div class="mb-16">
-                        <h2
-                            class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100"
-                        >
-                            The Challenge
-                        </h2>
-                        <p
-                            class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6"
-                        >
-                            Despite a growing user base of 200,000 downloads — 85% within the past year — moey! was struggling to connect emotionally with its core audience: people aged 25–34. Being a rather newly formed online bank, moey! also faced challenges with conversion, particularly within the identity validation steps when creating a new account.
-                        </p>
-                        <p
-                            class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
-                        >
-                            Our mission was to improve the onboarding experience and redefine the bank's tone of voice to better resonate with young adults.
-                        </p>
-                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+                        Main Insights
+                    </h3>
+                    <ul class="text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2">
+                        <li>Over <strong>50% of people aged 25–34</strong> don't feel in control of their finances</li>
+                        <li>Portugal ranks as the <strong>2nd least financially literate country in the EU</strong></li>
+                        <li>Users feared not understanding money, overspending, not saving, or making the wrong move
+                        </li>
+                        <li>A lot of people either didn’t recognize moey! or mistook it for something else. We had a
+                            real chance to better introduce the brand right from the start.</li>
+                    </ul>
+                </div>
 
-                    <!-- Research -->
-                    <div class="mb-16">
-                        <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
-                            Research & Discovery
-                        </h2>
-                    
-                        <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-                            Methods
-                        </h3>
-                        <ul class="text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
-                            <li>8 Competitors analised</li>
-                            <li>25 user interviews</li>
-                            <li>150 survey responses</li>
-                        </ul>
-                    
-                        <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-                            Main Insights
-                        </h3>
-                        <ul class="text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2">
-                            <li>Over <strong>50% of people aged 25–34</strong> don't feel in control of their finances</li>
-                            <li>Portugal ranks as the <strong>2nd least financially literate country in the EU</strong></li>
-                            <li>Users feared not understanding money, overspending, not saving, or making the wrong move</li>
-                            <li>A lot of people either didn’t recognize moey! or mistook it for something else. We had a real chance to better introduce the brand right from the start.</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="mb-12">
-                        <img src="/portfolio/images/case-studies/banking/research.png" alt="User Research Insights"
-                            class="w-full rounded-lg shadow-md" />
-                    </div>
-                    
+                <div class="mb-12">
+                    <img src="/portfolio/images/case-studies/banking/research.png" alt="User Research Insights"
+                        class="w-full rounded-lg shadow-md" />
+                </div>
+
                 <!-- Solution -->
                 <div class="mb-16">
                     <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
                         The Solution
                     </h2>
-                <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                        Our focus was to empower people to take control of their finances, by making moey! easier to use, less intimidating and more human. 
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                        Our focus was to empower people to take control of their finances, by making moey! easier to
+                        use, less intimidating and more human.
                     </p>
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                        With clear, impactful communication and accessible UX, moey! becomes a tool to move forward, <em>sem medos</em> - without fear. 
+                        With clear, impactful communication and accessible UX, moey! becomes a tool to move forward,
+                        <em>sem medos</em> - without fear.
                     </p>
                     <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
                         Marketing
                     </h3>
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                    The campaign was designed to meet users online, in their daily routines, and even on their feet (literally). From digital ads to physical merchandise, each touchpoint was crafted to reduce fear, build trust, and strengthen brand recognition for a new generation of users.
+                        The campaign was designed to meet users online, in their daily routines, and even on their feet
+                        (literally). From digital ads to physical merchandise, each touchpoint was crafted to reduce
+                        fear, build trust, and strengthen brand recognition for a new generation of users.
                     </p>
                     <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 ml-6 pl-2 mb-8">
-                        <li><strong>Google Ads</strong>: Targeted, intent-driven ads with clear messaging aligned to the "sem medos" tone.</li>
-                        <li><strong>Social Media Content</strong>: Engaging, educational posts using animations and illustrations to demystify finances.</li>
-                        <li><strong>Out-of-Home</strong>: Urban placements to boost visibility and reinforce the campaign in real-world settings.</li>
-                        <li><strong>Merchandise</strong>: Branded items like socks and stickers to extend the brand experience in a playful way.</li>
-                        <li><strong>Campaign Landing Page</strong>: A central hub introducing moey! and guiding users through the onboarding journey.</li>
+                        <li><strong>Google Ads</strong>: Targeted, intent-driven ads with clear messaging aligned to the
+                            "sem medos" tone.</li>
+                        <li><strong>Social Media Content</strong>: Engaging, educational posts using animations and
+                            illustrations to demystify finances.</li>
+                        <li><strong>Out-of-Home</strong>: Urban placements to boost visibility and reinforce the
+                            campaign in real-world settings.</li>
+                        <li><strong>Merchandise</strong>: Branded items like socks and stickers to extend the brand
+                            experience in a playful way.</li>
+                        <li><strong>Campaign Landing Page</strong>: A central hub introducing moey! and guiding users
+                            through the onboarding journey.</li>
                     </ul>
-                <div class="mb-12">
-                    <img
-                            src="/portfolio/images/case-studies/banking/marketing.png"
-                            alt="Design Solution"
-                            class="w-full rounded-lg shadow-md"
-                        />
+                    <div class="mb-12">
+                        <img src="/portfolio/images/case-studies/banking/marketing.png" alt="Design Solution"
+                            class="w-full rounded-lg shadow-md" />
+                    </div>
+                </div>
+                <!-- Landing Page Section -->
+                <div class="mb-16">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+                        Landing Page Design
+                    </h3>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        I redesigned the landing page to create a more engaging and conversion-focused
+                        experience,focusing on
+                        highlighting the key features, referral program and testimonials.
+                    </p>
+
+                    <!-- Landing Page Figma Prototype -->
+                    <div class="mb-12">
+                        <div class="w-full max-w-5xl mx-auto" style="height: 70vh; min-height: 600px;">
+                            <div class="w-full h-full bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-md">
+                                <iframe class="w-full h-full border-0"
+                                    src="https://embed.figma.com/proto/e0cK6zbHn711720xlSqeiq/moey-?page-id=159%3A6090&node-id=159-6936&viewport=-1196%2C55%2C0.14&scaling=min-zoom&content-scaling=fixed&embed-host=share"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
                     </div>
                     <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
                         Onboarding redesign
                     </h3>
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-                        This redesign had clarity and simplicity in mind. The idea was to have a linear, straightforward onboarding process
+                        This redesign had clarity and simplicity in mind. The idea was to have a linear,
+                        straightforward onboarding process
                         that followed:
                     </p>
-                    
+
                     <ol class="list-decimal list-inside text-gray-600 dark:text-gray-300 space-y-2 mb-8 ml-4">
                         <li>Registration</li>
                         <li>Personal Information</li>
                         <li>Professional Information</li>
                         <li>Legal Information</li>
                     </ol>
-                    
-                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                        The previous onboarding switched too often between topics, which was confusing.
-                    </p>
-                    
-                    <!-- Figma Prototype Section -->
 
+                    <!-- Onboarding Figma Prototype Section -->
+                    <div class="mb-12">
                         <div class="w-full aspect-[3/4] bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-md">
                             <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%"
                                 src="https://embed.figma.com/proto/e0cK6zbHn711720xlSqeiq/moey-?page-id=0%3A1&node-id=1-1623&viewport=-462%2C-210%2C0.27&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A1623&embed-host=share"
                                 allowfullscreen>
                             </iframe>
                         </div>
-                        </div>
+                    </div>
 
                     <!-- Key Features -->
                     <div class="mb-16">
-                        <h2
-                            class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100"
-                        >
+                        <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
                             Key Features
                         </h2>
                         <div class="grid md:grid-cols-2 gap-8">
-                            <div
-                                class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg"
-                            >
-                                <h3
-                                    class="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100"
-                                >
+                            <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">
                                     Straightforward Onboarding
                                 </h3>
                                 <p class="text-gray-600 dark:text-gray-300">
                                     Reduced numbers of screen from 30 to 24, having each section tightly organised.
                                 </p>
                             </div>
-                            <div
-                                class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg"
-                            >
-                                <h3
-                                    class="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100"
-                                >
+                            <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">
                                     Feedback Loop
                                 </h3>
                                 <p class="text-gray-600 dark:text-gray-300">
-                                    The user is now kept informed about each stage of the process, differentiating between registration and account creation.
+                                    The user is now kept informed about each stage of the process, differentiating
+                                    between registration and account creation.
                                 </p>
                             </div>
-                            <div
-                                class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg"
-                            >
-                                <h3
-                                    class="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100"
-                                >
-                                    
-                                Clarity on Friction Points
+                            <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">
+
+                                    Clarity on Friction Points
                                 </h3>
                                 <p class="text-gray-600 dark:text-gray-300">
-                                    More information on friction points such as professional informationa and national ID card validation.
+                                    More information on friction points such as professional informationa and
+                                    national ID card validation.
                                 </p>
                             </div>
-                            <div
-                                class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg"
-                            >
-                                <h3
-                                    class="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100"
-                                >
+                            <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">
                                     App Preview
                                 </h3>
                                 <p class="text-gray-600 dark:text-gray-300">
-                                    Allowing to understand the stage of the account creation process and interacting with the app. 
+                                    Allowing to understand the stage of the account creation process and interacting
+                                    with the app.
                                 </p>
                             </div>
                         </div>
@@ -308,43 +296,38 @@ import "../../styles/global.css";
 
                     <!-- Project Footer -->
                     <footer class="mt-20 pt-8 pb-12 border-t border-gray-200 dark:border-gray-700">
-                            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                                This project was developed as part of the 360º final project in the UX/UI Design course at EDIT.
-                                It was created in collaboration with the Digital Marketing team in response to a real-world
-                                challenge presented by moey! to improve their onboarding experience and communication strategy.
-                            </p>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                            This project was developed as part of the 360º final project in the UX/UI Design course
+                            at EDIT.
+                            It was created in collaboration with the Digital Marketing team in response to a
+                            real-world
+                            challenge presented by moey! to improve their onboarding experience and communication
+                            strategy.
+                        </p>
                     </footer>
-                    
+
                     <!-- Navigation -->
-                    <div
-                        class="border-t border-gray-200 dark:border-gray-700 pt-8"
-                    >
+                    <div class="border-t border-gray-200 dark:border-gray-700 pt-8">
                         <div class="flex justify-between items-center">
-                            <a
-                                href="../onboarding-redesign/"
-                                class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-white font-medium py-3 px-8 rounded-full transition duration-300"
-                            >
+                            <a href="../onboarding-redesign/"
+                                class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-white font-medium py-3 px-8 rounded-full transition duration-300">
                                 ← Previous Project
                             </a>
-                            <a
-                                href="../../"
-                                class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-full transition duration-300"
-                            >
+                            <a href="../../"
+                                class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-full transition duration-300">
                                 Back to Portfolio
                             </a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+    </section>
 
-        <!-- Footer -->
-        <footer
-            class="bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-300 py-12 transition-colors duration-300"
-        >
-            <div class="container mx-auto px-6 text-center">
-                <p>&copy; 2025 Fátima Rodrigues</p>
-            </div>
-        </footer>
-    </body>
+    <!-- Footer -->
+    <footer class="bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-300 py-12 transition-colors duration-300">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Fátima Rodrigues</p>
+        </div>
+    </footer>
+</body>
+
 </html>
