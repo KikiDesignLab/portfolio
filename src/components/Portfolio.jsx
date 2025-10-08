@@ -109,6 +109,28 @@ const Portfolio = () => {
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">
+                  Find Me Gluten Free Redesign
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                  Redesigned the home experience and interaction flow of the app to improve clarity, discoverability, and user trust through simplified navigation and better safety education.
+                </p>
+                <a
+                  href="./case-study/GF-app/"
+                  className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
+                >
+                  View Case Study →
+                </a>
+              </div>
+            </div>
+            {/* Project 2 */}
+            <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 max-w-[600px]">
+              <img
+                src="/portfolio/images/projects/onboarding-redesign.png"
+                alt="Onboarding"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">
                   Onboarding Redesign
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
@@ -124,7 +146,7 @@ const Portfolio = () => {
                 </a>
               </div>
             </div>
-            {/* Project 2 */}
+            {/* Project 3 */}
             <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 max-w-[600px]">
               <img
                 src="/portfolio/images/projects/mobile-banking-app.png"

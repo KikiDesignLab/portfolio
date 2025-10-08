@@ -1,0 +1,362 @@
+---
+import "../../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Me Gluten Free - App Redesign | Fátima Rodrigues</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <script>
+        // Dark mode initialization script
+        (function () {
+            const savedTheme = localStorage.getItem("theme");
+            if (
+                savedTheme === "dark" ||
+                (!savedTheme &&
+                    window.matchMedia("(prefers-color-scheme: dark)")
+                        .matches)
+            ) {
+                document.documentElement.classList.add("dark");
+                document.documentElement.classList.remove("light");
+            } else {
+                document.documentElement.classList.add("light");
+                document.documentElement.classList.remove("dark");
+            }
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-white dark:bg-gray-800 py-4 px-6 md:px-12 sticky top-0 z-50 transition-colors duration-300">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-xl font-bold text-gray-800 dark:text-gray-100">
+                <a href="../../">Fátima Rodrigues</a>
+            </div>
+            <nav>
+                <a href="../../"
+                    class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition duration-300">
+                    ← Back to Portfolio
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+        class="py-20 bg-gray-100 dark:bg-gradient-to-r dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                    Find Me Gluten Free - App Redesign
+                </h1>
+                <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
+                    A UX/UI redesign focused on clarity, trust, and accessibility for celiac users discovering safe dining options.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 text-sm">
+                    <span
+                        class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full">User
+                        Interface</span>
+                    <span
+                        class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full">Mobile
+                        Design</span>
+                    <span
+                        class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full">User
+                        Research</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Content -->
+    <section class="py-16 bg-white dark:bg-gray-800 transition-colors duration-300">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <!-- Project Image -->
+                <div class="mb-12">
+                    <img src="/portfolio/images/case-studies/gf-app/hero.png" alt="Find Me Gluten Free App Redesign"
+                        class="w-full rounded-lg shadow-lg" />
+                </div>
+
+                <!-- Project Overview -->
+                <div class="grid md:grid-cols-3 gap-8 mb-16">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">
+                            Timeline
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            1 week (from Research to Prototype)
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">
+                            Tools
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            Figma, FigJam
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">
+                            Role
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            Product Designer
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Introduction -->
+                <div class="mb-16">
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        To keep working on my craft as a Product Designer, I set myself a 1-week challenge focused on redesigning the home experience and interaction flow of Find Me Gluten Free. The goal: improve clarity, discoverability, and user trust through simplified navigation and better safety education.
+                    </p>
+                </div>
+
+                <!-- Problem & Context -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        Problem & Context
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        Find Me Gluten Free helps users find gluten-free restaurants based on community reviews. However, its current home experience feels overwhelming, with competing calls to action, inconsistent iconography, and no clear learning path for new users.
+                    </p>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        For people with celiac disease, this isn't just inconvenient — it creates real anxiety about whether a restaurant is safe to eat at.
+                    </p>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed font-semibold">
+                        Problem statement: How might we simplify the experience for new users, ensuring clarity and trust from the very first interaction?
+                    </p>
+                </div>
+
+                <!-- Research & Discovery -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        Research & Discovery
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        I conducted a heuristic evaluation and UX audit to identify usability issues in the home flow.
+                    </p>
+
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+                        Key findings:
+                    </h3>
+                    <ul class="text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
+                        <li>Competing CTAs with no clear hierarchy → users unsure where to start.</li>
+                        <li>Confusing filters and icons → users can't easily tell which options ensure safety.</li>
+                        <li>Lack of education about "Dedicated Gluten-Free" or what user badges mean → weak trust.</li>
+                    </ul>
+
+                    <div class="mb-8">
+                        <img src="/portfolio/images/case-studies/gf-app/app_preview.png" alt="App Preview"
+                            class="w-full rounded-lg shadow-md" />
+                    </div>
+
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        I also ran quick tests with three gluten-free users (including two with celiac disease). All reported uncertainty about how to assess safety when browsing.
+                    </p>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                        These findings guided my focus on clarity, safety education, and trust-building.
+                    </p>
+
+                    <div class="mb-8">
+                        <img src="/portfolio/images/case-studies/gf-app/audit.png" alt="UX Audit"
+                            class="w-full rounded-lg shadow-md" />
+                    </div>
+
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                        These insights shaped a clear opportunity: reduce cognitive load, make safety indicators instantly understandable, and educate users early on what "safe" really means.
+                    </p>
+                </div>
+
+                <!-- User Persona & Journey -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        User Persona & Journey
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                        Using research insights, I created a user persona representing a typical person with celiac disease looking for safe dining options.
+                    </p>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                        Mapping their journey highlighted key friction points — particularly at onboarding, search, and safety verification.
+                    </p>
+
+                    <div class="mb-8">
+                        <img src="/portfolio/images/case-studies/gf-app/persona.png" alt="User Persona"
+                            class="w-full rounded-lg shadow-md" />
+                    </div>
+
+                    <div class="mb-12">
+                        <img src="/portfolio/images/case-studies/gf-app/user_journey.png" alt="User Journey Map"
+                            class="w-full rounded-lg shadow-md" />
+                    </div>
+                </div>
+
+                <!-- Design Goals -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        Design Goals
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        My redesign focused on three experience pillars:
+                    </p>
+                    <ul class="text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2">
+                        <li><strong>Simplify navigation</strong> by reducing cognitive load and highlight key actions.</li>
+                        <li><strong>Build trust</strong> through explicit safety signals such as verified badges and clear filters.</li>
+                        <li><strong>Empower choice</strong> and educate users on what "Dedicated GF" and "Most Celiac Friendly" mean.</li>
+                    </ul>
+                </div>
+
+                <!-- Ideation & Wireframes -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        Ideation & Wireframes
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                        I started by mapping the main user journey from home page to restaurant details focusing on how users could filter by safety (Dedicated gluten-free and Most Celiac Friendly) and read reviews for certified members.
+                    </p>
+
+                    <div class="mb-8">
+                        <img src="/portfolio/images/case-studies/gf-app/iterations.png" alt="First Iteration Wireframes"
+                            class="w-full rounded-lg shadow-md" />
+                    </div>
+
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        The first wireframes clarified the navigation flow but revealed that the home screen still felt crowded and unfocused.
+                    </p>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        In the second iteration, I restructured the experience around two primary filters — Dedicated Gluten-Free and Most Celiac Friendly — and organized supporting content (Nearby, Latest Reviews, Browse by Category) into horizontally scrollable sections for easier scanning.
+                    </p>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                        Based on feedback, I also introduced a Gluten-Free Card, translatable into multiple languages, to help users safely communicate dietary needs abroad or across language barriers.
+                    </p>
+
+                    <div class="mb-12">
+                        <img src="/portfolio/images/case-studies/gf-app/iterations2.png" alt="Second Iteration Wireframes"
+                            class="w-full rounded-lg shadow-md" />
+                    </div>
+                </div>
+
+                <!-- High-Fidelity Design -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        High-Fidelity Design
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                        The final design uses a minimalist UI to prioritise content and readability, while reinforcing trust through clear safety cues and verified reviews.
+                    </p>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                        The onboarding introduces the app's unique features through three short, focused screens, helping users understand what safety filters and verified reviews mean before their first search.
+                    </p>
+
+                    <div class="mb-8">
+                        <img src="/portfolio/images/case-studies/gf-app/onboarding.png" alt="Onboarding Screens"
+                            class="w-full rounded-lg shadow-md" />
+                    </div>
+
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                        From the home screen, users can filter for dedicated gluten-free places, view detailed safety ratings, and call restaurants directly.
+                    </p>
+
+                    <div class="mb-8">
+                        <img src="/portfolio/images/case-studies/gf-app/hi-fi.png" alt="High-Fidelity Screens"
+                            class="w-full rounded-lg shadow-md" />
+                    </div>
+
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                        The clean, minimal interface not only improves readability but also ensures the visual hierarchy directs users toward safety and confidence at every step.
+                    </p>
+                </div>
+
+                <!-- Prototype -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        Prototype
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        The prototype demonstrates a streamlined flow from discovering nearby restaurants to viewing safety details and booking a table.
+                    </p>
+                    <ul class="text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
+                        <li><strong>From Home:</strong> select "Dedicated Gluten-Free" or "Most Celiac Friendly."</li>
+                        <li><strong>Results:</strong> view restaurants with verified badges and trusted reviews.</li>
+                        <li><strong>Details:</strong> see cross-contamination safety notes or call to book.</li>
+                        <li>A confirmation modal appears before calling.</li>
+                    </ul>
+
+                    <!-- Prototype Embed - Add your Figma prototype URL here -->
+                    <div class="mb-12 flex justify-center">
+                        <div class="w-[450px] h-[800px] bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-md">
+                            <!-- Replace with your Figma prototype embed URL -->
+                            <iframe width="450" height="800" style="border: none;"
+                                src="YOUR_FIGMA_PROTOTYPE_URL_HERE"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                        This prototype demonstrates how a simplified, education-first approach can turn anxiety into confidence — helping users make safe dining choices quickly and effortlessly.
+                    </p>
+                </div>
+
+                <!-- Impact & Next Steps -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        Impact & Next Steps
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        The redesign simplifies the journey, improves clarity for first-time users, and reinforces trust through educational onboarding.
+                    </p>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+                        Next steps:
+                    </h3>
+                    <ul class="text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2">
+                        <li>Conduct usability testing to validate clarity and trust perception.</li>
+                        <li>Integrate the different levels of cross-contamination tolerance - since some people are ok with cross-contamination, it's useful to signal this in the reviews</li>
+                    </ul>
+                </div>
+
+                <!-- What I Learned -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        What I Learned
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        Designing for health conditions means designing for emotional safety, not just usability. Simplifying pages and sections proved more complex than expected — user stories were essential to stay focused on what truly matters. As Steve Krug says, be ruthless in what you cut (and it's harder than it sounds).
+                    </p>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                        This exercise was a great opportunity to sharpen my skills as a Product Designer. Working within a 1-week timeline pushed me to think fast, prioritise what matters, and tackle a different kind of design challenge — keeping me sharp and helping me grow beyond my usual work.
+                    </p>
+                </div>
+
+                <!-- Navigation -->
+                <div class="border-t border-gray-200 dark:border-gray-700 pt-8">
+                    <div class="flex justify-between items-center">
+                        <a href="../mobile-banking-app/"
+                            class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-white font-medium py-3 px-8 rounded-full transition duration-300">
+                            ← Previous Project
+                        </a>
+                        <a href="../../"
+                            class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-full transition duration-300">
+                            Back to Portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-300 py-12 transition-colors duration-300">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Fátima Rodrigues</p>
+        </div>
+    </footer>
+</body>
+
+</html>
