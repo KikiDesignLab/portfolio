@@ -103,7 +103,7 @@ const Portfolio = () => {
             {/* Project 1 */}
             <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 max-w-[600px]">
               <img
-                src="/portfolio/images/projects/onboarding-redesign.png"
+                src="/portfolio/images/projects/GF-app.png"
                 alt="Onboarding"
                 className="w-full h-48 object-cover"
               />
