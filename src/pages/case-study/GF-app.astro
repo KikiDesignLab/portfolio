@@ -114,7 +114,10 @@ import "../../styles/global.css";
                 <!-- Introduction -->
                 <div class="mb-16">
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                        To keep working on my craft as a Product Designer, I set myself a 1-week challenge focused on redesigning the home experience and interaction flow of Find Me Gluten Free. The goal: improve clarity, discoverability, and user trust through simplified navigation and better safety education.
+                        To keep working on my craft as a Product Designer, I set myself a 1-week challenge focused on simplifying the home experience and interaction flow of Find Me Gluten Free.
+                    </p>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        The project aimed to improve clarity, trust, and education on how users find and assess safe dining options through clear navigation and verified community input.
                     </p>
                 </div>
 
@@ -132,43 +135,59 @@ import "../../styles/global.css";
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed font-semibold">
                         Problem statement: How might we simplify the experience for new users, ensuring clarity and trust from the very first interaction?
                     </p>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        To evaluate success, the redesign aimed to reduce user confusion on the home screen, decrease time to find a safe restaurant, and increase perceived trust in safety information
+                    </p>
                 </div>
-
+                
                 <!-- Research & Discovery -->
                 <div class="mb-16">
                     <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
                         Research & Discovery
                     </h2>
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                        I conducted a heuristic evaluation and UX audit to identify usability issues in the home flow.
+                        I started with a <strong>heuristic audit</strong> of the existing app and quick <strong>usability tests</strong>
+                        with three users (two with celiac disease, one with gluten sensitivity).
                     </p>
-
-                    <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-                        Key findings:
-                    </h3>
-                    <ul class="text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
-                        <li>Competing CTAs with no clear hierarchy → users unsure where to start.</li>
-                        <li>Confusing filters and icons → users can't easily tell which options ensure safety.</li>
-                        <li>Lack of education about "Dedicated Gluten-Free" or what user badges mean → weak trust.</li>
-                    </ul>
-
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                        I also ran quick tests with three gluten-free users (including two with celiac disease). All reported uncertainty about how to assess safety when browsing.
+                        As the main task, users were asked to use the current app to find and book a place they felt confident about
+                        visiting and eating safely.
                     </p>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                        Additionally, they were asked about:
+                    </p>
+                    <ul class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
+                        <li>First impression on the home screen</li>
+                        <li>How confident they were about their choice</li>
+                        <li>What cues helped them decide for an option and against the other</li>
+                        <li>Their understanding about the badges and icons</li>
+                    </ul>
+                
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+                        Key findings
+                    </h3>
+                    <ul class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
+                        <li><strong>Competing CTAs with no clear hierarchy</strong> → all 3 people were unsure where to start</li>
+                        <li><strong>Confusing filters and icons</strong> → users can't easily tell which options ensure safety</li>
+                        <li><strong>Lack of education about "Dedicated Gluten-Free" or what user badges mean</strong> → weak trust</li>
+                        <li><strong>Verified options inspired the most confidence</strong> → This was key to making a trusting decision
+                        </li>
+                    </ul>
+                
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                        These findings guided my focus on clarity, safety education, and trust-building.
+                        These findings guided my focus on clarity, safety education, and reducing cognitive load.
                     </p>
-
+                
                     <div class="mb-8">
-                        <img src="/portfolio/images/case-studies/gf-app/audit.png" alt="UX Audit"
-                            class="w-full rounded-lg shadow-md" />
+                        <img src="/portfolio/images/case-studies/gf-app/audit.png" alt="UX Audit" class="w-full rounded-lg shadow-md" />
                     </div>
-
+                
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                        These insights shaped a clear opportunity: reduce cognitive load, make safety indicators instantly understandable, and educate users early on what "safe" really means.
+                        These insights shaped a clear opportunity: reduce cognitive load, make safety indicators instantly
+                        understandable, and educate users early on what "safe" really means.
                     </p>
                 </div>
-
+                
                 <!-- User Persona & Journey -->
                 <div class="mb-16">
                     <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
@@ -200,7 +219,7 @@ import "../../styles/global.css";
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
                         My redesign focused on three experience pillars:
                     </p>
-                    <ul class="text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2">
+                    <ul class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
                         <li><strong>Simplify navigation</strong> by reducing cognitive load and highlight key actions.</li>
                         <li><strong>Build trust</strong> through explicit safety signals such as verified badges and clear filters.</li>
                         <li><strong>Empower choice</strong> and educate users on what "Dedicated GF" and "Most Celiac Friendly" mean.</li>
@@ -222,13 +241,23 @@ import "../../styles/global.css";
                     </div>
 
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                        The first wireframes clarified the navigation flow but revealed that the home screen still felt crowded and unfocused.
+                        The first wireframes clarified the navigation flow but the home page proved the most challenging as there was a lot to fit in, and it was still feeling crowded and unfocused. 
                     </p>
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                        In the second iteration, I restructured the experience around two primary filters — Dedicated Gluten-Free and Most Celiac Friendly — and organized supporting content (Nearby, Latest Reviews, Browse by Category) into horizontally scrollable sections for easier scanning.
-                    </p>
+                        In the second iteration, I restructured the experience around two primary filters <strong>Dedicated Gluten-Free</strong> and <strong>Most Celiac Friendly</strong>, and organized supporting content (Nearby, Latest Reviews, Browse by Category) into horizontally
+                        scrollable sections for easier scanning.
+                        </p>
+                        <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                            This new hierarchy made better use of the screen space:
+                        </p>
+                        <ul class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
+                            <li>Highlighting the two main safety filters as primary actions</li>
+                            <li>Organizing supporting content into horizontally scrollable sections for faster scanning</li>
+                            <li>Following familiar mobile patterns to make the experience feel natural and effortless</li>
+                            <li>Keeping the interface light and easy to explore</li>
+                        </ul>
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                        Based on feedback, I also introduced a Gluten-Free Card, translatable into multiple languages, to help users safely communicate dietary needs abroad or across language barriers.
+                        Based on feedback from the usability tests, I also introduced a Gluten-Free Card, translatable into multiple languages, to help users safely communicate dietary needs abroad or across language barriers.
                     </p>
 
                     <div class="mb-12">
@@ -276,7 +305,7 @@ import "../../styles/global.css";
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
                         The prototype demonstrates a streamlined flow from discovering nearby restaurants to viewing safety details and booking a table.
                     </p>
-                    <ul class="text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
+                    <ul class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
                         <li><strong>From Home:</strong> select "Dedicated Gluten-Free" or "Most Celiac Friendly."</li>
                         <li><strong>Results:</strong> view restaurants with verified badges and trusted reviews.</li>
                         <li><strong>Details:</strong> see cross-contamination safety notes or call to book.</li>
@@ -293,34 +322,55 @@ import "../../styles/global.css";
                     </div>
 
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                        This prototype demonstrates how a simplified, education-first approach can turn anxiety into confidence — helping users make safe dining choices quickly and effortlessly.
+                        This prototype demonstrates how a simplified, education-first approach can turn anxiety into confidence — helping
+                        users make safe dining choices quickly and effortlessly.
+                    </p>
+
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                        Future testing will focus on measuring time to complete key tasks and users’ reported confidence in safety information.
                     </p>
                 </div>
 
-                <!-- Impact & Next Steps -->
+                <!-- Impact, Validation & Next Steps -->
                 <div class="mb-16">
                     <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
-                        Impact & Next Steps
+                        Impact, Validation & Next Steps
                     </h2>
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                        The redesign simplifies the journey, improves clarity for first-time users, and reinforces trust through educational onboarding.
+                        The redesign simplifies the journey, improves clarity for first-time users, and reinforces trust through educational
+                        onboarding.
                     </p>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                       As this was a 1-week project, subsequent usability tests are needed to validate:
+                    </p>
+                    <ul class="text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
+                        <li>Tasks success rate</li>
+                        <li>Clarity perspection</li>
+                        <li>Trust level</li>
+                    </ul>
                     <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
                         Next steps:
-                    </h3>
-                    <ul class="text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2">
-                        <li>Conduct usability testing to validate clarity and trust perception.</li>
-                        <li>Integrate the different levels of cross-contamination tolerance - since some people are ok with cross-contamination, it's useful to signal this in the reviews</li>
+                        </h3>
+                        </p>
+                        <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                            Moving forward, there are key opportunities to extend the redesign beyond clarity and trust, enhancing functionality
+                            and personalization for users with different safety needs.
+                        
+                        </p>
+                        <ul class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
+                        <li>Allow users to book directly through the app or connect with existing booking platforms</li>
+                        <li>Enable a direct chat with restaurants so users can ask safety-related questions before booking</li>
+                        <li>Allow users and reviewers to indicate their level of cross-contamination tolerance, making reviews more relevant and personalised</li>
                     </ul>
                 </div>
 
-                <!-- What I Learned -->
+                <!-- Reflection & Learnings -->
                 <div class="mb-16">
                     <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
-                        What I Learned
+                        Reflection & Learnings
                     </h2>
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                        Designing for health conditions means designing for emotional safety, not just usability. Simplifying pages and sections proved more complex than expected — user stories were essential to stay focused on what truly matters. As Steve Krug says, be ruthless in what you cut (and it's harder than it sounds).
+                        Designing for health conditions means designing for emotional safety, not just usability. Simplifying pages and sections proved more complex than expected — user stories were essential to stay focused on what truly matters. As Steve Krug says, <i>be ruthless in what you cut</i> (and it's harder than it sounds).
                     </p>
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
                         This exercise was a great opportunity to sharpen my skills as a Product Designer. Working within a 1-week timeline pushed me to think fast, prioritise what matters, and tackle a different kind of design challenge — keeping me sharp and helping me grow beyond my usual work.
