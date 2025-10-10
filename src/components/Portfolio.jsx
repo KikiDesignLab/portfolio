@@ -37,14 +37,50 @@ const Portfolio = () => {
     }
   }, [isDarkMode, isClient]);
 
+  useEffect(() => {
+  if (!isClient) return;
+
+  const favicon = document.querySelector("link[rel='icon']") || document.createElement("link");
+  favicon.rel = "icon";
+  favicon.type = "image/svg+xml";
+
+  favicon.href = isDarkMode
+    ? `${import.meta.env.BASE_URL}Favicon-dark.svg`
+    : `${import.meta.env.BASE_URL}Favicon-light.svg`;
+
+  // Append if not already in document
+  if (!document.head.contains(favicon)) {
+    document.head.appendChild(favicon);
+  }
+
+  if (isDarkMode) {
+    document.documentElement.classList.add("dark");
+    document.documentElement.classList.remove("light");
+    localStorage.setItem("theme", "dark");
+  } else {
+    document.documentElement.classList.add("light");
+    document.documentElement.classList.remove("dark");
+    localStorage.setItem("theme", "light");
+  }
+}, [isDarkMode, isClient]);
+
+
   return (
     <>
       {/* Header */}
       <header className="bg-white dark:bg-gray-800 py-4 px-6 md:px-12 sticky top-0 z-50 transition-colors duration-300">
         <div className="container mx-auto max-w-5xl flex justify-between items-center">
-          <div className="text-xl font-bold text-gray-800 dark:text-gray-100">
-            Fátima Rodrigues
+          <div className="flex items-center space-x-2">
+            <img
+              src={`${import.meta.env.BASE_URL}Favicon-dark.svg`}
+              alt="Logo"
+              className="w-7 h-7 md:w-8 md:h-8"
+            />
+            <span className="text-xl font-bold text-gray-800 dark:text-gray-100">
+              Fátima Rodrigues
+            </span>
           </div>
+
           <div className="flex items-center space-x-4 sm:space-x-6 md:space-x-8 ml-4 sm:ml-6">
             <nav>
               <ul className="flex space-x-4 sm:space-x-6 md:space-x-8">
