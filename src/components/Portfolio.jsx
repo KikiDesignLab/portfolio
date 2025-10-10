@@ -72,7 +72,11 @@ const Portfolio = () => {
         <div className="container mx-auto max-w-5xl flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <img
-              src={`${import.meta.env.BASE_URL}Favicon-dark.svg`}
+              src={
+                isDarkMode
+                  ? `${import.meta.env.BASE_URL}Favicon-dark.svg`
+                  : `${import.meta.env.BASE_URL}Favicon-light.svg`
+              }
               alt="Logo"
               className="w-7 h-7 md:w-8 md:h-8"
             />
