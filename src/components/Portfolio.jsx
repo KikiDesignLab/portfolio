@@ -229,7 +229,7 @@ const Portfolio = () => {
               balance business goals with user needs. 
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-              I've been actively exploring the intersection of design and development through personal projects, such as this little corner of the web, and discovering the power of "vibe coding" – that intuitive approach to rapidly prototyping and refining user experiences directly in code. This hands-on exploration has strengthened my understanding of design systems and the developer experience, making me more effective when collaborating with engineering teams.
+              I've been actively exploring the intersection of design and development through personal projects, such as this little corner of the web, and discovering the power of "vibe coding" that allows rapidly prototyping and refining user experiences directly in code. This hands-on exploration has strengthened my understanding of design systems and the developer experience, making me more effective when collaborating with engineering teams.
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
               I'm drawn to challenges where I can think deeply about a topic and merge aesthetics with functionality to craft clear, purposeful experiences.
