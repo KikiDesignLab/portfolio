@@ -122,11 +122,10 @@ const Portfolio = () => {
       <section className="py-20 bg-gray-100 dark:bg-gradient-to-r dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-gray-100">
-            Crafting Digital Experiences
+            Designing with Intention
           </h1>
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-            I'm Fátima, a product designer focused on creating intuitive and
-            delightful user experiences that solve real problems.
+            I’m Fátima, an HR Specialist turned Product Designer, bringing curiosity, empathy, and a drive to learn to every project.
           </p>
         </div>
       </section>
@@ -223,11 +222,7 @@ const Portfolio = () => {
               About Me
             </h2>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-              An HR Specialist turned Product Designer, I bring a unique blend
-              of human-centered skills and design expertise to every challenge I
-              tackle. I specialize in creating user-centered solutions that
-              balance business goals with user needs. 
-            </p>
+              An HR Specialist turned Product Designer, I’ve always found myself at the intersection of listening to people and solving problems. Being a learner at heart, I keep my curiosity alive by constantly exploring, reading, and experimenting, trying to become a little better with each project. I bring a unique blend of human-centered skills and design curiosity to every challenge I tackle, striving to create thoughtful, user-centered solutions that balance business goals with real human needs.            </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
               I've been actively exploring the intersection of design and development through personal projects, such as this little corner of the web, and discovering the power of "vibe coding" that allows rapidly prototyping and refining user experiences directly in code. This hands-on exploration has strengthened my understanding of design systems and the developer experience, making me more effective when collaborating with engineering teams.
             </p>
