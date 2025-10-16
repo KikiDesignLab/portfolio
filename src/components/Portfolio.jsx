@@ -222,16 +222,13 @@ const Portfolio = () => {
               About Me
             </h2>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-              An HR Specialist turned Product Designer, I’ve always found myself at the intersection of listening to people and solving problems. Being a learner at heart, I keep my curiosity alive by constantly exploring, reading, and experimenting, trying to become a little better with each project. I bring a unique blend of human-centered skills and design curiosity to every challenge I tackle, striving to create thoughtful, user-centered solutions that balance business goals with real human needs.            </p>
+              An HR Specialist turned Product Designer, I’ve always found myself at the intersection of listening to people and solving problems. Being a learner at heart, I keep my curiosity alive by constantly exploring, reading, and experimenting, trying to become a little better with each project. I bring a unique blend of human-centered skills and design curiosity to every challenge I tackle, striving to create thoughtful, user-centered solutions that balance business goals with real human needs.
+            </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-              I've been actively exploring the intersection of design and development through personal projects, such as this little corner of the web, and discovering the power of "vibe coding" that allows rapidly prototyping and refining user experiences directly in code. This hands-on exploration has strengthened my understanding of design systems and the developer experience, making me more effective when collaborating with engineering teams.
+              I've been actively exploring the intersection of design and development through personal projects, such as this little corner of the web, and discovering the power of "vibe coding" that allows rapidly prototyping and refining user experiences directly in code. This hands-on approach has strengthened my understanding of design systems and the developer experience, making me more effective when collaborating with engineering teams.
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
               I'm drawn to challenges where I can think deeply about a topic and merge aesthetics with functionality to craft clear, purposeful experiences.
-            </p>
-            <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-              In my free time, you'll find me painting in watercolour, devouring
-              a book or having long walks with some music on.
             </p>
             {/* <button className="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-white font-medium py-3 px-8 rounded-full transition duration-300">
               Download Resume
