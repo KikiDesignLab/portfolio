@@ -80,7 +80,7 @@ const Portfolio = () => {
               alt="Logo"
               className="w-7 h-7 md:w-8 md:h-8"
             />
-            <span className="text-xl font-bold text-gray-800 dark:text-gray-100">
+            <span className="text-xl font-semibold text-gray-800 dark:text-gray-100">
               Fátima Rodrigues
             </span>
           </div>
@@ -119,12 +119,12 @@ const Portfolio = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 bg-gray-100 dark:bg-gradient-to-r dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300">
+      <section  className="py-16 bg-white dark:bg-gray-800 transition-colors duration-300">
         <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-gray-100">
+          <h1 className="text-4xl md:text-5xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
             Designing with Intention
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl font-normal text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
             I’m Fátima, an HR Specialist turned Product Designer, bringing curiosity, empathy, and a drive to learn to every project.
           </p>
         </div>
@@ -135,7 +135,7 @@ const Portfolio = () => {
         className="py-16 bg-gray-100 dark:bg-gray-900 transition-colors duration-300"
       >
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-gray-100">
+          <h2 className="text-3xl font-semibold text-center mb-12 text-gray-900 dark:text-gray-100">
             Selected Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -196,7 +196,7 @@ const Portfolio = () => {
                 <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">
                   Mobile Banking App
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                <p className="text-gray-600 font-normal dark:text-gray-400 mb-4">
                   Designed a new mobile banking experience that helps people demystify financial insecurities, empowering them to take full ownership of their finances.
                 </p>
                  <a
