@@ -155,9 +155,9 @@ const Portfolio = () => {
                 </p>
                 <a
                   href="./case-study/GF-app/"
-                  className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
+                  className="text-blue-600 dark:text-blue-300 hover:underline font-medium"
                 >
-                  View Case Study →
+                  <strong>View Case Study</strong>
                 </a>
               </div>
             </div>
@@ -179,9 +179,9 @@ const Portfolio = () => {
                 </p>
                 <a
                   href="./case-study/onboarding-redesign/"
-                  className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
+                  className="text-blue-600 dark:text-blue-300 hover:underline font-medium"
                 >
-                  View Case Study →
+                  <strong>View Case Study</strong>
                 </a>
               </div>
             </div>
@@ -201,9 +201,9 @@ const Portfolio = () => {
                 </p>
                  <a
                   href="./case-study/mobile-banking-app/"
-                  className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
+                  className="text-blue-600 dark:text-blue-300 hover:underline font-medium"
                 >
-                  View Case Study →
+                  <strong>View Case Study</strong>
                 </a>
               </div>
             </div>
