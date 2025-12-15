@@ -4,332 +4,361 @@ import "../../styles/global.css";
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Onboarding Redesign - Case Study | Fátima Rodrigues</title>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
-        <script>
-            // Dark mode initialization script
-            (function () {
-                const savedTheme = localStorage.getItem("theme");
-                if (
-                    savedTheme === "dark" ||
-                    (!savedTheme &&
-                        window.matchMedia("(prefers-color-scheme: dark)")
-                            .matches)
-                ) {
-                    document.documentElement.classList.add("dark");
-                    document.documentElement.classList.remove("light");
-                } else {
-                    document.documentElement.classList.add("light");
-                    document.documentElement.classList.remove("dark");
-                }
-            })();
-        </script>
-    </head>
-    <body>
-        <!-- Header -->
-        <header class="bg-white dark:bg-gray-800 py-4 px-6 md:px-12 sticky top-0 z-50 transition-colors duration-300">
-            <div class="container mx-auto flex justify-between items-center">
-                <div class="flex items-center space-x-2">
-                    <img id="header-logo" src="/portfolio/Favicon-light.svg" alt="Logo" class="w-7 h-7 md:w-8 md:h-8" />
-                    <a href="../../" class="text-xl font-bold text-gray-800 dark:text-gray-100">
-                        Fátima Rodrigues
-                    </a>
-                </div>
-                <nav>
-                    <a href="../../"
-                        class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition duration-300">
-                        Back to Portfolio
-                    </a>
-                </nav>
-            </div>
-        </header>
 
-        <!-- Hero Section -->
-        <section
-            class="py-20 bg-gray-100 dark:bg-gradient-to-r dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300"
-        >
-            <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto text-center">
-                    <h1
-                        class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-gray-100"
-                    >
-                        Onboarding Redesign
-                    </h1>
-                    <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
-                        Designing a new onboarding experience for a Scanner app
-                        to increase user adoption and conversion rates
-                    </p>
-                     <div class="flex flex-wrap justify-center gap-4 text-sm">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onboarding Redesign - Case Study | Fátima Rodrigues</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <script>
+        // Dark mode initialization script
+        (function () {
+            const savedTheme = localStorage.getItem("theme");
+            if (
+                savedTheme === "dark" ||
+                (!savedTheme &&
+                    window.matchMedia("(prefers-color-scheme: dark)")
+                        .matches)
+            ) {
+                document.documentElement.classList.add("dark");
+                document.documentElement.classList.remove("light");
+            } else {
+                document.documentElement.classList.add("light");
+                document.documentElement.classList.remove("dark");
+            }
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-white dark:bg-gray-800 py-4 px-6 md:px-12 sticky top-0 z-50 transition-colors duration-300">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img id="header-logo" src="/portfolio/Favicon-light.svg" alt="Logo" class="w-7 h-7 md:w-8 md:h-8" />
+                <a href="../../" class="text-xl font-bold text-gray-800 dark:text-gray-100">
+                    Fátima Rodrigues
+                </a>
+            </div>
+            <nav>
+                <a href="../../"
+                    class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition duration-300">
+                    Back to Portfolio
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+        class="py-20 bg-gray-100 dark:bg-gradient-to-r dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                    Onboarding Redesign
+                </h1>
+                <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
+                    Designing a new onboarding experience for a Scanner app
+                    to increase user adoption and conversion rates
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 text-sm">
                     <span class="bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-full">User
                         Interface</span>
-                    <span class="bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-full">Mobile
+                    <span
+                        class="bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-full">Mobile
                         Design</span>
                     <span class="bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-full">User
                         Research</span>
                 </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Case Study Content -->
+    <section class="py-16 bg-white dark:bg-gray-800 transition-colors duration-300">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <!-- Project Image -->
+                <div class="mb-12">
+                    <img src="/portfolio/images/case-studies/onboarding/hero.png" alt="Onboarding Redesign hero image"
+                        class="w-full rounded-lg shadow-lg" />
+                </div>
+
+                <!-- Project Overview -->
+                <div class="grid md:grid-cols-3 gap-8 mb-16">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">
+                            Duration
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            2 months
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">
+                            Team
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            1 Designer, 1 Video Producer, 1 Developer, 1
+                            Monetization Manager
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">
+                            My Role
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            Product Designer
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Problem & Context -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        Problem & Context
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        Our recently created monetisation team was tasked with working on ways to improve monetisation,
+                        conversion being one of the main areas of focus.
+                    </p>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-10">
+                        Currently on Scanner Air, we were facing a low conversion rate, which was especially critical
+                        for first-time users as this was their very first interaction with the product. Users were being
+                        blocked on first screen by a generic paywall.
+                    </p>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        The current Paywalls had several shortcomings:
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-8 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+                                Poor hero image
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                Low quality, irrelevant AI-generated images, impacting perceived credibility.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+                                Weak value-proposition
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                Unclear how users would benefit from subscribing Scanner Air.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+                                Generic copy
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                Long, dense paragraph about conditions and legal text that users don’t read.
+                            </p>
+                        </div>
+                    </div>
+                    <img src="/portfolio/images/case-studies/onboarding/currentpw.png" alt="Current Paywall Images"
+                        class="w-full rounded-lg shadow-md" />
+                </div>
+
+                <!-- Research & Discovery -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        Research & Discovery
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+                                Competitive Analysis
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                We analysed 4 competitors in the productivity app space, focusing on document management
+                                apps.
+                                Onboarding was a common practice, with progressive disclosure of features, interactive
+                                demos, and paywalls placed at the end.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+                                Internal data
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                We examined the existing user flow using partial behavioral metrics and internal data.
+                                There was a considerable gap between CTA interaction and purchase, which signaled that
+                                we weren't communicating the app's value properly.
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        Main takeaways
+                    </p>
+                     <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 mb-8">
+                        <li>Key features weren’t being explained, so users had no context before being asked to convert.</li>
+                        <li>Education upfront was a common and effective approach in this product category.</li>
+                    </ul>
+                </div>
+
+                <!-- Assumption & Experiment Setup -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        Assumption & Experiment Setup
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                       <i>If users understand the value of Scanner Air before seeing the paywall, they will be more motivated to engage and more likely to convert.</i>
+                    </p>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                       To validate this, we compared a flow with onboarding + paywall <i>versus</i> a flow with only a paywall
+                        on first launch.
+                    </p>
+                </div>
+
+                <!-- User Flow Mapping -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        User Flow Mapping
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        I mapped the ideal learning journey for a first-time user, prioritising:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 mb-8">
+                        <li>Clarity</li>
+                        <li>Progressive disclosure of the main features of the app</li>
+                        <li>Low cognitive load</li>
+                        <li>Fast access to the core value of the app</li>
+                    </ul>
+                    <img src="/portfolio/images/case-studies/onboarding/userflow.png" alt="User Flow Mapping"
+                        class="w-full rounded-lg shadow-md" />
+                </div>
+
+                <!-- Solution -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        The Solution
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                        We created a clean, intuitive onboarding experience that communicated the app’s value before
+                        showing the
+                        paywall.
+                        The design emphasized visual hierarchy, progressive disclosure, and lightweight feature
+                        demonstrations.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 mb-8">
+                        <li>Clear, concise language explaining each feature.</li>
+                        <li>Interactive animations demonstrating core paid features.</li>
+                        <li>Progressive disclosure to avoid cognitive overload.</li>
+                        <li>Redesigned paywall summarizing all key value points at the end.</li>
+                    </ul>
+                    <img src="/portfolio/images/case-studies/onboarding/solution.png" alt="Solution Overview"
+                        class="w-full rounded-lg shadow-md" />
+                </div>
+
+                <!-- Results -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        Outcome
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        The onboarding flow led to a clear improvement in both user engagement and conversion rates
+                        compared to a
+                        paywall-only experience.
+                        While exact numbers remain confidential, we observed a meaningful uplift in CTA interaction and
+                        subscription
+                        conversion, validating onboarding as a high-leverage growth strategy.
+                    </p>
+                </div>
+
+                <!-- Constraints -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        Constraints
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                        Limited behavioral data and qualitative insights from reviews meant the design prioritized
+                        clarity and proven
+                        onboarding patterns over highly personalized flows.
+                        User interviews were not standard practice but would have added valuable context in this case.
+                    </p>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                        Cross-functional dependencies included animations, which were confirmed mid-way through the
+                        design process,
+                        requiring validation with engineering to ensure performance was not impacted.
+                        Marketing requirements, such as product page and notifications, influenced the structure and
+                        length of the
+                        onboarding flow.
+                    </p>
+                </div>
+
+                <!-- Considerations & Next Steps -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        Considerations & Next Steps
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        Future tests could explore shorter onboarding flows to reduce early drop-off while maintaining
+                        conversion,
+                        as well as evaluating the product page and survey placement for potential efficiency
+                        improvements.
+                    </p>
+                </div>
+
+                <!-- Summary -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        Summary
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                        The redesigned onboarding created a clearer, value-driven first experience, increasing
+                        engagement and
+                        conversions.
+                        The experiment validated educating users before introducing a paywall as a key growth strategy
+                        and informed
+                        similar initiatives across other apps.
+                    </p>
+                </div>
+
+                <!-- Navigation -->
+                <div class="border-t border-gray-200 dark:border-gray-700 pt-8">
+                    <div class="flex justify-between items-center">
+                        <a href="../GF-app/"
+                            class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-white font-medium py-3 px-8 rounded-full transition duration-300">
+                            ← Previous Project
+                        </a>
+                        <a href="../mobile-banking-app/"
+                            class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-full transition duration-300">
+                            Next Project →
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Case Study Content -->
-        <section
-            class="py-16 bg-white dark:bg-gray-800 transition-colors duration-300"
-        >
-            <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto">
-                    <!-- Project Image -->
-                    <div class="mb-12">
-                        <img
-                            src="/portfolio/images/case-studies/onboarding/hero.png"
-                            alt="Onboarding Redesign Mockup"
-                            class="w-full rounded-lg shadow-lg"
-                        />
-                    </div>
-
-                    <!-- Project Overview -->
-                    <div class="grid md:grid-cols-3 gap-8 mb-16">
-                        <div>
-                            <h3
-                                class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100"
-                            >
-                                Duration
-                            </h3>
-                            <p class="text-gray-600 dark:text-gray-400">
-                                2 months
-                            </p>
-                        </div>
-                        <div>
-                            <h3
-                                class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100"
-                            >
-                                Team
-                            </h3>
-                            <p class="text-gray-600 dark:text-gray-400">
-                                1 Designer, 1 Video Producer, 1 Developer, 1
-                                Monetization Manager
-                            </p>
-                        </div>
-                        <div>
-                            <h3
-                                class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100"
-                            >
-                                My Role
-                            </h3>
-                            <p class="text-gray-600 dark:text-gray-400">
-                                Product Designer
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Challenge -->
-                    <div class="mb-16">
-                        <h2
-                            class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100"
-                        >
-                            The Challenge
-                        </h2>
-                        <p
-                            class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6"
-                        >
-                            Paid features are blocked for free users by a
-                            general paywall that does little to translate what’s
-                            behind it. This creates paywall fatigue and users
-                            quickly disengage without understanding what the app
-                            has to offer. Our monetization team identified that
-                            top-performing apps often showcased value through
-                            onboarding before introducing a paywall. Early
-                            experiments confirmed the potential - our calculator
-                            app showed higher conversation rate on onboarding.
-                        </p>
-                        <p
-                            class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
-                        >
-                            The challenge was to redesign the onboarding flow to
-                            better communicate the app's value while reducing
-                            cognitive load and improving user engagement.
-                        </p>
-                    </div>
-
-                    <!-- Research -->
-                    <div class="mb-16">
-                        <h2
-                            class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100"
-                        >
-                            Research & Discovery
-                        </h2>
-                        <div class="grid md:grid-cols-2 gap-8 mb-8">
-                            <div>
-                                <h3
-                                    class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100"
-                                >
-                                    Competitive Analysis
-                                </h3>
-                                <p
-                                    class="text-gray-600 dark:text-gray-300 leading-relaxed"
-                                >
-                                    We analysed several competitors in the
-                                    productivity app world, namely document
-                                    management apps.This allowed to understand
-                                    core features how users are being educated.
-                                    Onboarding was a recurring practice, but
-                                    steps varied greatly.
-                                </p>
-                            </div>
-                            <div>
-                                <h3
-                                    class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100"
-                                >
-                                    User Flow Mapping
-                                </h3>
-                                <p
-                                    class="text-gray-600 dark:text-gray-300 leading-relaxed"
-                                >
-                                    When mapping the ideal user journey, the
-                                    focus was prioritizing the features users
-                                    care most about and making it a seamless,
-                                    informative experience without overwhelming
-                                    the user with a long onboarding process.
-                                </p>
-                            </div>
-                        </div>
-                        <img
-                            src="/portfolio/images/case-studies/onboarding/research.png"
-                            alt="Research Insights"
-                            class="w-full rounded-lg shadow-md"
-                        />
-                    </div>
-
-                    <!-- Solution -->
-                    <div class="mb-16">
-                        <h2
-                            class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100"
-                        >
-                            The Solution
-                        </h2>
-                        <p
-                            class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8"
-                        >
-                            I focused on creating a clean, intuitive interface
-                            that made the app’s core features - editing,
-                            signing, and text extraction - easy to understand at
-                            a glance. Throughout the design, I emphasized visual
-                            hierarchy to naturally guide the user’s attention
-                            and keep the experience lightweight. I redesigned
-                            the onboarding experience focusing on progressive
-                            disclosure and immediate value demonstration. The
-                            new flow includes:
-                        </p>
-                        <ul
-                            class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 mb-8"
-                        >
-                            <li>Clear, concise language to explain each step and a simple flow.</li>
-                            <li>Interactive feature demonstrations</li>
-                            <li>Clear value propositions at each step</li>
-                            <li>A straightforward paywall summarising all info</li>
-                        </ul>
-                        <img
-                            src="/portfolio/images/case-studies/onboarding/solution.png"
-                            alt="Solution Overview"
-                            class="w-full rounded-lg shadow-md"
-                        />
-                    </div>
-
-                    <!-- Results -->
-                    <div class="mb-16">
-                        <h2
-                            class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100"
-                        >
-                            Outcome
-                        </h2>
-                        <p
-                            class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
-                        >
-                            The new onboarding drove a measurable increase in
-                            conversion rate to purchase and stronger user
-                            engagement overall. While specific figures remain
-                            internal, the experiment validated onboarding as a
-                            high-leverage growth strategy. This success also
-                            informed similar initiatives across other apps.
-                        </p>
-                    </div>
-
-                    <!-- Considerations & Next Steps -->
-                    <div class="mb-16">
-                        <h2
-                            class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100"
-                        >
-                            Considerations & Next Steps
-                        </h2>
-                        <p
-                            class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6"
-                        >
-                            We still need more time for more significant results to come in, and further tests need to be performed (e.g.: with a shorter version of the onboarding).
-                        </p>
-
-                        <p
-                            class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
-                        >
-                            For Marketing purposes we added a Product Page with reviews right at the beginning, however it's still debatable the added value it brings, even though it's a market standard. Another relevant point is the survey, which allows the user to interact with the onboarding but is still 2 extra steps. We would ideally run an A/B/C test that would compare no onboarding/complete onboarding/shorter version.
-                        </p>
-                    </div>
-
-                    <!-- Navigation -->
-                    <div
-                        class="border-t border-gray-200 dark:border-gray-700 pt-8"
-                    >
-                        <div class="flex justify-between items-center">
-                            <a
-                                href="../GF-app/"
-                                class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-white font-medium py-3 px-8 rounded-full transition duration-300"
-                            >
-                                ← Previous Project
-                            </a>
-                            <a href="../mobile-banking-app/"
-                                class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-full transition duration-300">
-                                Next Project →
-                            </a>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer
-            class="bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-300 py-12 transition-colors duration-300"
-        >
-            <div class="container mx-auto px-6 text-center">
-                <p>&copy; 2025 Fátima Rodrigues</p>
-            </div>
-        </footer>
-    </body>
-    <script>
-        // Update header logo based on theme
-        function updateHeaderLogo() {
-            const isDark = document.documentElement.classList.contains('dark');
-            const logo = document.getElementById('header-logo');
-            if (logo) {
-                logo.src = isDark ? '/portfolio/Favicon-dark.svg' : '/portfolio/Favicon-light.svg';
-            }
+    <!-- Footer -->
+    <footer class="bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-300 py-12 transition-colors duration-300">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Fátima Rodrigues</p>
+        </div>
+    </footer>
+</body>
+<script>
+    // Update header logo based on theme
+    function updateHeaderLogo() {
+        const isDark = document.documentElement.classList.contains('dark');
+        const logo = document.getElementById('header-logo');
+        if (logo) {
+            logo.src = isDark ? '/portfolio/Favicon-dark.svg' : '/portfolio/Favicon-light.svg';
         }
+    }
 
-        // Run on load
-        updateHeaderLogo();
+    // Run on load
+    updateHeaderLogo();
 
-        // Watch for theme changes
-        const observer = new MutationObserver(updateHeaderLogo);
-        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
-    </script>
-    </body>
+    // Watch for theme changes
+    const observer = new MutationObserver(updateHeaderLogo);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+</script>
+</body>
+
 </html>
