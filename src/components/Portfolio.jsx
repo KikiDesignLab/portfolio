@@ -143,7 +143,7 @@ const Portfolio = () => {
             <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 max-w-[600px]">
               <img
                 src="/portfolio/images/projects/GF-app.png"
-                alt="Onboarding"
+                alt="Find Me Gluten Free Redesign"
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
@@ -170,11 +170,11 @@ const Portfolio = () => {
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">
-                  Onboarding Redesign
+                  Onboarding for Monetisation
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
                   Designed the new onboarding for a Scanner app to help users
-                  quickly familiarize with core features of the app leading to
+                  quickly familiarise with core features of the app leading to
                   an increase on conversion rates.
                 </p>
                 <a
