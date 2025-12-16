@@ -83,7 +83,7 @@ import "../../styles/global.css";
                 <!-- Project Image -->
                 <div class="mb-12">
                     <img src="/portfolio/images/case-studies/onboarding/hero.png" alt="Onboarding Redesign hero image"
-                        class="w-full rounded-lg"/>
+                        class="w-full rounded-lg" />
                 </div>
 
                 <!-- Project Overview -->
@@ -102,7 +102,7 @@ import "../../styles/global.css";
                         </h3>
                         <p class="text-gray-600 dark:text-gray-400">
                             1 Designer, 1 Video Producer, 1 Developer, 1
-                            Monetization Manager
+                            Monetisation Manager
                         </p>
                     </div>
                     <div>
@@ -121,7 +121,7 @@ import "../../styles/global.css";
                         Problem & Context
                     </h2>
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                        Our recently created monetisation team was tasked with working on ways to improve monetisation,
+                        Our recently created team was tasked with working on ways to improve monetisation,
                         conversion being one of the main areas of focus.
                     </p>
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-10">
@@ -173,10 +173,11 @@ import "../../styles/global.css";
                                 Competitive Analysis
                             </h3>
                             <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                                We analysed 4 competitors in the productivity app space, focusing on document management
-                                apps.
-                                Onboarding was a common practice, with progressive disclosure of features, interactive
-                                demos, and paywalls placed at the end.
+                                We analysed four competitors in the productivity app space, focusing on document management tools. Across
+                                these
+                                products, onboarding played a central role in setting expectations, with features introduced progressively
+                                through
+                                short flows, interactive demos, and paywalls positioned after users had experienced initial value.
                             </p>
                         </div>
                         <div>
@@ -184,36 +185,65 @@ import "../../styles/global.css";
                                 Internal data
                             </h3>
                             <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                                We examined the existing user flow using partial behavioral metrics and internal data.
-                                There was a considerable gap between CTA interaction and purchase, which signaled that
-                                we weren't communicating the app's value properly.
+                                We reviewed the existing user flow using available behavioral metrics and internal data. While limited, the data
+                                showed a significant drop-off between CTA interaction and purchase, suggesting a gap between user intent and
+                                perceived value.
                             </p>
-                        </div>
+                            </div>
                     </div>
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc mb-6">
                         <b>Main takeaways</b>
                     </p>
-                     <ul class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
-                        <li>Key features weren’t being explained, so users had no context before being asked to convert.</li>
-                        <li>Education upfront was a common and effective approach in this product category.</li>
+                    <ul
+                        class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
+                        <li>The first-time user experience should prioritise product value communication over immediate monetisation.</li>
+                        <li>Early interactions need to help users understand what the product enables, before asking for commitment.</li>
+                        <li>The role of the paywall is to formalise a decision users are already ready to make.</li>
                     </ul>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc mb-6">
+                        These insights shifted our focus away from immediate paywall and toward an onboarding-led experience that surfaces
+                        value before introducing the paywall.
+                        </p>
                 </div>
-
                 <!-- Assumption & Experiment Setup -->
                 <div class="mb-16">
                     <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
                         Assumption & Experiment Setup
                     </h2>
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                       <i>If users understand the value of Scanner Air before seeing the paywall, they will be more motivated to engage and more likely to convert.</i>
-                    </p>
-                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                       To validate this, we compared a flow with onboarding + paywall <i>versus</i> a flow with only a paywall
-                        on first launch.
-                    </p>
-                </div>
-
-                <!-- User Flow Mapping -->
+                        <i>If users understand the value of Scanner Air before seeing the paywall, they will be more
+                            likely to engage and convert.</i>
+                        </p>
+                        <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                            To validate this, we ran an experiment comparing:
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-8">
+                            <div class="md:col-span-5 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md">
+                                <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+                                    Flow with onboarding + paywall
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-2">
+                                    Users experienced the full onboarding before seeing the paywall.
+                                </p>
+                            </div>
+                            <div class="md:col-span-2 flex items-center justify-center">
+                                <p class="text-lg font-bold text-gray-600 dark:text-gray-300">
+                                    vs
+                                </p>
+                            </div>
+                            <div class="md:col-span-5 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md">
+                                <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+                                    Flow with paywall on first launch
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-2">
+                                    Users saw the paywall immediately without onboarding context.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        </div>
+                        
+                        <!-- User Flow Mapping -->
                 <div class="mb-16">
                     <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
                         User Flow Mapping
@@ -221,81 +251,86 @@ import "../../styles/global.css";
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
                         I mapped the ideal learning journey for a first-time user, prioritising:
                     </p>
-                    <ul class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
-                        <li>Clarity</li>
+                    <ul
+                        class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
+                        <li>Clear and early framing of the app’s core value</li>
                         <li>Progressive disclosure of the main features of the app</li>
-                        <li>Low cognitive load</li>
-                        <li>Fast access to the core value of the app</li>
+                        <li>Reduced cognitive load by limiting choices early in the flow</li>
                     </ul>
                     <img src="/portfolio/images/case-studies/onboarding/userflow.png" alt="User Flow Mapping"
                         class="w-full rounded-lg" />
                 </div>
 
-            <!-- Solution -->
-            <div class="mb-16">
-                <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
-                    The Solution
-                </h2>
-                <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                    We created a clean, intuitive onboarding experience that communicated the app's value before
-                    showing the
-                    paywall.
-                    The design emphasized visual hierarchy, progressive disclosure, and lightweight feature
-                    demonstrations.
-                </p>
-                <img src="/portfolio/images/case-studies/onboarding/solution1.png" alt="Solution Overview"
-                    class="w-full rounded-lg my-8" />
-            
-                <img src="/portfolio/images/case-studies/onboarding/solution2.png" alt="Solution Overview"
-                    class="w-full rounded-lg my-8" />
-            
-                <img src="/portfolio/images/case-studies/onboarding/solution3.png" alt="Solution Overview"
-                    class="w-full rounded-lg my-8" />
-            
-                <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                    We now have clear, simple explanations of the core features - Editing, signing, and text extraction are
-                    explained in a scannable way, with clear, direct language.
-                </p>
-                <img src="/portfolio/images/case-studies/onboarding/solution4.png" alt="Solution Overview"
-                    class="w-full rounded-lg my-8" />
-                <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                    The paywall now summarises the key value points surfaced during onboarding, helping reinforce understanding. The
-                    design is simple and minimalistic, with a title and 5 bullet points. We had data from previous experiments that
-                    supported these simple PWs over more elaborated, image-based ones.
-                </p>
-            </div>
-            
-            
-            <!-- Results -->
-            <div class="mb-16">
-                <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
-                    Results
-                </h2>
-                <div class="grid md:grid-cols-2 gap-8 mb-8">
-                    <div class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md">
-                        <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-                            CTA Engagement
-                        </h3>
-                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-2">
-                            Adding onboarding led to a substantial increase in CTA interaction.
-                        </p>
-                        <p class="text-lg font-bold text-green-600 dark:text-green-400">+73% relative uplift</p>
-                    </div>
-                    <div class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md">
-                        <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-                            Purchase Conversion
-                        </h3>
-                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-2">
-                            Users were significantly more likely to convert after experiencing onboarding.
-                        </p>
-                        <p class="text-lg font-bold text-green-600 dark:text-green-400">+172% relative uplift</p>
-                    </div>
+                <!-- Solution -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        The Solution
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                        We created a clean, intuitive onboarding experience that communicated the app's value before
+                        showing the
+                        paywall.
+                        The design emphasized visual hierarchy, progressive disclosure, and lightweight feature
+                        demonstrations.
+                    </p>
+                    <img src="/portfolio/images/case-studies/onboarding/solution1.png" alt="Solution Overview"
+                        class="w-full rounded-lg my-8" />
+
+                    <img src="/portfolio/images/case-studies/onboarding/solution2.png" alt="Solution Overview"
+                        class="w-full rounded-lg my-8" />
+
+                    <img src="/portfolio/images/case-studies/onboarding/solution3.png" alt="Solution Overview"
+                        class="w-full rounded-lg my-8" />
+
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                        We now have clear, simple explanations of the core features - Editing, signing, and text
+                        extraction are
+                        explained in a scannable way, with clear, direct language.
+                    </p>
+                    <img src="/portfolio/images/case-studies/onboarding/solution4.png" alt="Solution Overview"
+                        class="w-full rounded-lg my-8" />
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                        The paywall now summarises the key value points surfaced during onboarding, helping reinforce
+                        understanding. The
+                        design is simple and minimalistic, with a title and 5 bullet points. We had data from previous
+                        experiments that
+                        supported these simple PWs over more elaborated, image-based ones.
+                    </p>
                 </div>
-                <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                    These relative improvements demonstrate that educating users on the app’s value before presenting the paywall
-                    has a clear, positive impact on both engagement and monetization.
-                </p></div>
-                
+
+
+                <!-- Results -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        Results
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <div class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+                                CTA Engagement
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-2">
+                                Adding onboarding led to a substantial increase in CTA interaction.
+                            </p>
+                            <p class="text-lg font-bold text-green-600 dark:text-green-400">+73% relative uplift</p>
+                        </div>
+                        <div class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+                                Purchase Conversion
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-2">
+                                Users were significantly more likely to convert after experiencing onboarding.
+                            </p>
+                            <p class="text-lg font-bold text-green-600 dark:text-green-400">+172% relative uplift</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                        These results suggest that delaying the paywall until after users better understand initial
+                        value increases both engagement and conversion. Positioning monetisation as a follow-up to
+                        learning, rather than a first interaction, proved more effective for first-time users.
+                    </p>
+                </div>
+
                 <!-- Considerations & Next Steps -->
                 <div class="mb-16">
                     <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
@@ -304,72 +339,83 @@ import "../../styles/global.css";
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
                         Future tests could explore shorter onboarding flows to reduce early drop-off.
                     </p>
-                
-                    <ul class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-4">
+
+                    <ul
+                        class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-4">
                         <li><b>Product Hero Page</b></li>
                     </ul>
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed list-disc ml-6 pl-2 mb-6">
-                        Hypothesis: Removing the product page might improve completion time while maintaining or even improving conversion.
-                        Currently added for marketing purposes and to improve credibility, but the added value is still unclear
+                        Hypothesis: Removing the product hero page might improve completion time while maintaining or
+                        even improving conversion.
+                        Currently added for marketing purposes and to improve credibility, but the added value is still
+                        unclear
                     </p>
-                
-                    <ul class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-4">
+
+                    <ul
+                        class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-4">
                         <li><b>Survey Placement</b></li>
                     </ul>
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed list-disc ml-6 pl-2 mb-8">
-                        Hypothesis: The survey may increase engagement, but it adds two steps — testing with/without it will clarify
+                        Hypothesis: The survey may increase engagement, but it adds two steps — testing with/without it
+                        will clarify
                         trade-offs.
-                        </p>
-                        
-                        </div>
-                        
-                        <!-- Constraints -->
-                        <div class="mb-16">
-                            <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
-                                Constraints
-                            </h2>
-                            <h3 class="text-xl font-bold mb-6 text-gray-900 dark:text-gray-100">
-                                Limited behavioural data at the start
-                            </h3>
-                            <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                                We only had high-level funnel metrics and user reviews, so we focused on clear messaging and well-established
-                                onboarding patterns rather than highly personalised or experimental flows.
-                            </p>
-                            <h3 class="text-xl font-bold mb-6 text-gray-900 dark:text-gray-100">
-                                Cross-functional dependencies
-                            </h3>
-                            <ul class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-6">
-                                <li><b>Animation & performance</b></li>
-                            </ul>
-                            <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed list-disc ml-6 pl-2 mb-6">
-                                Feature animations were confirmed midway through the design process, which required close alignment between
-                                me, the video producer and the engineer. We validated the use of lightweight Lottie animations to ensure they
-                                enhanced clarity without negatively impacting performance or load times.
-                            </p>
-                            <ul class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-6">
-                                <li><b>Marketing requirements</b></li>
-                            </ul>
-                            <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed list-disc ml-6 pl-2 mb-8">
-                                The onboarding also needed to accommodate existing marketing requirements, such as notifications, which
-                                influenced the structure and length of the flow. It's also debatable if notifications belong here and
-                                I'd want to validate their impact. Given the constraints, we included them, but it's something I'd test
-                                or reconsider in future iterations.
-                            </p>
-                        </div>
-                        
-                        
-                        <!-- Summary -->
-                        <div class="mb-16">
+                    </p>
+
+                </div>
+
+                <!-- Constraints -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        Constraints
+                    </h2>
+                    <h3 class="text-xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        Limited behavioural data at the start
+                    </h3>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                        We only had high-level funnel metrics and user reviews, so we focused on clear messaging and
+                        well-established
+                        onboarding patterns rather than highly personalised or experimental flows.
+                    </p>
+                    <h3 class="text-xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                        Cross-functional dependencies
+                    </h3>
+                    <ul
+                        class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-6">
+                        <li><b>Animation & performance</b></li>
+                    </ul>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed list-disc ml-6 pl-2 mb-6">
+                        Feature animations were confirmed midway through the design process, which required close
+                        alignment between
+                        me, the video producer and the engineer. We validated the use of lightweight Lottie animations
+                        to ensure they
+                        enhanced clarity without negatively impacting performance or load times.
+                    </p>
+                    <ul
+                        class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-6">
+                        <li><b>Marketing requirements</b></li>
+                    </ul>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed list-disc ml-6 pl-2 mb-8">
+                        The onboarding flow also needed to accommodate existing marketing requirements, including
+                        notification prompts,
+                        which influenced both its structure and length. While these elements were included to meet
+                        current business needs,
+                        their placement within onboarding remains an open question. In future iterations, I would
+                        validate their impact and
+                        explore alternative moments to introduce them.
+                    </p>
+                </div>
+
+
+                <!-- Summary -->
+                <div class="mb-16">
                     <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
                         Summary
                     </h2>
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
                         The redesigned onboarding created a clearer, value-driven first experience, increasing
-                        engagement and
-                        conversions.
-                        The experiment validated educating users before introducing a paywall as a key growth strategy
-                        and informed
-                        similar initiatives across other apps.
+                        engagement and conversions.
+                        Showcasing the product's core value before making users face a paywall proved effective and
+                        informed similar initiatives across other apps.
                     </p>
                 </div>
 
