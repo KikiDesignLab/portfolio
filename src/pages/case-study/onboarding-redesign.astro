@@ -8,7 +8,7 @@ import "../../styles/global.css";
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Onboarding Redesign - Case Study | Fátima Rodrigues</title>
+    <title>Onboarding redesign - Case Study | Fátima Rodrigues</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
@@ -61,7 +61,7 @@ import "../../styles/global.css";
                 </h1>
                 <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
                     Designing a new onboarding experience for a Scanner app
-                    to increase user adoption and conversion rates
+                    to increase conversion rates
                 </p>
                 <div class="flex flex-wrap justify-center gap-4 text-sm">
                     <span class="bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-full">User
@@ -269,54 +269,98 @@ import "../../styles/global.css";
             
             <!-- Results -->
             <div class="mb-16">
-                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
-                        Outcome
-                    </h2>
-                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                        The onboarding flow led to a clear improvement in both user engagement and conversion rates
-                        compared to a
-                        paywall-only experience.
-                        While exact numbers remain confidential, we observed a meaningful uplift in CTA interaction and
-                        subscription
-                        conversion, validating onboarding as a high-leverage growth strategy.
-                    </p>
+                <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                    Results
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+                            CTA Engagement
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-2">
+                            Adding onboarding led to a substantial increase in CTA interaction.
+                        </p>
+                        <p class="text-lg font-bold text-green-600 dark:text-green-400">+73% relative uplift</p>
+                    </div>
+                    <div class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+                            Purchase Conversion
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-2">
+                            Users were significantly more likely to convert after experiencing onboarding.
+                        </p>
+                        <p class="text-lg font-bold text-green-600 dark:text-green-400">+172% relative uplift</p>
+                    </div>
                 </div>
-
-                <!-- Constraints -->
-                <div class="mb-16">
-                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
-                        Constraints
-                    </h2>
-                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-                        Limited behavioral data and qualitative insights from reviews meant the design prioritized
-                        clarity and proven
-                        onboarding patterns over highly personalized flows.
-                        User interviews were not standard practice but would have added valuable context in this case.
-                    </p>
-                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-                        Cross-functional dependencies included animations, which were confirmed mid-way through the
-                        design process,
-                        requiring validation with engineering to ensure performance was not impacted.
-                        Marketing requirements, such as product page and notifications, influenced the structure and
-                        length of the
-                        onboarding flow.
-                    </p>
-                </div>
-
+                <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                    These relative improvements demonstrate that educating users on the app’s value before presenting the paywall
+                    has a clear, positive impact on both engagement and monetization.
+                </p></div>
+                
                 <!-- Considerations & Next Steps -->
                 <div class="mb-16">
                     <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
                         Considerations & Next Steps
                     </h2>
                     <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                        Future tests could explore shorter onboarding flows to reduce early drop-off while maintaining
-                        conversion,as well as evaluating the product page and survey placement for potential efficiency
-                        improvements.
+                        Future tests could explore shorter onboarding flows to reduce early drop-off.
                     </p>
-                </div>
-
-                <!-- Summary -->
-                <div class="mb-16">
+                
+                    <ul class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-4">
+                        <li><b>Product Hero Page</b></li>
+                    </ul>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed list-disc ml-6 pl-2 mb-6">
+                        Hypothesis: Removing the product page might improve completion time while maintaining or even improving conversion.
+                        Currently added for marketing purposes and to improve credibility, but the added value is still unclear
+                    </p>
+                
+                    <ul class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-4">
+                        <li><b>Survey Placement</b></li>
+                    </ul>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed list-disc ml-6 pl-2 mb-8">
+                        Hypothesis: The survey may increase engagement, but it adds two steps — testing with/without it will clarify
+                        trade-offs.
+                        </p>
+                        
+                        </div>
+                        
+                        <!-- Constraints -->
+                        <div class="mb-16">
+                            <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                                Constraints
+                            </h2>
+                            <h3 class="text-xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                                Limited behavioural data at the start
+                            </h3>
+                            <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                                We only had high-level funnel metrics and user reviews, so we focused on clear messaging and well-established
+                                onboarding patterns rather than highly personalised or experimental flows.
+                            </p>
+                            <h3 class="text-xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+                                Cross-functional dependencies
+                            </h3>
+                            <ul class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-6">
+                                <li><b>Animation & performance</b></li>
+                            </ul>
+                            <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed list-disc ml-6 pl-2 mb-6">
+                                Feature animations were confirmed midway through the design process, which required close alignment between
+                                me, the video producer and the engineer. We validated the use of lightweight Lottie animations to ensure they
+                                enhanced clarity without negatively impacting performance or load times.
+                            </p>
+                            <ul class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-6">
+                                <li><b>Marketing requirements</b></li>
+                            </ul>
+                            <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed list-disc ml-6 pl-2 mb-8">
+                                The onboarding also needed to accommodate existing marketing requirements, such as notifications, which
+                                influenced the structure and length of the flow. It's also debatable if notifications belong here and
+                                I'd want to validate their impact. Given the constraints, we included them, but it's something I'd test
+                                or reconsider in future iterations.
+                            </p>
+                        </div>
+                        
+                        
+                        <!-- Summary -->
+                        <div class="mb-16">
                     <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
                         Summary
                     </h2>
