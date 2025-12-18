@@ -174,7 +174,7 @@ const Portfolio = () => {
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
                   Designed the new onboarding for a Scanner app to help users
-                  quickly familiarise with core features of the app leading to
+                  quickly familiarie with core features of the app leading to
                   an increase on conversion rates.
                 </p>
                 <a
@@ -222,10 +222,16 @@ const Portfolio = () => {
               About Me
             </h2>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-              An HR Specialist turned Product Designer, I’ve always found myself at the intersection of listening to people and solving problems. Being a learner at heart, I keep my curiosity alive by constantly exploring, reading, and experimenting, trying to become a little better with each project. I bring a unique blend of human-centered skills and design curiosity to every challenge I tackle, striving to create thoughtful, user-centered solutions that balance business goals with real human needs.
+              In the mix of HR and Product, I’ve always found myself at the intersection 
+              of listening to people and solving problems. Being a learner at heart, I keep my curiosity 
+              alive by constantly exploring, reading, and experimenting, trying to become a little better 
+              with each project. I bring a unique blend of human-centered skills and design curiosity to every 
+              challenge I tackle, striving to create thoughtful, user-centered solutions that balance business goals with real human needs.
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-              I've been actively exploring the intersection of design and development through personal projects, such as this little corner of the web, and discovering the power of "vibe coding" that allows rapidly prototyping and refining user experiences directly in code. This hands-on approach has strengthened my understanding of design systems and the developer experience, making me more effective when collaborating with engineering teams.
+              I lose sleep to books, painting and silly little side quests. I've been actively exploring the intersection of design and development through personal projects, such as this 
+              little corner of the web, and discovering the power of "vibe coding" that allows rapidly prototyping and refining 
+              user experiences directly in code. 
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
               I'm drawn to challenges where I can think deeply about a topic and merge aesthetics with functionality to craft clear, purposeful experiences.
