@@ -1,12 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=source+sans+pro:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Apply Roboto to headings */
+@layer base {
+
+    h1,
+    h2,
+    h3 {
+        font-family: 'Roboto', serif;
+    }
+}
+
+/* Custom font class for Geist Mono */
+@layer utilities {
+    .font-geist-mono {
+        font-family: 'Geist Mono', monospace;
+    }
+}
+
 /* Ensure smooth transitions for theme changes */
 html {
-  transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Custom theme toggle styles */
@@ -47,11 +67,11 @@ html {
     border-radius: 50%;
 }
 
-input:checked + .slider {
+input:checked+.slider {
     background-color: #2196f3;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
     transform: translateX(30px);
 }
 
@@ -60,22 +80,26 @@ input:checked + .slider:before {
     background-color: #4a5568;
 }
 
-.dark .theme-toggle input:checked + .slider {
+.dark .theme-toggle input:checked+.slider {
     background-color: #63b3ed;
 }
 
 @keyframes heartbeat {
-  0%, 100% { 
-    transform: scale(1); 
-  }
-  25% { 
-    transform: scale(1.15); 
-  }
-  50% { 
-    transform: scale(1); 
-  }
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.15);
+    }
+
+    50% {
+        transform: scale(1);
+    }
 }
 
 .heartbeat-animation {
-  animation: heartbeat 1.5s ease-in-out infinite;
+    animation: heartbeat 1.5s ease-in-out infinite;
 }

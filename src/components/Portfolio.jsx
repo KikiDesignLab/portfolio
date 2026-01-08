@@ -38,38 +38,37 @@ const Portfolio = () => {
   }, [isDarkMode, isClient]);
 
   useEffect(() => {
-  if (!isClient) return;
+    if (!isClient) return;
 
-  const favicon = document.querySelector("link[rel='icon']") || document.createElement("link");
-  favicon.rel = "icon";
-  favicon.type = "image/svg+xml";
+    const favicon = document.querySelector("link[rel='icon']") || document.createElement("link");
+    favicon.rel = "icon";
+    favicon.type = "image/svg+xml";
 
-  favicon.href = isDarkMode
-    ? `${import.meta.env.BASE_URL}Favicon-dark.svg`
-    : `${import.meta.env.BASE_URL}Favicon-light.svg`;
+    favicon.href = isDarkMode
+      ? `${import.meta.env.BASE_URL}Favicon-dark.svg`
+      : `${import.meta.env.BASE_URL}Favicon-light.svg`;
 
-  // Append if not already in document
-  if (!document.head.contains(favicon)) {
-    document.head.appendChild(favicon);
-  }
+    // Append if not already in document
+    if (!document.head.contains(favicon)) {
+      document.head.appendChild(favicon);
+    }
 
-  if (isDarkMode) {
-    document.documentElement.classList.add("dark");
-    document.documentElement.classList.remove("light");
-    localStorage.setItem("theme", "dark");
-  } else {
-    document.documentElement.classList.add("light");
-    document.documentElement.classList.remove("dark");
-    localStorage.setItem("theme", "light");
-  }
-}, [isDarkMode, isClient]);
-
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.add("light");
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [isDarkMode, isClient]);
 
   return (
     <>
       {/* Header */}
-      <header className="bg-white dark:bg-gray-800 py-4 px-6 md:px-12 sticky top-0 z-50 transition-colors duration-300">
-        <div className="container mx-auto max-w-5xl flex justify-between items-center">
+      <header className="bg-white dark:bg-gray-800 py-4 px-6 lg:px-12 sticky top-0 z-50 transition-colors duration-300">
+        <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <img
               src={
@@ -78,80 +77,158 @@ const Portfolio = () => {
                   : `${import.meta.env.BASE_URL}Favicon-light.svg`
               }
               alt="Logo"
-              className="w-7 h-7 md:w-8 md:h-8"
+              className="w-7 h-7 lg:w-8 lg:h-8"
             />
-            <span className="text-xl font-semibold text-gray-800 dark:text-gray-100">
+            <span className="text-xl text-gray-800 dark:text-gray-100">
               Fátima Rodrigues
             </span>
           </div>
-
-          <div className="flex items-center space-x-4 sm:space-x-6 md:space-x-8 ml-4 sm:ml-6">
+          <div className="flex items-center space-x-4 sm:space-x-6 lg:space-x-8 ml-4 sm:ml-6">
             <nav>
-              <ul className="flex space-x-4 sm:space-x-6 md:space-x-8">
+              <ul className="flex space-x-4 sm:space-x-6 lg:space-x-8">
                 <li>
                   <a
-                    href="#works"
-                    className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition duration-300"
-                  >
-                    Works
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#about"
-                    className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition duration-300"
-                  >
-                    About
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <label className="theme-toggle">
-              <input
-                type="checkbox"
-                checked={isDarkMode}
-                onChange={toggleTheme}
-              />
-              <span className="slider"></span>
-            </label>
-          </div>
-        </div>
-      </header>
+                  href="#works"
+                  className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition duration-300"
+            >
+                  Works
+                </a>
+              </li>
+              <li>
+                <a
+                href="#about"
+                className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition duration-300"
+            >
+                About
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <label className="theme-toggle">
+          <input
+            type="checkbox"
+            checked={isDarkMode}
+            onChange={toggleTheme}
+          />
+          <span className="slider"></span>
+        </label>
+      </div>
+    </div >
+</header >
 
       {/* Hero Section */}
+      {/* 
       <section  className="py-16 bg-white dark:bg-gray-800 transition-colors duration-300">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-            Designing with Intention
+            Hi, I'm Fátima,
           </h1>
           <p className="text-lg md:text-xl font-normal text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-            I’m Fátima, an HR Specialist turned Product Designer, bringing curiosity, empathy, and a drive to learn to every project.
+            An HR Specialist turned Product Designer, bringing curiosity, empathy, and a drive to learn to every project.
           </p>
         </div>
       </section>
+      */}
+
+
+{/* Career Section */}
+<section
+  id="career"
+  className="pt-64 bg-gray-100 dark:bg-gray-900 transition-colors duration-300"
+>
+  <div className="container mx-auto px-6 md:px-12">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-20 md:items-center">
+      {/* Left Column - Introduction */}
+        <div>
+          <h1
+            className="text-4xl font-noto-serif md:text-5xl text-gray-900 dark:text-gray-100"
+            style={{ lineHeight: '1.2' }}
+          >
+            I'm Fátima, a Product Designer with roots in HR.
+          </h1>
+        </div>
+      {/* Right Column - Experience */}
+      <div className="space-y-3 text-sm md:text-base">
+        {/* Air Apps */}
+        <div className="flex items-baseline gap-8">
+          <span className="text-gray-600 dark:text-gray-400 min-w-[100px] ">
+            2024 – 2025
+          </span>
+          <a
+            href="https://airapps.co/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-900 dark:text-gray-100  hover:text-blue-600 dark:hover:text-blue-400 transition duration-300 min-w-[100px] shrink-0"
+          >
+            Air Apps
+          </a>
+          <span className="text-gray-600 dark:text-gray-400">
+            Junior Product Designer
+          </span>
+        </div>
+
+        {/* Farfetch - Business Partner */}
+        <div className="flex items-baseline gap-8">
+          <span className="text-gray-600 dark:text-gray-400 min-w-[100px]">
+            2021 – 2023
+          </span>
+          <a
+            href="https://farfetch.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300 min-w-[100px] shrink-0"
+          >
+            Farfetch
+          </a>
+          <span className="text-gray-600 dark:text-gray-400">
+            People Partner
+          </span>
+        </div>
+
+        {/* Farfetch - Talent Acquisition */}
+        <div className="flex items-baseline gap-8">
+          <span className="text-gray-600 dark:text-gray-400 min-w-[100px]">
+            2017 – 2021
+          </span>
+          <a
+            href="https://farfetch.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300 min-w-[100px] shrink-0"
+          >
+            Farfetch
+          </a>
+          <span className="text-gray-600 dark:text-gray-400">
+            Talent Acquisition Specialist
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
       {/* Case Studies Section */}
       <section
         id="works"
-        className="py-16 bg-gray-100 dark:bg-gray-900 transition-colors duration-300"
+        className="py-12 bg-gray-100 dark:bg-gray-900 transition-colors duration-300"
       >
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-semibold text-center mb-12 text-gray-900 dark:text-gray-100">
-            Selected Projects
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="container mx-auto px-6 md:px-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
             {/* Project 1 */}
-            <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 max-w-[600px]">
+            <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
               <img
                 src="/portfolio/images/projects/GF-app.png"
                 alt="Find Me Gluten Free Redesign"
-                className="w-full h-48 object-cover"
+                className="w-full aspect-[3/2] object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">
                   Find Me Gluten Free Redesign
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  Redesigned the home experience and interaction flow of the app to improve clarity, discoverability, and user trust through simplified navigation and better safety education.
+                  Redesigned the home experience and interaction flow of the app to improve clarity,
+                  discoverability, and user trust through simplified navigation and better safety education.
                 </p>
                 <a
                   href="./case-study/GF-app/"
@@ -161,21 +238,21 @@ const Portfolio = () => {
                 </a>
               </div>
             </div>
+
             {/* Project 2 */}
-            <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 max-w-[600px]">
+            <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
               <img
                 src="/portfolio/images/projects/onboarding-redesign.png"
                 alt="Onboarding"
-                className="w-full h-48 object-cover"
+                className="w-full aspect-[3/2] object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">
                   Onboarding for Monetisation
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  Designed the new onboarding for a Scanner app to help users
-                  quickly familiarie with core features of the app leading to
-                  an increase on conversion rates.
+                  Designed a new onboarding for a Scanner app to help users quickly familiarise with
+                  core features, leading to improved conversion.
                 </p>
                 <a
                   href="./case-study/onboarding-redesign/"
@@ -185,21 +262,23 @@ const Portfolio = () => {
                 </a>
               </div>
             </div>
+
             {/* Project 3 */}
-            <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 max-w-[600px]">
+            <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
               <img
                 src="/portfolio/images/projects/mobile-banking-app.png"
                 alt="Mobile Banking App"
-                className="w-full h-48 object-cover"
+                className="w-full aspect-[3/2] object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">
                   Mobile Banking App
                 </h3>
-                <p className="text-gray-600 font-normal dark:text-gray-400 mb-4">
-                  Designed a new mobile banking experience that helps people demystify financial insecurities, empowering them to take full ownership of their finances.
+                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                  Designed a mobile banking experience that helps people demystify financial
+                  insecurities and take ownership of their finances.
                 </p>
-                 <a
+                <a
                   href="./case-study/mobile-banking-app/"
                   className="text-blue-600 dark:text-blue-300 hover:underline font-medium"
                 >
@@ -207,6 +286,7 @@ const Portfolio = () => {
                 </a>
               </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -222,16 +302,16 @@ const Portfolio = () => {
               About Me
             </h2>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-              In the mix of HR and Product, I’ve always found myself at the intersection 
-              of listening to people and solving problems. Being a learner at heart, I keep my curiosity 
-              alive by constantly exploring, reading, and experimenting, trying to become a little better 
-              with each project. I bring a unique blend of human-centered skills and design curiosity to every 
+              In the mix of HR and Product, I’ve always found myself at the intersection
+              of listening to people and solving problems. Being a learner at heart, I keep my curiosity
+              alive by constantly exploring, reading, and experimenting, trying to become a little better
+              with each project. I bring a unique blend of human-centered skills and design curiosity to every
               challenge I tackle, striving to create thoughtful, user-centered solutions that balance business goals with real human needs.
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-              I lose sleep to books, painting and silly little side quests. I've been actively exploring the intersection of design and development through personal projects, such as this 
-              little corner of the web, and discovering the power of "vibe coding" that allows rapidly prototyping and refining 
-              user experiences directly in code. 
+              I lose sleep to books, painting and silly little side quests. I've been actively exploring the intersection of design and development through personal projects, such as this
+              little corner of the web, and discovering the power of "vibe coding" that allows rapidly prototyping and refining
+              user experiences directly in code.
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
               I'm drawn to challenges where I can think deeply about a topic and merge aesthetics with functionality to craft clear, purposeful experiences.
@@ -245,7 +325,7 @@ const Portfolio = () => {
 
       {/* Footer */}
       <footer className="bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 py-12 transition-colors duration-300">
-        <div className="container mx-auto max-w-5xl px-6">
+        <div className="container mx-auto px-6 text-center">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
               <p className="flex items-center gap-2">
@@ -256,8 +336,6 @@ const Portfolio = () => {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
