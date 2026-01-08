@@ -63,3 +63,19 @@ input:checked + .slider:before {
 .dark .theme-toggle input:checked + .slider {
     background-color: #63b3ed;
 }
+
+@keyframes heartbeat {
+  0%, 100% { 
+    transform: scale(1); 
+  }
+  25% { 
+    transform: scale(1.15); 
+  }
+  50% { 
+    transform: scale(1); 
+  }
+}
+
+.heartbeat-animation {
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
