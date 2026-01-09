@@ -79,7 +79,7 @@ const Portfolio = () => {
               alt="Logo"
               className="w-7 h-7 lg:w-8 lg:h-8"
             />
-            <span className="text-xl text-gray-800 dark:text-gray-100">
+            <span className="text-base text-gray-800 dark:text-gray-100">
               Fátima Rodrigues
             </span>
           </div>
@@ -117,95 +117,17 @@ const Portfolio = () => {
 </header >
 
       {/* Hero Section */}
-      {/* 
       <section  className="py-16 bg-white dark:bg-gray-800 transition-colors duration-300">
         <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-            Hi, I'm Fátima,
+          <h1 className="text-4xl md:text-5xl mb-4 text-gray-900 dark:text-gray-100">
+            Hello, I'm Fátima
           </h1>
           <p className="text-lg md:text-xl font-normal text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-            An HR Specialist turned Product Designer, bringing curiosity, empathy, and a drive to learn to every project.
+            A product designer shaped at the intersection of people and product
           </p>
         </div>
       </section>
-      */}
 
-
-{/* Career Section */}
-<section
-  id="career"
-  className="pt-64 bg-gray-100 dark:bg-gray-900 transition-colors duration-300"
->
-  <div className="container mx-auto px-6 md:px-12">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-20 md:items-center">
-      {/* Left Column - Introduction */}
-        <div>
-          <h1
-            className="text-4xl font-noto-serif md:text-5xl text-gray-900 dark:text-gray-100"
-            style={{ lineHeight: '1.2' }}
-          >
-            I'm Fátima, a Product Designer with roots in HR.
-          </h1>
-        </div>
-      {/* Right Column - Experience */}
-      <div className="space-y-3 text-sm md:text-base">
-        {/* Air Apps */}
-        <div className="flex items-baseline gap-8">
-          <span className="text-gray-600 dark:text-gray-400 min-w-[100px] ">
-            2024 – 2025
-          </span>
-          <a
-            href="https://airapps.co/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-900 dark:text-gray-100  hover:text-blue-600 dark:hover:text-blue-400 transition duration-300 min-w-[100px] shrink-0"
-          >
-            Air Apps
-          </a>
-          <span className="text-gray-600 dark:text-gray-400">
-            Junior Product Designer
-          </span>
-        </div>
-
-        {/* Farfetch - Business Partner */}
-        <div className="flex items-baseline gap-8">
-          <span className="text-gray-600 dark:text-gray-400 min-w-[100px]">
-            2021 – 2023
-          </span>
-          <a
-            href="https://farfetch.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300 min-w-[100px] shrink-0"
-          >
-            Farfetch
-          </a>
-          <span className="text-gray-600 dark:text-gray-400">
-            People Partner
-          </span>
-        </div>
-
-        {/* Farfetch - Talent Acquisition */}
-        <div className="flex items-baseline gap-8">
-          <span className="text-gray-600 dark:text-gray-400 min-w-[100px]">
-            2017 – 2021
-          </span>
-          <a
-            href="https://farfetch.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300 min-w-[100px] shrink-0"
-          >
-            Farfetch
-          </a>
-          <span className="text-gray-600 dark:text-gray-400">
-            Talent Acquisition Specialist
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
       {/* Case Studies Section */}
       <section
@@ -227,7 +149,7 @@ const Portfolio = () => {
                   Find Me Gluten Free Redesign
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  Redesigned the home experience and interaction flow of the app to improve clarity,
+                  Redesigned the home and interaction flow to improve clarity,
                   discoverability, and user trust through simplified navigation and better safety education.
                 </p>
                 <a
@@ -304,14 +226,11 @@ const Portfolio = () => {
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
               In the mix of HR and Product, I’ve always found myself at the intersection
               of listening to people and solving problems. Being a learner at heart, I keep my curiosity
-              alive by constantly exploring, reading, and experimenting, trying to become a little better
-              with each project. I bring a unique blend of human-centered skills and design curiosity to every
+              alive by constantly exploring, reading, and experimenting. I bring a unique blend of human-centered skills and design curiosity to every
               challenge I tackle, striving to create thoughtful, user-centered solutions that balance business goals with real human needs.
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-              I lose sleep to books, painting and silly little side quests. I've been actively exploring the intersection of design and development through personal projects, such as this
-              little corner of the web, and discovering the power of "vibe coding" that allows rapidly prototyping and refining
-              user experiences directly in code.
+              I lose sleep to books, painting and silly little side quests.
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
               I'm drawn to challenges where I can think deeply about a topic and merge aesthetics with functionality to craft clear, purposeful experiences.

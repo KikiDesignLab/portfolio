@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=source+sans+pro:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;600;700&display=swap');
 
@@ -7,15 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Apply Roboto to headings */
-@layer base {
-
-    h1,
-    h2,
-    h3 {
-        font-family: 'Roboto', serif;
-    }
-}
 
 /* Custom font class for Geist Mono */
 @layer utilities {
