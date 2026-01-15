@@ -60,8 +60,6 @@ const Portfolio = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-
-
             {/* Project 1 */}
             <a
               href="./case-study/GF-app/"
@@ -73,17 +71,15 @@ const Portfolio = () => {
                 className="w-full aspect-[3/2] object-cover"
               />
               {/* Info box */}
-              <div className="flex justify-between items-center mt-4">
+              <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mt-4 gap-2">
                 <p className="text-body font-primary text-main">
-                  App Redesign
+                  Redesigning for Clarity & Trust
                 </p>
                 <span className="text-meta font-primary uppercase tracking-wider text-grey">
                   Find Me Gluten Free • 2025
                 </span>
               </div>
             </a>
-
-
 
             {/* Project 2 */}
             <a
@@ -95,7 +91,7 @@ const Portfolio = () => {
                 alt="Onboarding"
                 className="w-full aspect-[3/2] object-cover"
               />
-              <div className="flex justify-between items-center mt-4">
+              <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mt-4 gap-2">
                 <p className="text-body font-primary text-main">
                   Onboarding Redesign
                 </p>
@@ -104,8 +100,6 @@ const Portfolio = () => {
                 </span>
               </div>
             </a>
-
-
 
             {/* Project 3 */}
             <a
@@ -117,7 +111,7 @@ const Portfolio = () => {
                 alt="Mobile Banking App"
                 className="w-full aspect-[3/2] object-cover"
               />
-              <div className="flex justify-between items-center mt-4">
+              <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mt-4 gap-2">
                 <p className="text-body font-primary text-main">
                   Mobile Banking App
                 </p>
@@ -127,11 +121,10 @@ const Portfolio = () => {
               </div>
             </a>
 
-
-
           </div>
         </div>
       </section>
+
 
 
 

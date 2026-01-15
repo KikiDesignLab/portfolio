@@ -19,7 +19,7 @@ export default {
         hero: ['Anton', 'sans-serif'],             
       },
       fontSize: {
-        h1: ['28px', '35px'],      
+        h1: ['36px', '44px'],      
         h2: ['24px', '30px'],
         h3: ['18px', '23px'],
         h4: ['16px', '20px'],
