@@ -47,84 +47,80 @@ const Portfolio = () => {
       </section>
 
       { }
-      <section id="works" className="py-12 bg-bg">
-        <div className="container mx-auto px-6 md:px-12">
+      {/* Works Section */}
+      <section id="works" className="bg-bg">
+        <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
             {/* Project 1 */}
-            <div className="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+            <a
+              href="./case-study/GF-app/"
+              className="group rounded-lg overflow-hidden relative block"
+            >
               <img
                 src="/portfolio/images/projects/GF-app.png"
                 alt="Find Me Gluten Free Redesign"
                 className="w-full aspect-[3/2] object-cover"
               />
-              <div className="p-6">
-                <h3 className="text-h3 font-primary mb-2 text-grey">
-                  Find Me Gluten Free Redesign
-                </h3>
-                <p className="text-body mb-4 text-grey">
-                  Redesigned the home and interaction flow to improve clarity, discoverability, and user trust through simplified navigation and better safety education.
+              {/* Info box */}
+              <div className="flex justify-between items-center mt-4">
+                <p className="text-body font-primary text-main">
+                  App Redesign
                 </p>
-                <a
-                  href="./case-study/GF-app/"
-                  className="text-main hover:underline font-medium"
-                >
-                  View Case Study
-                </a>
+                <span className="text-meta font-primary uppercase tracking-wider text-grey">
+                  Find Me Gluten Free • 2025
+                </span>
               </div>
-            </div>
+            </a>
 
             {/* Project 2 */}
-            <div className="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+            <a
+              href="./case-study/onboarding-redesign/"
+              className="group rounded-lg overflow-hidden relative block"
+            >
               <img
                 src="/portfolio/images/projects/onboarding-redesign.png"
                 alt="Onboarding"
                 className="w-full aspect-[3/2] object-cover"
               />
-              <div className="p-6">
-                <h3 className="text-h3 font-primary mb-2 text-grey">
-                  Onboarding for Monetisation
-                </h3>
-                <p className="text-body mb-4 text-grey">
-                  Designed a new onboarding for a Scanner app to help users quickly familiarise with core features, leading to improved conversion.
+              <div className="flex justify-between items-center mt-4">
+                <p className="text-body font-primary text-main">
+                  Onboarding Redesign
                 </p>
-                <a
-                  href="./case-study/onboarding-redesign/"
-                  className="text-main hover:underline font-medium"
-                >
-                  View Case Study
-                </a>
+                <span className="text-meta font-primary uppercase tracking-wider text-grey">
+                  Scanner Air • 2025
+                </span>
               </div>
-            </div>
+            </a>
 
             {/* Project 3 */}
-            <div className="bg-light rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+            <a
+              href="./case-study/mobile-banking-app/"
+              className="group rounded-lg overflow-hidden relative block"
+            >
               <img
                 src="/portfolio/images/projects/mobile-banking-app.png"
                 alt="Mobile Banking App"
                 className="w-full aspect-[3/2] object-cover"
               />
-              <div className="p-6">
-                <h3 className="text-h3 font-primary mb-2 text-grey">
+              <div className="flex justify-between items-center mt-4">
+                <p className="text-body font-primary text-main">
                   Mobile Banking App
-                </h3>
-                <p className="text-body mb-4 text-grey">
-                  Designed a mobile banking experience that helps people demystify financial insecurities and take ownership of their finances.
                 </p>
-                <a
-                  href="./case-study/mobile-banking-app/"
-                  className="text-main hover:underline font-medium"
-                >
-                  View Case Study
-                </a>
+                <span className="text-meta font-primary uppercase tracking-wider text-grey">
+                  Moey • 2024
+                </span>
               </div>
-            </div>
+            </a>
+
           </div>
         </div>
       </section>
 
+
       {/* About Section */}
       <section id="about" className="py-16 bg-bg">
-        <div className="container mx-auto px-6 lg:px-12">
+        <div className="container mx-auto">
           <h2 className="text-h2 font-primary font-bold mb-6 text-main">
             About Me
           </h2>
@@ -146,7 +142,7 @@ const Portfolio = () => {
 
       {/* Footer */}
       <footer className="bg-bg text-grey py-12 border-t border-line">
-        <div className="container mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
 
           {/* Designed with ♡ by Fátima */}
           <p className="flex items-center gap-2 text-meta font-primary uppercase tracking-wider mb-4 md:mb-0">
