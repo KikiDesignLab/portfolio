@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 const Portfolio = () => {
   return (
     <>
@@ -10,6 +12,8 @@ const Portfolio = () => {
           <span className="text-nav font-mono text-main">
             Fátima Rodrigues
           </span>
+
+
 
           {/* Navigation */}
           <nav>
@@ -35,22 +39,28 @@ const Portfolio = () => {
         </div>
       </header>
 
-      <section className="py-16 bg-bg">
+
+
+      <section className="pt-9 lg:pt-60 bg-bg px-6 lg:px-12">
         <div className="container mx-auto flex flex-col text-left">
           <h1 className="text-hero font-hero mb-4 text-main">
             Hello,
           </h1>
-          <p className="text-body font-primary text-main mb-8 max-w-2xl">
+          <p className="text-body font-primary text-main max-w-2xl">
             I'm Fátima, a product designer shaped at the intersection of people and product
           </p>
         </div>
       </section>
 
+
+
       { }
       {/* Works Section */}
-      <section id="works" className="bg-bg">
+      <section id="works" className="bg-bg px-6 lg:px-12 pt-8 lg:pt-12 pb-9 lg:pb-12">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+
 
             {/* Project 1 */}
             <a
@@ -73,6 +83,8 @@ const Portfolio = () => {
               </div>
             </a>
 
+
+
             {/* Project 2 */}
             <a
               href="./case-study/onboarding-redesign/"
@@ -92,6 +104,8 @@ const Portfolio = () => {
                 </span>
               </div>
             </a>
+
+
 
             {/* Project 3 */}
             <a
@@ -113,25 +127,35 @@ const Portfolio = () => {
               </div>
             </a>
 
+
+
           </div>
         </div>
       </section>
 
 
+
+
       {/* About Section */}
-      <section id="about" className="py-16 bg-bg">
+      <section id="about" className="py-12 bg-bg px-6 lg:px-12">
         <div className="container mx-auto">
           <h2 className="text-h2 font-primary font-bold mb-6 text-main">
             About Me
           </h2>
 
+
+
           <p className="text-body font-primary text-main mb-4 leading-relaxed">
-            In the mix of HR and Product, I’ve always found myself at the intersection of listening to people and solving problems. Being a learner at heart, I keep my curiosity alive by constantly exploring, reading, and experimenting. I bring a unique blend of human-centered skills and design curiosity to every challenge I tackle, striving to create thoughtful, user-centered solutions that balance business goals with real human needs.
+            In the mix of HR and Product, I've always found myself at the intersection of listening to people and solving problems. Being a learner at heart, I keep my curiosity alive by constantly exploring, reading, and experimenting. I bring a unique blend of human-centered skills and design curiosity to every challenge I tackle, striving to create thoughtful, user-centered solutions that balance business goals with real human needs.
           </p>
+
+
 
           <p className="text-body font-primary text-main mb-4 leading-relaxed">
             I lose sleep to books, painting and silly little side quests.
           </p>
+
+
 
           <p className="text-body font-primary text-main mb-8 leading-relaxed">
             I'm drawn to challenges where I can think deeply about a topic and merge aesthetics with functionality to craft clear, purposeful experiences.
@@ -140,9 +164,13 @@ const Portfolio = () => {
       </section>
 
 
+
+
       {/* Footer */}
-      <footer className="bg-bg text-grey py-12 border-t border-line">
+      <footer className="bg-bg text-grey py-4 border-t border-line px-6 lg:px-12">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+
+
 
           {/* Designed with ♡ by Fátima */}
           <p className="flex items-center gap-2 text-meta font-primary uppercase tracking-wider mb-4 md:mb-0">
@@ -150,6 +178,8 @@ const Portfolio = () => {
             <span className="text-main text-xl heartbeat-animation">♡</span>
             by Fátima
           </p>
+
+
 
           {/* Social Links */}
           <div className="flex space-x-6">
@@ -171,5 +201,7 @@ const Portfolio = () => {
     </>
   );
 };
+
+
 
 export default Portfolio;
