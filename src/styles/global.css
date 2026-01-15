@@ -1,95 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=source+sans+pro:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;600;700&display=swap');
+/* --- Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;700&family=Hanken+Grotesk:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
 
+/* --- Tailwind --- */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-/* Custom font class for Geist Mono */
-@layer utilities {
-    .font-geist-mono {
-        font-family: 'Geist Mono', monospace;
-    }
-}
-
-/* Ensure smooth transitions for theme changes */
-html {
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Custom theme toggle styles */
-.theme-toggle {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 30px;
-}
-
-.theme-toggle input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: 0.4s;
-    border-radius: 34px;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 22px;
-    width: 22px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    transition: 0.4s;
-    border-radius: 50%;
-}
-
-input:checked+.slider {
-    background-color: #2196f3;
-}
-
-input:checked+.slider:before {
-    transform: translateX(30px);
-}
-
-/* Prevent flash of unstyled content */
-.dark .theme-toggle .slider {
-    background-color: #4a5568;
-}
-
-.dark .theme-toggle input:checked+.slider {
-    background-color: #63b3ed;
-}
-
+/* Heartbeat animation */
 @keyframes heartbeat {
-
-    0%,
-    100% {
-        transform: scale(1);
-    }
-
-    25% {
-        transform: scale(1.15);
-    }
-
-    50% {
-        transform: scale(1);
-    }
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.2); }
+  50% { transform: scale(1); }
 }
 
 .heartbeat-animation {
-    animation: heartbeat 1.5s ease-in-out infinite;
+  display: inline-block;
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+/* --- THEME TOGGLE (light only) --- */
+.theme-toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.theme-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(30px);
+}
+
+/* Smooth transitions for general changes */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }

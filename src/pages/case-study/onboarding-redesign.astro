@@ -6,45 +6,21 @@ import "../../styles/global.css";
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Onboarding for Monetisation | Fátima Rodrigues</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
-    <script>
-        // Dark mode initialization script
-        (function () {
-            const savedTheme = localStorage.getItem("theme");
-            if (
-                savedTheme === "dark" ||
-                (!savedTheme &&
-                    window.matchMedia("(prefers-color-scheme: dark)")
-                        .matches)
-            ) {
-                document.documentElement.classList.add("dark");
-                document.documentElement.classList.remove("light");
-            } else {
-                document.documentElement.classList.add("light");
-                document.documentElement.classList.remove("dark");
-            }
-        })();
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onboarding for Monetisation | Fátima Rodrigues</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="icon" type="image/svg+xml" href="/portfolio/Favicon-light.svg" />
 </head>
 
-<body>
     <!-- Header -->
-    <header class="bg-white dark:bg-gray-800 py-4 px-6 md:px-12 sticky top-0 z-50 transition-colors duration-300">
+    <header class="bg-white py-4 px-6 md:px-12 sticky top-0 z-50 transition-colors duration-300">
         <div class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <img id="header-logo" src="/portfolio/Favicon-light.svg" alt="Logo" class="w-7 h-7 md:w-8 md:h-8" />
-                <a href="../../" class="text-base text-gray-800 dark:text-gray-100">
-                    Fátima Rodrigues
-                </a>
-            </div>
+            <a href="../../" class="text-nav font-mono text-gray-800">
+                Fátima Rodrigues
+            </a>
             <nav>
-                <a href="../../"
-                    class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition duration-300">
+                <a href="../../" class="text-nav font-mono text-gray-600 hover:text-gray-900 transition duration-300">
                     Back to Portfolio
                 </a>
             </nav>
@@ -462,27 +438,34 @@ import "../../styles/global.css";
     </section>
 
     <!-- Footer -->
-      <footer class="bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-300 py-12 transition-colors duration-300">
-        <div class="container mx-auto px-6 text-center">
-            <p class="flex items-center justify-center gap-2">
-                Designed with
-                <button
-                    class="group relative inline-flex items-center justify-center p-1 transition-all duration-200 hover:scale-110 active:scale-95 focus:outline-none"
-                    aria-label="Like">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-                        className="lucide lucide-heart w-[15px] h-[15px] transition-all duration-300 transform text-foreground-light hover:text-primary relative z-10 heart-hover"
-                        aria-hidden="true" style={{ animation: 'heartbeat 1.5s ease-in-out infinite' }}>
-                        <path
-                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
-                        </path>
-                    </svg>
-                    </button>
+<footer class="bg-gray-100 text-gray-600 py-12 transition-colors duration-300">
+    <div class="container mx-auto px-6 text-center">
+
+        <!-- Designed with ❤️ by Fátima -->
+        <p class="flex items-center justify-center gap-2 text-body font-primary">
+            <span class="text-meta font-primary uppercase tracking-wider">
+                Designed + coded with
+            </span>
+
+            <button
+                class="group relative inline-flex items-center justify-center p-1 transition-transform duration-200 hover:scale-110 active:scale-95 focus:outline-none"
+                aria-label="Like">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-[15px] h-[15px] text-gray-600 transform heartbeat-animation" aria-hidden="true">
+                    <path
+                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                    </path>
+                </svg>
+            </button>
+
+            <span class="text-meta font-primary uppercase tracking-wider">
                 by Fátima
-            </p>
-        </div>
-    </footer>
-</body>
+            </span>
+        </p>
+
+    </div>
+</footer>
 <script>
     // Update header logo based on theme
     function updateHeaderLogo() {
