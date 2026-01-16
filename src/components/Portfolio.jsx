@@ -118,24 +118,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-12 bg-bg px-6 lg:px-12">
-        <div className="container mx-auto">
-          <h2 className="text-h2 font-primary font-bold mb-6 text-main">
-            About Me
-          </h2>
-          <p className="text-body font-primary text-main mb-4 leading-relaxed">
-            In the mix of HR and Product, I've always found myself at the intersection of listening to people and solving problems. Being a learner at heart, I keep my curiosity alive by constantly exploring, reading, and experimenting. I bring a unique blend of human-centered skills and design curiosity to every challenge I tackle, striving to create thoughtful, user-centered solutions that balance business goals with real human needs.
-          </p>
-          <p className="text-body font-primary text-main mb-4 leading-relaxed">
-            I lose sleep to books, painting and silly little side quests.
-          </p>
-          <p className="text-body font-primary text-main mb-8 leading-relaxed">
-            I'm drawn to challenges where I can think deeply about a topic and merge aesthetics with functionality to craft clear, purposeful experiences.
-          </p>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="bg-bg text-grey py-4 border-t border-line px-6 lg:px-12">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-left text-left md:text-left">
