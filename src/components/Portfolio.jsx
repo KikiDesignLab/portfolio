@@ -137,7 +137,7 @@ const Portfolio = () => {
 
       {/* Footer */}
       <footer className="bg-bg text-grey py-4 border-t border-line px-6 lg:px-12">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-left text-left md:text-left">
 
           {/* Designed with ♡ by Fátima */}
           <p className="flex items-center gap-2 text-meta font-primary uppercase tracking-wider mb-4 md:mb-0">
