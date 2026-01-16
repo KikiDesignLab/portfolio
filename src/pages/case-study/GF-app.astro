@@ -28,350 +28,403 @@ import "../../styles/global.css";
     </div>
   </header>
 
-<!-- Hero Section -->
-<section class="py-12 bg-bg px-6 lg:px-12">
-  <div class="container mx-auto">
-    <div class="max-w-4xl mx-auto">
-      <!-- Hero Content -->
-      <div class="text-left mb-12">
-        <p class="text-meta font-primary uppercase tracking-wider text-grey mb-4">
-          Find Me Gluten Free • designed 2025
-        </p>
-        <h1 class="text-h1 font-primary font-bold mb-4 text-main">
-          Redesigning for Clarity & Trust
-        </h1>
-        <div class="flex flex-wrap gap-4">
-          <span class="bg-line text-main px-4 py-2 rounded-full text-bodySmall font-primary">User Interface</span>
-          <span class="bg-line text-main px-4 py-2 rounded-full text-bodySmall font-primary">Mobile Design</span>
-          <span class="bg-line text-main px-4 py-2 rounded-full text-bodySmall font-primary">User Research</span>
-        </div>
-      </div>
-
-      <!-- Hero Image -->
-      <div>
-        <img src="/portfolio/images/case-studies/gf-app/hero.png" alt="Find Me Gluten Free App Redesign"
-          class="w-full rounded-lg" />
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- Case Study Content -->
+  <!-- Combined Hero & Case Study Section with Side Menu -->
   <section class="py-12 bg-bg px-6 lg:px-12">
-    <div class="container mx-auto">
-      <div class="max-w-4xl mx-auto">
-        <!-- Project Overview -->
-        <div class="grid md:grid-cols-3 gap-8 mb-16">
-          <div>
-            <h3 class="text-h3 font-primary font-bold mb-2 text-grey">
-              Timeline
-            </h3>
-            <p class="text-body font-primary text-grey">
-              1 week
-            </p>
-          </div>
-          <div>
-            <h3 class="text-h3 font-primary font-bold mb-2 text-grey">
-              Tools
-            </h3>
-            <p class="text-body font-primary text-grey">
-              Figma, FigJam
-            </p>
-          </div>
-          <div>
-            <h3 class="text-h3 font-primary font-bold mb-2 text-grey">
-              My role
-            </h3>
-            <p class="text-body font-primary text-grey">
-              Product Designer
-            </p>
-          </div>
-        </div>
+   <div class="container mx-auto">
+    <div class="flex gap-12">
+        <!-- Side Menu -->
+        <aside class="hidden lg:block w-56 flex-shrink-0">
+          <nav class="sticky top-24">
+            <ul class="space-y-3">
+              <li>
+                <a href="../../" class="flex items-center gap-2 text-bodySmall font-primary text-grey hover:text-main transition duration-300">
+                  <i class="fas fa-arrow-left"></i>
+                  <span>Back</span>
+                </a>
+              </li>
+              <li class="pt-4">
+                <a href="#overview" class="block text-bodySmall font-primary text-grey hover:text-main transition duration-300">
+                  Overview
+                </a>
+              </li>
+              <li>
+                <a href="#problem" class="block text-bodySmall font-primary text-grey hover:text-main transition duration-300">
+                  Problem & Context
+                </a>
+              </li>
+              <li>
+                <a href="#research" class="block text-bodySmall font-primary text-grey hover:text-main transition duration-300">
+                  Research
+                </a>
+              </li>
+              <li>
+                <a href="#persona" class="block text-bodySmall font-primary text-grey hover:text-main transition duration-300">
+                   User Persona & Journey 
+                </a>
+              </li>
+              <li>
+                <a href="#goals" class="block text-bodySmall font-primary text-grey hover:text-main transition duration-300">
+                  Design Goals
+                </a>
+              </li>
+              <li>
+                <a href="#ideation" class="block text-bodySmall font-primary text-grey hover:text-main transition duration-300">
+                  Ideation &
+                </a>
+              </li>
+              <li>
+                <a href="#hifi" class="block text-bodySmall font-primary text-grey hover:text-main transition duration-300">
+                  Hi-Fi & Prototype
+                </a>
+              </li>
+              <li>
+                <a href="#impact" class="block text-bodySmall font-primary text-grey hover:text-main transition duration-300">
+                  Impact & Validation
+                </a>
+              </li>
+              <li>
+                <a href="#learnings" class="block text-bodySmall font-primary text-grey hover:text-main transition duration-300">
+                  Learnings
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
 
-        <!-- Introduction -->
-        <div class="mb-16">
-          <p class="text-body font-primary text-main leading-relaxed mb-6">
-            To keep working on my craft as a Product Designer, I set myself a 1-week challenge focused on simplifying the home experience and interaction flow of Find Me Gluten Free.
-          </p>
-          <p class="text-body font-primary text-main leading-relaxed mb-6">
-            The project aimed to improve clarity, trust, and education on how users find and assess safe dining options through clear navigation and verified community input.
-          </p>
-        </div>
-
-        <!-- Problem & Context -->
-        <div class="mb-16">
-          <h2 class="text-h2 font-primary font-bold mb-6 text-main">
-            Problem & Context
-          </h2>
-          <p class="text-body font-primary text-main leading-relaxed mb-6">
-            Find Me Gluten Free helps users find gluten-free restaurants based on community reviews. However, its current home experience feels overwhelming, with competing CTAs, inconsistent iconography, and no clear learning path for new users.
-          </p>
-          <p class="text-body font-primary text-main leading-relaxed mb-6">
-            For people with celiac disease this creates further anxiety and confusion about whether a restaurant is safe to eat at.
-          </p>
-          <p class="text-body font-primary text-main leading-relaxed font-bold mb-6">
-            Problem statement: How might we simplify the experience for new users, ensuring clarity and trust from the very first interaction?
-          </p>
-          <p class="text-body font-primary text-main leading-relaxed mb-6">
-            To evaluate success, the redesign aimed to reduce user confusion on the home screen, decrease time to find a safe restaurant, and increase perceived trust in safety information.
-          </p>
-        </div>
-
-        <!-- Research & Discovery -->
-        <div class="mb-16">
-          <h2 class="text-h2 font-primary font-bold mb-6 text-main">
-            Research & Discovery
-          </h2>
-          <p class="text-body font-primary text-main leading-relaxed mb-6">
-            I started with a <strong>heuristic audit</strong> of the existing app and <strong>usability tests</strong>
-            with three users (two with celiac disease, one with gluten sensitivity).
-          </p>
-          <p class="text-body font-primary text-main leading-relaxed mb-6">
-            As the main task, users were asked to use the current app to find and book a place they felt confident about
-            visiting and eating safely.
-          </p>
-          <p class="text-body font-primary text-main leading-relaxed mb-4">
-            Additionally, they were asked about:
-          </p>
-          <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
-            <li>First impression on the home screen</li>
-            <li>How confident they were about their choice</li>
-            <li>What cues helped them decide for an option and against the other</li>
-            <li>Their understanding about the badges and icons</li>
-          </ul>
-
-          <h3 class="text-h3 font-primary font-bold mb-4 text-main">
-            Key findings
-          </h3>
-          <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
-            <li><strong>Competing CTAs with no clear hierarchy</strong> → all 3 people were unsure where to start</li>
-            <li><strong>Confusing filters and icons</strong> → users can't easily tell which options ensure safety</li>
-            <li><strong>Lack of education about "Dedicated Gluten-Free" or what user badges mean</strong> → weak trust</li>
-            <li><strong>Verified options inspired the most confidence</strong> → This was key to making a trusting decision</li>
-          </ul>
-
-          <p class="text-body font-primary text-main leading-relaxed mb-8">
-            These findings guided my focus on clarity, safety education, and reducing cognitive load.
-          </p>
-
-          <div class="mb-8">
-            <img src="/portfolio/images/case-studies/gf-app/audit.png" alt="UX Audit" class="w-full rounded-lg" />
-          </div>
-
-          <p class="text-body font-primary text-main leading-relaxed">
-            The goal was to reduce cognitive load, make safety indicators instantly
-            understandable, and educate users early on what "safe" really means.
-          </p>
-        </div>
-
-        <!-- User Persona & Journey -->
-        <div class="mb-16">
-          <h2 class="text-h2 font-primary font-bold mb-6 text-main">
-            User Persona & Journey
-          </h2>
-          <p class="text-body font-primary text-main leading-relaxed mb-8">
-            Using research insights, I created a user persona representing a typical person with celiac disease looking for safe dining options.
-          </p>
-          <p class="text-body font-primary text-main leading-relaxed mb-8">
-            Mapping their journey highlighted key friction points, particularly at onboarding, search, and safety verification.
-          </p>
-
-          <div class="mb-8">
-            <img src="/portfolio/images/case-studies/gf-app/persona.png" alt="User Persona"
-              class="w-full rounded-lg" />
-          </div>
-
+        <!-- Main Content (Hero + Case Study) -->
+        <div class="flex-1 max-w-3xl mx-auto">
+          <!-- Hero Content -->
           <div class="mb-12">
-            <img src="/portfolio/images/case-studies/gf-app/user_journey.png" alt="User Journey Map"
-              class="w-full rounded-lg" />
-          </div>
-        </div>
+            <p class="text-meta font-primary uppercase tracking-wider text-grey mb-4">
+              Find Me Gluten Free • designed 2025
+            </p>
+            <h1 class="text-h1 font-primary font-bold mb-4 text-main">
+              Redesigning for Clarity & Trust
+            </h1>
+            <div class="flex flex-wrap gap-4 mb-12">
+              <span class="bg-line text-main px-4 py-2 rounded-full text-bodySmall font-primary">User Interface</span>
+              <span class="bg-line text-main px-4 py-2 rounded-full text-bodySmall font-primary">Mobile Design</span>
+              <span class="bg-line text-main px-4 py-2 rounded-full text-bodySmall font-primary">User Research</span>
+            </div>
 
-        <!-- Design Goals -->
-        <div class="mb-16">
-          <h2 class="text-h2 font-primary font-bold text-main mb-6">
-            Design Goals
-          </h2>
-          <p class="text-body font-primary text-main leading-relaxed mb-6">
-            My redesign focused on three experience pillars:
-          </p>
-          <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
-            <li><strong>Simplify navigation</strong> by reducing cognitive load and highlight key actions.</li>
-            <li><strong>Build trust</strong> through explicit safety signals such as verified badges and clear filters.</li>
-            <li><strong>Empower choice</strong> and educate users on what "Dedicated GF" and "Most Celiac Friendly" mean.</li>
-          </ul>
-        </div>
-
-        <!-- Ideation & Wireframes -->
-        <div class="mb-16">
-          <h2 class="text-h2 font-primary font-bold mb-6 text-main">
-            Ideation & Wireframes
-          </h2>
-          <p class="text-body font-primary text-main leading-relaxed mb-8">
-            I started by mapping the main user journey from home page to restaurant details focusing on how users could filter by safety (Dedicated gluten-free and Most Celiac Friendly) and read reviews for certified members.
-          </p>
-
-          <div class="mb-8">
-            <img src="/portfolio/images/case-studies/gf-app/iterations.png" alt="First Iteration Wireframes"
-              class="w-full rounded-lg" />
+            <!-- Hero Image -->
+            <div class="mb-12">
+              <img src="/portfolio/images/case-studies/gf-app/hero.png" alt="Find Me Gluten Free App Redesign"
+                class="w-full rounded-lg" />
+            </div>
           </div>
 
-          <p class="text-body font-primary text-main leading-relaxed mb-6">
-            The first wireframes clarified the navigation flow but the home page proved the most challenging as there was a lot to fit in, and it was still feeling crowded and unfocused.
-          </p>
-          <p class="text-body font-primary text-main leading-relaxed mb-6">
-            In the second iteration, I restructured the experience around two primary filters <strong>Dedicated Gluten-Free</strong> and <strong>Most Celiac Friendly</strong>, and organized supporting content (Nearby, Latest Reviews, Browse by Category) into horizontally
-            scrollable sections for easier scanning.
-          </p>
-          <p class="text-body font-primary text-main leading-relaxed mb-4">
-            This new hierarchy made better use of the screen space:
-          </p>
-          <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
-            <li>Highlighting the two main safety filters as primary actions</li>
-            <li>Organizing supporting content into horizontally scrollable sections for faster scanning</li>
-            <li>Following familiar mobile patterns to make the experience feel natural and effortless</li>
-            <li>Keeping the interface light and easy to explore</li>
-          </ul>
-          <p class="text-body font-primary text-main leading-relaxed mb-8">
-            Based on feedback from the usability tests, I also introduced a Gluten-Free Card, translatable into multiple languages, to help users safely communicate dietary needs abroad or across language barriers.
-          </p>
-
-          <div class="mb-12">
-            <img src="/portfolio/images/case-studies/gf-app/iterations2.png" alt="Second Iteration Wireframes"
-              class="w-full rounded-lg" />
-          </div>
-        </div>
-
-        <!-- High-Fidelity Design & Prototype -->
-        <div class="mb-16">
-          <h2 class="text-h2 font-primary font-bold mb-6 text-main">
-            High-Fidelity Design & Prototype
-          </h2>
-          <p class="text-body font-primary text-main leading-relaxed mb-8">
-            The final design uses a minimalist UI to prioritise content and readability, while reinforcing trust through clear safety cues and verified reviews.
-          </p>
-          <p class="text-body font-primary text-main leading-relaxed mb-8">
-            The onboarding introduces the app's unique features through three short, focused screens, helping users understand what safety filters and verified reviews mean before their first search.
-          </p>
-
-          <div class="mb-8">
-            <img src="/portfolio/images/case-studies/gf-app/onboarding.png" alt="Onboarding Screens"
-              class="w-full rounded-lg" />
+          <!-- Project Overview -->
+          <div id="overview" class="grid md:grid-cols-3 gap-8 mb-16">
+            <div>
+              <h3 class="text-h3 font-primary font-bold mb-2 text-grey">
+                Timeline
+              </h3>
+              <p class="text-body font-primary text-grey">
+                1 week
+              </p>
+            </div>
+            <div>
+              <h3 class="text-h3 font-primary font-bold mb-2 text-grey">
+                Tools
+              </h3>
+              <p class="text-body font-primary text-grey">
+                Figma, FigJam
+              </p>
+            </div>
+            <div>
+              <h3 class="text-h3 font-primary font-bold mb-2 text-grey">
+                My role
+              </h3>
+              <p class="text-body font-primary text-grey">
+                Product Designer
+              </p>
+            </div>
           </div>
 
-          <p class="text-body font-primary text-main leading-relaxed mb-6">
-            The users now have a streamlined flow from discovering nearby restaurants to viewing safety details and
-            booking a table.
-          </p>
-          <div class="mb-8">
-            <img src="/portfolio/images/case-studies/gf-app/hi-fi.png" alt="High-Fidelity Screens"
-              class="w-full rounded-lg" />
-          </div>
-          <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
-            <li><strong>From Home:</strong> select "Dedicated Gluten-Free" or "Most Celiac Friendly."</li>
-            <li><strong>Results:</strong> view restaurants with verified badges and trusted reviews.</li>
-            <li><strong>Details:</strong> see cross-contamination safety notes or call to book.</li>
-            <li>A confirmation modal appears before calling.</li>
-          </ul>
-        </div>
-
-        <!-- Prototype -->
-        <div class="mb-16">
-          <h2 class="text-h2 font-primary font-bold mb-6 text-main">
-            Prototype
-          </h2>
-          <p class="text-body font-primary text-main leading-relaxed mb-6">
-            The prototype demonstrates a streamlined flow from discovering nearby restaurants to viewing safety details and
-            booking a table.
-          </p>
-
-          <!-- Video 1-->
-          <div class="mb-8">
-            <video autoplay loop muted playsinline class="w-full max-w-[410px] mx-auto rounded-lg">
-              <source src="/portfolio/images/case-studies/gf-app/main-flow.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <p class="text-bodySmall font-primary text-grey mt-3 text-center italic">
-              Main flow walkthrough
+          <!-- Introduction -->
+          <div class="mb-16">
+            <p class="text-body font-primary text-main leading-relaxed mb-6">
+              To keep working on my craft as a Product Designer, I set myself a 1-week challenge focused on simplifying the home experience and interaction flow of Find Me Gluten Free.
+            </p>
+            <p class="text-body font-primary text-main leading-relaxed mb-6">
+              The project aimed to improve clarity, trust, and education on how users find and assess safe dining options through clear navigation and verified community input.
             </p>
           </div>
 
-          <!-- Video 2-->
-          <div class="mb-8">
-            <video autoplay loop muted playsinline class="w-full max-w-[410px] mx-auto rounded-lg">
-              <source src="/portfolio/images/case-studies/gf-app/home-page-details.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <p class="text-bodySmall font-primary text-grey mt-3 text-center italic">
-              Home page details
+          <!-- Problem & Context -->
+          <div id="problem" class="mb-16">
+            <h2 class="text-h2 font-primary font-bold mb-6 text-main">
+              Problem & Context
+            </h2>
+            <p class="text-body font-primary text-main leading-relaxed mb-6">
+              Find Me Gluten Free helps users find gluten-free restaurants based on community reviews. However, its current home experience feels overwhelming, with competing CTAs, inconsistent iconography, and no clear learning path for new users.
+            </p>
+            <p class="text-body font-primary text-main leading-relaxed mb-6">
+              For people with celiac disease this creates further anxiety and confusion about whether a restaurant is safe to eat at.
+            </p>
+            <p class="text-body font-primary text-main leading-relaxed font-bold mb-6">
+              Problem statement: How might we simplify the experience for new users, ensuring clarity and trust from the very first interaction?
+            </p>
+            <p class="text-body font-primary text-main leading-relaxed mb-6">
+              To evaluate success, the redesign aimed to reduce user confusion on the home screen, decrease time to find a safe restaurant, and increase perceived trust in safety information.
             </p>
           </div>
 
-          <!-- Link to Figma Prototype -->
-          <div class="text-left mb-8">
-            <a href="https://embed.figma.com/proto/ipjXKDYhLe0mwYGlageTqL/Design---Find-Me-GF?page-id=147%3A6938&node-id=147-8542&viewport=-3238%2C318%2C0.6&scaling=scale-down&content-scaling=fixed&starting-point-node-id=147%3A8526&show-proto-sidebar=1&embed-host=share"
-              target="_blank"
-              class="text-body font-primary text-main hover:text-grey transition duration-300 underline">
-              View interactive prototype in Figma →
-            </a>
+          <!-- Research & Discovery -->
+          <div id="research" class="mb-16">
+            <h2 class="text-h2 font-primary font-bold mb-6 text-main">
+              Research & Discovery
+            </h2>
+            <p class="text-body font-primary text-main leading-relaxed mb-6">
+              I started with a <strong>heuristic audit</strong> of the existing app and <strong>usability tests</strong>
+              with three users (two with celiac disease, one with gluten sensitivity).
+            </p>
+            <p class="text-body font-primary text-main leading-relaxed mb-6">
+              As the main task, users were asked to use the current app to find and book a place they felt confident about
+              visiting and eating safely.
+            </p>
+            <p class="text-body font-primary text-main leading-relaxed mb-4">
+              Additionally, they were asked about:
+            </p>
+            <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
+              <li>First impression on the home screen</li>
+              <li>How confident they were about their choice</li>
+              <li>What cues helped them decide for an option and against the other</li>
+              <li>Their understanding about the badges and icons</li>
+            </ul>
+
+            <h3 class="text-h3 font-primary font-bold mb-4 text-main">
+              Key findings
+            </h3>
+            <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
+              <li><strong>Competing CTAs with no clear hierarchy</strong> → all 3 people were unsure where to start</li>
+              <li><strong>Confusing filters and icons</strong> → users can't easily tell which options ensure safety</li>
+              <li><strong>Lack of education about "Dedicated Gluten-Free" or what user badges mean</strong> → weak trust</li>
+              <li><strong>Verified options inspired the most confidence</strong> → This was key to making a trusting decision</li>
+            </ul>
+
+            <p class="text-body font-primary text-main leading-relaxed mb-8">
+              These findings guided my focus on clarity, safety education, and reducing cognitive load.
+            </p>
+
+            <div class="mb-8">
+              <img src="/portfolio/images/case-studies/gf-app/audit.png" alt="UX Audit" class="w-full rounded-lg" />
+            </div>
+
+            <p class="text-body font-primary text-main leading-relaxed">
+              The goal was to reduce cognitive load, make safety indicators instantly
+              understandable, and educate users early on what "safe" really means.
+            </p>
           </div>
-        </div>
 
-        <!-- Impact, Validation & Next Steps -->
-        <div class="mb-16">
-          <h2 class="text-h2 font-primary font-bold mb-6 text-main">
-            Impact, Validation & Next Steps
-          </h2>
-          <p class="text-body font-primary text-main leading-relaxed mb-6">
-            The redesign simplifies the journey, improves clarity for first-time users, and reinforces trust through educational
-            onboarding.
-          </p>
-          <p class="text-body font-primary text-main leading-relaxed mb-6">
-            As this was a 1-week project, subsequent usability tests are needed to validate:
-          </p>
-          <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
-            <li>Tasks success rate</li>
-            <li>Clarity perspection</li>
-            <li>Trust level</li>
-          </ul>
-          <h3 class="text-h3 font-primary font-bold text-main mb-4">
-            Next steps
-          </h3>
-          <p class="text-body font-primary text-main leading-relaxed mb-6">
-            Moving forward, there are key opportunities to extend the redesign beyond clarity and trust, enhancing functionality
-            and personalization for users with different safety needs.
-          </p>
-          <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
-            <li>Allow users to book directly through the app or connect with existing booking platforms</li>
-            <li>Enable a direct chat with restaurants so users can ask safety-related questions before booking</li>
-            <li>Allow users and reviewers to indicate their level of cross-contamination tolerance, making reviews more relevant and personalised</li>
-          </ul>
-        </div>
+          <!-- User Persona & Journey -->
+          <div id="persona" class="mb-16">
+            <h2 class="text-h2 font-primary font-bold mb-6 text-main">
+              User Persona & Journey
+            </h2>
+            <p class="text-body font-primary text-main leading-relaxed mb-8">
+              Using research insights, I created a user persona representing a typical person with celiac disease looking for safe dining options.
+            </p>
+            <p class="text-body font-primary text-main leading-relaxed mb-8">
+              Mapping their journey highlighted key friction points, particularly at onboarding, search, and safety verification.
+            </p>
 
-        <!-- Reflection & Learnings -->
-        <div class="mb-16">
-          <h2 class="text-h2 font-primary font-bold text-main mb-6">
-            Reflection & Learnings
-          </h2>
-          <p class="text-body font-primary text-main leading-relaxed mb-6">
-            Designing for health conditions means designing for emotional safety, not just usability. Simplifying pages and sections proved more complex than expected. User stories were essential to stay focused on what truly matters. As Steve Krug says, <i>be ruthless in what you cut</i> (and it's harder than it sounds).
-          </p>
-          <p class="text-body font-primary text-main leading-relaxed">
-            This exercise was a great opportunity to sharpen my skills as a Product Designer. Working within a 1-week timeline pushed me to think fast, prioritise what matters, and tackle a different kind of design challenge, keeping me sharp and helping me grow beyond my usual work.
-          </p>
-        </div>
+            <div class="mb-8">
+              <img src="/portfolio/images/case-studies/gf-app/persona.png" alt="User Persona"
+                class="w-full rounded-lg" />
+            </div>
 
-        <!-- Navigation -->
-        <div class="pt-8">
-          <div class="flex justify-between items-center">
-            <a href="../../"
-              class="text-body font-primary text-grey hover:text-main transition duration-300">
-              ← Back to Portfolio
-            </a>
-            <a href="../onboarding-redesign/"
-              class="text-body font-primary text-main hover:text-grey transition duration-300">
-              Next Project →
-            </a>
+            <div class="mb-12">
+              <img src="/portfolio/images/case-studies/gf-app/user_journey.png" alt="User Journey Map"
+                class="w-full rounded-lg" />
+            </div>
+          </div>
+
+          <!-- Design Goals -->
+          <div id="goals" class="mb-16">
+            <h2 class="text-h2 font-primary font-bold text-main mb-6">
+              Design Goals
+            </h2>
+            <p class="text-body font-primary text-main leading-relaxed mb-6">
+              My redesign focused on three experience pillars:
+            </p>
+            <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
+              <li><strong>Simplify navigation</strong> by reducing cognitive load and highlight key actions.</li>
+              <li><strong>Build trust</strong> through explicit safety signals such as verified badges and clear filters.</li>
+              <li><strong>Empower choice</strong> and educate users on what "Dedicated GF" and "Most Celiac Friendly" mean.</li>
+            </ul>
+          </div>
+
+          <!-- Ideation & Wireframes -->
+          <div id="ideation" class="mb-16">
+            <h2 class="text-h2 font-primary font-bold mb-6 text-main">
+              Ideation & Wireframes
+            </h2>
+            <p class="text-body font-primary text-main leading-relaxed mb-8">
+              I started by mapping the main user journey from home page to restaurant details focusing on how users could filter by safety (Dedicated gluten-free and Most Celiac Friendly) and read reviews for certified members.
+            </p>
+
+            <div class="mb-8">
+              <img src="/portfolio/images/case-studies/gf-app/iterations.png" alt="First Iteration Wireframes"
+                class="w-full rounded-lg" />
+            </div>
+
+            <p class="text-body font-primary text-main leading-relaxed mb-6">
+              The first wireframes clarified the navigation flow but the home page proved the most challenging as there was a lot to fit in, and it was still feeling crowded and unfocused.
+            </p>
+            <p class="text-body font-primary text-main leading-relaxed mb-6">
+              In the second iteration, I restructured the experience around two primary filters <strong>Dedicated Gluten-Free</strong> and <strong>Most Celiac Friendly</strong>, and organized supporting content (Nearby, Latest Reviews, Browse by Category) into horizontally
+              scrollable sections for easier scanning.
+            </p>
+            <p class="text-body font-primary text-main leading-relaxed mb-4">
+              This new hierarchy made better use of the screen space:
+            </p>
+            <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
+              <li>Highlighting the two main safety filters as primary actions</li>
+              <li>Organizing supporting content into horizontally scrollable sections for faster scanning</li>
+              <li>Following familiar mobile patterns to make the experience feel natural and effortless</li>
+              <li>Keeping the interface light and easy to explore</li>
+            </ul>
+            <p class="text-body font-primary text-main leading-relaxed mb-8">
+              Based on feedback from the usability tests, I also introduced a Gluten-Free Card, translatable into multiple languages, to help users safely communicate dietary needs abroad or across language barriers.
+            </p>
+
+            <div class="mb-12">
+              <img src="/portfolio/images/case-studies/gf-app/iterations2.png" alt="Second Iteration Wireframes"
+                class="w-full rounded-lg" />
+            </div>
+          </div>
+
+          <!-- High-Fidelity Design & Prototype -->
+          <div id="hifi" class="mb-16">
+            <h2 class="text-h2 font-primary font-bold mb-6 text-main">
+              High-Fidelity Design & Prototype
+            </h2>
+            <p class="text-body font-primary text-main leading-relaxed mb-8">
+              The final design uses a minimalist UI to prioritise content and readability, while reinforcing trust through clear safety cues and verified reviews.
+            </p>
+            <p class="text-body font-primary text-main leading-relaxed mb-8">
+              The onboarding introduces the app's unique features through three short, focused screens, helping users understand what safety filters and verified reviews mean before their first search.
+            </p>
+
+            <div class="mb-8">
+              <img src="/portfolio/images/case-studies/gf-app/onboarding.png" alt="Onboarding Screens"
+                class="w-full rounded-lg" />
+            </div>
+
+            <p class="text-body font-primary text-main leading-relaxed mb-6">
+              The users now have a streamlined flow from discovering nearby restaurants to viewing safety details and
+              booking a table.
+            </p>
+            <div class="mb-8">
+              <img src="/portfolio/images/case-studies/gf-app/hi-fi.png" alt="High-Fidelity Screens"
+                class="w-full rounded-lg" />
+            </div>
+            <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
+              <li><strong>From Home:</strong> select "Dedicated Gluten-Free" or "Most Celiac Friendly."</li>
+              <li><strong>Results:</strong> view restaurants with verified badges and trusted reviews.</li>
+              <li><strong>Details:</strong> see cross-contamination safety notes or call to book.</li>
+              <li>A confirmation modal appears before calling.</li>
+            </ul>
+
+            <!-- Prototype -->
+            <h3 class="text-h3 font-primary font-bold mb-6 text-main">
+              Prototype
+            </h3>
+            <p class="text-body font-primary text-main leading-relaxed mb-6">
+              The prototype demonstrates a streamlined flow from discovering nearby restaurants to viewing safety details and
+              booking a table.
+            </p>
+
+            <!-- Video 1-->
+            <div class="mb-8">
+              <video autoplay loop muted playsinline class="w-full max-w-[410px] mx-auto rounded-lg">
+                <source src="/portfolio/images/case-studies/gf-app/main-flow.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <p class="text-bodySmall font-primary text-grey mt-3 text-center italic">
+                Main flow walkthrough
+              </p>
+            </div>
+
+            <!-- Video 2-->
+            <div class="mb-8">
+              <video autoplay loop muted playsinline class="w-full max-w-[410px] mx-auto rounded-lg">
+                <source src="/portfolio/images/case-studies/gf-app/home-page-details.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <p class="text-bodySmall font-primary text-grey mt-3 text-center italic">
+                Home page details
+              </p>
+            </div>
+
+            <!-- Link to Figma Prototype -->
+            <div class="text-left mb-8">
+              <a href="https://embed.figma.com/proto/ipjXKDYhLe0mwYGlageTqL/Design---Find-Me-GF?page-id=147%3A6938&node-id=147-8542&viewport=-3238%2C318%2C0.6&scaling=scale-down&content-scaling=fixed&starting-point-node-id=147%3A8526&show-proto-sidebar=1&embed-host=share"
+                target="_blank"
+                class="text-body font-primary text-main hover:text-grey transition duration-300 underline">
+                View interactive prototype in Figma →
+              </a>
+            </div>
+          </div>
+
+          <!-- Impact, Validation & Next Steps -->
+          <div id="impact" class="mb-16">
+            <h2 class="text-h2 font-primary font-bold mb-6 text-main">
+              Impact, Validation & Next Steps
+            </h2>
+            <p class="text-body font-primary text-main leading-relaxed mb-6">
+              The redesign simplifies the journey, improves clarity for first-time users, and reinforces trust through educational
+              onboarding.
+            </p>
+            <p class="text-body font-primary text-main leading-relaxed mb-6">
+              As this was a 1-week project, subsequent usability tests are needed to validate:
+            </p>
+            <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
+              <li>Tasks success rate</li>
+              <li>Clarity perspection</li>
+              <li>Trust level</li>
+            </ul>
+            <h3 class="text-h3 font-primary font-bold text-main mb-4">
+              Next steps
+            </h3>
+            <p class="text-body font-primary text-main leading-relaxed mb-6">
+              Moving forward, there are key opportunities to extend the redesign beyond clarity and trust, enhancing functionality
+              and personalization for users with different safety needs.
+            </p>
+            <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
+              <li>Allow users to book directly through the app or connect with existing booking platforms</li>
+              <li>Enable a direct chat with restaurants so users can ask safety-related questions before booking</li>
+              <li>Allow users and reviewers to indicate their level of cross-contamination tolerance, making reviews more relevant and personalised</li>
+            </ul>
+          </div>
+
+          <!-- Reflection & Learnings -->
+          <div id="learnings" class="mb-16">
+            <h2 class="text-h2 font-primary font-bold text-main mb-6">
+              Reflection & Learnings
+            </h2>
+            <p class="text-body font-primary text-main leading-relaxed mb-6">
+              Designing for health conditions means designing for emotional safety, not just usability. Simplifying pages and sections proved more complex than expected. User stories were essential to stay focused on what truly matters. As Steve Krug says, <i>be ruthless in what you cut</i> (and it's harder than it sounds).
+            </p>
+            <p class="text-body font-primary text-main leading-relaxed">
+              This exercise was a great opportunity to sharpen my skills as a Product Designer. Working within a 1-week timeline pushed me to think fast, prioritise what matters, and tackle a different kind of design challenge, keeping me sharp and helping me grow beyond my usual work.
+            </p>
+          </div>
+
+          <!-- Navigation -->
+          <div class="pt-8">
+            <div class="flex justify-between items-center">
+              <a href="../../"
+                class="text-body font-primary text-grey hover:text-main transition duration-300">
+                ← Back to Portfolio
+              </a>
+              <a href="../onboarding-redesign/"
+                class="text-body font-primary text-main hover:text-grey transition duration-300">
+                Next Project →
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -401,5 +454,45 @@ import "../../styles/global.css";
       </div>
     </div>
   </footer>
+
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Active section highlighting
+    const sections = document.querySelectorAll('[id]');
+    const navLinks = document.querySelectorAll('aside nav a[href^="#"]');
+
+    function updateActiveLink() {
+      let currentSection = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.scrollY >= sectionTop - 150) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('font-bold', 'text-main');
+        link.classList.add('text-grey');
+        if (link.getAttribute('href') === `#${currentSection}`) {
+          link.classList.add('font-bold', 'text-main');
+          link.classList.remove('text-grey');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveLink);
+    updateActiveLink();
+  </script>
 </body>
 </html>

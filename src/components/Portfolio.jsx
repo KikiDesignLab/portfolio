@@ -1,6 +1,4 @@
-import React from "react";
-
-
+import React, { useEffect } from "react";
 
 const Portfolio = () => {
   return (
@@ -12,8 +10,6 @@ const Portfolio = () => {
           <span className="text-nav font-mono text-main">
             Fátima Rodrigues
           </span>
-
-
 
           {/* Navigation */}
           <nav>
@@ -39,8 +35,6 @@ const Portfolio = () => {
         </div>
       </header>
 
-
-
       <section className="pt-9 lg:pt-60 bg-bg px-6 lg:px-12">
         <div className="container mx-auto flex flex-col text-left">
           <h1 className="text-hero font-hero mb-4 text-main">
@@ -51,8 +45,6 @@ const Portfolio = () => {
           </p>
         </div>
       </section>
-
-
 
       { }
       {/* Works Section */}
@@ -73,7 +65,7 @@ const Portfolio = () => {
               {/* Info box */}
               <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mt-4 gap-2">
                 <p className="text-body font-primary text-main">
-                  Redesigning for Clarity & Trust
+                  Redesigning for Trust
                 </p>
                 <span className="text-meta font-primary uppercase tracking-wider text-grey">
                   Find Me Gluten Free • 2025
@@ -125,45 +117,27 @@ const Portfolio = () => {
         </div>
       </section>
 
-
-
-
-
       {/* About Section */}
       <section id="about" className="py-12 bg-bg px-6 lg:px-12">
         <div className="container mx-auto">
           <h2 className="text-h2 font-primary font-bold mb-6 text-main">
             About Me
           </h2>
-
-
-
           <p className="text-body font-primary text-main mb-4 leading-relaxed">
             In the mix of HR and Product, I've always found myself at the intersection of listening to people and solving problems. Being a learner at heart, I keep my curiosity alive by constantly exploring, reading, and experimenting. I bring a unique blend of human-centered skills and design curiosity to every challenge I tackle, striving to create thoughtful, user-centered solutions that balance business goals with real human needs.
           </p>
-
-
-
           <p className="text-body font-primary text-main mb-4 leading-relaxed">
             I lose sleep to books, painting and silly little side quests.
           </p>
-
-
-
           <p className="text-body font-primary text-main mb-8 leading-relaxed">
             I'm drawn to challenges where I can think deeply about a topic and merge aesthetics with functionality to craft clear, purposeful experiences.
           </p>
         </div>
       </section>
 
-
-
-
       {/* Footer */}
       <footer className="bg-bg text-grey py-4 border-t border-line px-6 lg:px-12">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-
-
 
           {/* Designed with ♡ by Fátima */}
           <p className="flex items-center gap-2 text-meta font-primary uppercase tracking-wider mb-4 md:mb-0">
@@ -171,8 +145,6 @@ const Portfolio = () => {
             <span className="text-main text-xl heartbeat-animation">♡</span>
             by Fátima
           </p>
-
-
 
           {/* Social Links */}
           <div className="flex space-x-6">

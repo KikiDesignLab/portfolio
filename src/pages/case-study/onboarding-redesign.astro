@@ -28,339 +28,399 @@ import "../../styles/global.css";
     </div>
   </header>
 
-<!-- Hero Section -->
-<section class="py-12 bg-bg px-6 lg:px-12">
-  <div class="container mx-auto">
-    <div class="max-w-4xl mx-auto">
-      <!-- Hero Content -->
-      <div class="text-left mb-12">
-        <p class="text-meta font-primary uppercase tracking-wider text-grey mb-4">
-          Scanner Air • Shipped 2025
-        </p>
-        <h1 class="text-h1 font-primary font-bold mb-4 text-main">
-          Onboarding for Monetisation
-        </h1>
-        <div class="flex flex-wrap gap-4">
-          <span class="bg-line text-main px-4 py-2 rounded-full text-bodySmall font-primary">User Interface</span>
-          <span class="bg-line text-main px-4 py-2 rounded-full text-bodySmall font-primary">Mobile Design</span>
-          <span class="bg-line text-main px-4 py-2 rounded-full text-bodySmall font-primary">User Research</span>
-        </div>
-      </div>
-
-      <!-- Hero Image -->
-      <div>
-        <img src="/portfolio/images/case-studies/onboarding/hero.png" alt="Onboarding Redesign hero image"
-          class="w-full rounded-lg" />
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- Case Study Content -->
+  <!-- Combined Hero & Case Study Section with Side Menu -->
   <section class="py-12 bg-bg px-6 lg:px-12">
     <div class="container mx-auto">
-      <div class="max-w-4xl mx-auto">
-        <!-- Project Overview -->
-        <div class="grid md:grid-cols-3 gap-8 mb-16">
-          <div>
-            <h3 class="text-h3 font-primary font-bold mb-2 text-grey">
-              Timeline
-            </h3>
-            <p class="text-body font-primary text-grey">
-              2 months
-            </p>
-          </div>
-          <div>
-            <h3 class="text-h3 font-primary font-bold mb-2 text-grey">
-              Team
-            </h3>
-            <p class="text-body font-primary text-grey">
-              1 Designer, 1 Video Producer, 1 Developer, 1 Monetisation Manager
-            </p>
-          </div>
-          <div>
-            <h3 class="text-h3 font-primary font-bold mb-2 text-grey">
-              My Role
-            </h3>
-            <p class="text-body font-primary text-grey">
-              Product Designer
-            </p>
-          </div>
-        </div>
+      <div class="flex gap-12">
+        <!-- Side Menu -->
+        <aside class="hidden lg:block w-56 flex-shrink-0">
+          <nav class="sticky top-24">
+            <ul class="space-y-3">
+              <li>
+                <a href="../../" class="flex items-center gap-2 text-bodySmall font-primary text-grey hover:text-main transition duration-300">
+                  <i class="fas fa-arrow-left"></i>
+                  <span>Back</span>
+                </a>
+              </li>
+              <li class="pt-4">
+                <a href="#overview" class="block text-bodySmall font-primary text-grey hover:text-main transition duration-300">
+                  Overview
+                </a>
+              </li>
+              <li>
+                <a href="#problem" class="block text-bodySmall font-primary text-grey hover:text-main transition duration-300">
+                  Problem & Context
+                </a>
+              </li>
+              <li>
+                <a href="#research" class="block text-bodySmall font-primary text-grey hover:text-main transition duration-300">
+                  Research & Discovery
+                </a>
+              </li>
+              <li>
+                <a href="#experiment" class="block text-bodySmall font-primary text-grey hover:text-main transition duration-300">
+                  Assumption & Experiment
+                </a>
+              </li>
+              <li>
+                <a href="#userflow" class="block text-bodySmall font-primary text-grey hover:text-main transition duration-300">
+                  User Flow Mapping
+                </a>
+              </li>
+              <li>
+                <a href="#solution" class="block text-bodySmall font-primary text-grey hover:text-main transition duration-300">
+                  Key Design Decisions
+                </a>
+              </li>
+              <li>
+                <a href="#results" class="block text-bodySmall font-primary text-grey hover:text-main transition duration-300">
+                  Results
+                </a>
+              </li>
+              <li>
+                <a href="#considerations" class="block text-bodySmall font-primary text-grey hover:text-main transition duration-300">
+                  Considerations & Next Steps
+                </a>
+              </li>
+              <li>
+                <a href="#constraints" class="block text-bodySmall font-primary text-grey hover:text-main transition duration-300">
+                  Constraints
+                </a>
+              </li>
+              <li>
+                <a href="#summary" class="block text-bodySmall font-primary text-grey hover:text-main transition duration-300">
+                  Summary
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
 
-        <!-- Problem & Context -->
-        <div class="mb-16">
-          <h2 class="text-h2 font-primary font-bold mb-6 text-main">
-            Problem & Context
-          </h2>
-          <p class="text-body font-primary text-main leading-relaxed mb-6">
-            Our recently created team was tasked with improving monetisation, with conversion as one of the main focus areas.
-          </p>
-          <p class="text-body font-primary text-main leading-relaxed mb-10">
-            Users were encountering a generic paywall before experiencing value, leading to low conversions. The current paywall had several shortcomings:
-          </p>
-          <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <!-- Main Content (Hero + Case Study) -->
+        <div class="flex-1 max-w-3xl mx-auto">
+          <!-- Hero Content -->
+          <div class="mb-12">
+            <p class="text-meta font-primary uppercase tracking-wider text-grey mb-4">
+              Scanner Air • Shipped 2025
+            </p>
+            <h1 class="text-h1 font-primary font-bold mb-4 text-main">
+              Onboarding for Monetisation
+            </h1>
+            <div class="flex flex-wrap gap-4 mb-12">
+              <span class="bg-line text-main px-4 py-2 rounded-full text-bodySmall font-primary">User Interface</span>
+              <span class="bg-line text-main px-4 py-2 rounded-full text-bodySmall font-primary">Mobile Design</span>
+              <span class="bg-line text-main px-4 py-2 rounded-full text-bodySmall font-primary">User Research</span>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="mb-12">
+              <img src="/portfolio/images/case-studies/onboarding/hero.png" alt="Onboarding Redesign hero image"
+                class="w-full rounded-lg" />
+            </div>
+          </div>
+
+          <!-- Project Overview -->
+          <div id="overview" class="grid md:grid-cols-3 gap-8 mb-16">
             <div>
-              <h3 class="text-h3 font-primary font-bold mb-4 text-main">
-                Poor hero image
+              <h3 class="text-h3 font-primary font-bold mb-2 text-grey">
+                Timeline
               </h3>
-              <p class="text-body font-primary text-main leading-relaxed">
-                Low quality, irrelevant AI-generated images, impacting perceived credibility.
+              <p class="text-body font-primary text-grey">
+                2 months
               </p>
             </div>
             <div>
-              <h3 class="text-h3 font-primary font-bold mb-4 text-main">
-                Weak value-proposition
+              <h3 class="text-h3 font-primary font-bold mb-2 text-grey">
+                Team
               </h3>
-              <p class="text-body font-primary text-main leading-relaxed">
-                Unclear how users would benefit from subscribing to Scanner Air.
+              <p class="text-body font-primary text-grey">
+                1 Designer, 1 Video Producer, 1 Developer, 1 Monetisation Manager
               </p>
             </div>
             <div>
-              <h3 class="text-h3 font-primary font-bold mb-4 text-main">
-                Generic copy
+              <h3 class="text-h3 font-primary font-bold mb-2 text-grey">
+                My Role
               </h3>
-              <p class="text-body font-primary text-main leading-relaxed">
-                Long, dense paragraph about conditions and legal text that users don't read.
+              <p class="text-body font-primary text-grey">
+                Product Designer
               </p>
             </div>
           </div>
-          <img src="/portfolio/images/case-studies/onboarding/currentpw.png" alt="Current Paywall Images"
-            class="w-full rounded-lg" />
-        </div>
 
-        <!-- Research & Discovery -->
-        <div class="mb-16">
-          <h2 class="text-h2 font-primary font-bold mb-6 text-main">
-            Research & Discovery
-          </h2>
-          <div>
-            <h3 class="text-h3 font-primary font-bold text-main mb-6">
-              Internal data
+          <!-- Problem & Context -->
+          <div id="problem" class="mb-16">
+            <h2 class="text-h2 font-primary font-bold mb-6 text-main">
+              Problem & Context
+            </h2>
+            <p class="text-body font-primary text-main leading-relaxed mb-6">
+              Our recently created team was tasked with improving monetisation, with conversion as one of the main focus areas.
+            </p>
+            <p class="text-body font-primary text-main leading-relaxed mb-10">
+              Users were encountering a generic paywall before experiencing value, leading to low conversions. The current paywall had several shortcomings:
+            </p>
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+              <div>
+                <h3 class="text-h3 font-primary font-bold mb-4 text-main">
+                  Poor hero image
+                </h3>
+                <p class="text-body font-primary text-main leading-relaxed">
+                  Low quality, irrelevant AI-generated images, impacting perceived credibility.
+                </p>
+              </div>
+              <div>
+                <h3 class="text-h3 font-primary font-bold mb-4 text-main">
+                  Weak value-proposition
+                </h3>
+                <p class="text-body font-primary text-main leading-relaxed">
+                  Unclear how users would benefit from subscribing to Scanner Air.
+                </p>
+              </div>
+              <div>
+                <h3 class="text-h3 font-primary font-bold mb-4 text-main">
+                  Generic copy
+                </h3>
+                <p class="text-body font-primary text-main leading-relaxed">
+                  Long, dense paragraph about conditions and legal text that users don't read.
+                </p>
+              </div>
+            </div>
+            <img src="/portfolio/images/case-studies/onboarding/currentpw.png" alt="Current Paywall Images"
+              class="w-full rounded-lg" />
+          </div>
+
+          <!-- Research & Discovery -->
+          <div id="research" class="mb-16">
+            <h2 class="text-h2 font-primary font-bold mb-6 text-main">
+              Research & Discovery
+            </h2>
+            <div>
+              <h3 class="text-h3 font-primary font-bold text-main mb-6">
+                Internal data
+              </h3>
+              <p class="text-body font-primary text-main leading-relaxed mb-6">
+                We reviewed the existing user flow using available behavioral metrics and internal data. While limited, the data showed a significant drop-off between CTA interaction and purchase.
+              </p>
+              <p class="text-body font-primary text-main leading-relaxed mb-6">
+                From a monetisation perspective, this suggested a mismatch between user intent and perceived value as users were engaging but not committing. From a UX standpoint I identified another interaction issue: by presenting the paywall as a first step, users were likely tapping "continue" without fully processing the information, only to drop off once they reached the main experience. This also highlighted a risk of false engagement metrics, where CTA interaction did not reflect genuine intent.
+              </p>
+              <p class="text-body font-primary text-main leading-relaxed mb-6">
+                This interpretation shifted the direction of the experiment away from optimising the paywall itself and toward improving value comprehension earlier in the journey, before asking users to make a decision.
+              </p>
+              <h3 class="text-h3 font-primary font-bold text-main mb-6">
+                Competitive Analysis
+              </h3>
+              <p class="text-body font-primary text-main leading-relaxed mb-6">
+                We analysed four competitors in the productivity app space, focusing on document management tools. Across these products, onboarding played a central role in setting expectations, with features introduced progressively through short flows, interactive demos, and paywalls positioned after users had experienced initial value.
+              </p>
+            </div>
+            <p class="text-body font-primary text-main leading-relaxed mb-4">
+              <b>Main takeaways</b>
+            </p>
+            <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-6">
+              <li>The first-time user experience should prioritise product value communication over immediate monetisation.</li>
+              <li>Early interactions should help users understand what the product enables, before asking for commitment.</li>
+              <li>The role of the paywall is to formalise a decision users are already ready to make.</li>
+            </ul>
+          </div>
+
+          <!-- Assumption & Experiment Setup -->
+          <div id="experiment" class="mb-16">
+            <h2 class="text-h2 font-primary font-bold mb-6 text-main">
+              Assumption & Experiment Setup
+            </h2>
+            <p class="text-body font-primary text-main leading-relaxed mb-8">
+              <i>If users understand the value of Scanner Air before seeing the paywall, they will be more likely to engage and convert.</i>
+            </p>
+            <p class="text-body font-primary text-main leading-relaxed mb-8">
+              To validate this, we ran an experiment comparing:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-8">
+              <div class="md:col-span-5 p-4 bg-line rounded-lg">
+                <h3 class="text-h3 font-primary font-bold mb-4 text-main">
+                  Flow with onboarding + paywall
+                </h3>
+                <p class="text-body font-primary text-main leading-relaxed mb-2">
+                  Users experienced the full onboarding before seeing the paywall.
+                </p>
+              </div>
+              <div class="md:col-span-2 flex items-center justify-center">
+                <p class="text-body font-primary font-bold text-grey">
+                  vs
+                </p>
+              </div>
+              <div class="md:col-span-5 p-4 bg-line rounded-lg">
+                <h3 class="text-h3 font-primary font-bold mb-4 text-main">
+                  Flow with paywall on first launch
+                </h3>
+                <p class="text-body font-primary text-main leading-relaxed mb-2">
+                  Users saw the paywall immediately without onboarding context.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- User Flow Mapping -->
+          <div id="userflow" class="mb-16">
+            <h2 class="text-h2 font-primary font-bold mb-6 text-main">
+              User Flow Mapping
+            </h2>
+            <p class="text-body font-primary text-main leading-relaxed mb-6">
+              I mapped the ideal learning journey for a first-time user, prioritising:
+            </p>
+            <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
+              <li>Clear and early framing of the app's core value</li>
+              <li>Progressive disclosure of the main features of the app</li>
+              <li>Reduced cognitive load by limiting choices early in the journey</li>
+            </ul>
+            <img src="/portfolio/images/case-studies/onboarding/userflow.png" alt="User Flow Mapping"
+              class="w-full rounded-lg" />
+          </div>
+
+          <!-- Solution -->
+          <div id="solution" class="mb-16">
+            <h2 class="text-h2 font-primary font-bold mb-6 text-main">
+              Key Design Decisions
+            </h2>
+            <p class="text-body font-primary text-main leading-relaxed mb-8">
+              The design decisions focused on addressing a specific problem identified during research: we were asking users to commit without properly guiding them on the benefits of subscribing. To resolve this, each step of the onboarding was intentionally designed to build understanding, reduce false engagement, and prepare users to make an informed decision at the paywall.
+            </p>
+            <h3 class="text-h3 font-primary font-bold mb-4 text-main">
+              Decision 1: Use progressive disclosure
             </h3>
-            <p class="text-body font-primary text-main leading-relaxed mb-6">
-              We reviewed the existing user flow using available behavioral metrics and internal data. While limited, the data showed a significant drop-off between CTA interaction and purchase.
+            <p class="text-body font-primary text-main leading-relaxed mb-8">
+              Each section of the onboarding is introduced individually with limited copy and a single visual focus. This was intentional to prevent overwhelming first-time users while still building a clear mental model of the product's value.
             </p>
-            <p class="text-body font-primary text-main leading-relaxed mb-6">
-              From a monetisation perspective, this suggested a mismatch between user intent and perceived value as users were engaging but not committing. From a UX standpoint I identified another interaction issue: by presenting the paywall as a first step, users were likely tapping "continue" without fully processing the information, only to drop off once they reached the main experience. This also highlighted a risk of false engagement metrics, where CTA interaction did not reflect genuine intent.
-            </p>
-            <p class="text-body font-primary text-main leading-relaxed mb-6">
-              This interpretation shifted the direction of the experiment away from optimising the paywall itself and toward improving value comprehension earlier in the journey, before asking users to make a decision.
-            </p>
-            <h3 class="text-h3 font-primary font-bold text-main mb-6">
-              Competitive Analysis
+            <img src="/portfolio/images/case-studies/onboarding/solution1.png" alt="Onboarding - Landing page and hero page"
+              class="w-full rounded-lg my-8" />
+
+            <img src="/portfolio/images/case-studies/onboarding/solution2.png" alt="Onboarding - User Survey"
+              class="w-full rounded-lg my-8" />
+
+            <img src="/portfolio/images/case-studies/onboarding/solution3.png" alt="Onboarding - Core Features Overview"
+              class="w-full rounded-lg my-8" />
+
+            <h3 class="text-h3 font-primary font-bold mb-4 text-main">
+              Decision 2: Show core features instead of full product overview
             </h3>
-            <p class="text-body font-primary text-main leading-relaxed mb-6">
-              We analysed four competitors in the productivity app space, focusing on document management tools. Across these products, onboarding played a central role in setting expectations, with features introduced progressively through short flows, interactive demos, and paywalls positioned after users had experienced initial value.
+            <p class="text-body font-primary text-main leading-relaxed mb-8">
+              We focused on three core paid features, <i>editing</i>, <i>signing</i>, and <i>text extraction</i>. These were selected based on user reviews, monetisation insights, and competitor analysis, ensuring users understood exactly what they would be paying for before encountering the paywall.
+            </p>
+            <img src="/portfolio/images/case-studies/onboarding/solution4.png" alt="Solution Overview - paywall"
+              class="w-full rounded-lg my-8" />
+            <h3 class="text-h3 font-primary font-bold mb-4 text-main">
+              Decision 3: Paywall placed at the end of first-time experience
+            </h3>
+            <p class="text-body font-primary text-main leading-relaxed mb-8">
+              Research showed that users were interacting with the CTA without fully processing information, leading to drop-off and misleading engagement metrics. By delaying the paywall until after users had seen core features, we reframed monetisation as a confirmation step rather than a barrier.
+            </p>
+            <p class="text-body font-primary text-main leading-relaxed mb-8">
+              The paywall highlights the key value points in a minimalistic design with title plus five bullet points, aligned with insights from previous experiments that showed simpler paywalls outperform more elaborate versions.
             </p>
           </div>
-          <p class="text-body font-primary text-main leading-relaxed mb-4">
-            <b>Main takeaways</b>
-          </p>
-          <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-6">
-            <li>The first-time user experience should prioritise product value communication over immediate monetisation.</li>
-            <li>Early interactions should help users understand what the product enables, before asking for commitment.</li>
-            <li>The role of the paywall is to formalise a decision users are already ready to make.</li>
-          </ul>
-        </div>
 
-        <!-- Assumption & Experiment Setup -->
-        <div class="mb-16">
-          <h2 class="text-h2 font-primary font-bold mb-6 text-main">
-            Assumption & Experiment Setup
-          </h2>
-          <p class="text-body font-primary text-main leading-relaxed mb-8">
-            <i>If users understand the value of Scanner Air before seeing the paywall, they will be more likely to engage and convert.</i>
-          </p>
-          <p class="text-body font-primary text-main leading-relaxed mb-8">
-            To validate this, we ran an experiment comparing:
-          </p>
-          <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-8">
-            <div class="md:col-span-5 p-4 bg-line rounded-lg">
-              <h3 class="text-h3 font-primary font-bold mb-4 text-main">
-                Flow with onboarding + paywall
-              </h3>
-              <p class="text-body font-primary text-main leading-relaxed mb-2">
-                Users experienced the full onboarding before seeing the paywall.
-              </p>
+          <!-- Results -->
+          <div id="results" class="mb-16">
+            <h2 class="text-h2 font-primary font-bold mb-6 text-main">
+              Results
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+              <div class="p-4 bg-line rounded-lg">
+                <h3 class="text-h3 font-primary font-bold mb-4 text-main">
+                  CTA Engagement
+                </h3>
+                <p class="text-body font-primary text-main leading-relaxed mb-2">
+                  Adding onboarding led to a substantial increase in CTA interaction.
+                </p>
+                <p class="text-body font-primary font-bold text-main">+73% relative uplift</p>
+              </div>
+              <div class="p-4 bg-line rounded-lg">
+                <h3 class="text-h3 font-primary font-bold mb-4 text-main">
+                  Purchase Conversion
+                </h3>
+                <p class="text-body font-primary text-main leading-relaxed mb-2">
+                  Users were significantly more likely to convert after experiencing onboarding.
+                </p>
+                <p class="text-body font-primary font-bold text-main">+172% relative uplift</p>
+              </div>
             </div>
-            <div class="md:col-span-2 flex items-center justify-center">
-              <p class="text-body font-primary font-bold text-grey">
-                vs
-              </p>
-            </div>
-            <div class="md:col-span-5 p-4 bg-line rounded-lg">
-              <h3 class="text-h3 font-primary font-bold mb-4 text-main">
-                Flow with paywall on first launch
-              </h3>
-              <p class="text-body font-primary text-main leading-relaxed mb-2">
-                Users saw the paywall immediately without onboarding context.
-              </p>
-            </div>
+            <p class="text-body font-primary text-main leading-relaxed">
+              These results suggest that not only volume improved, but <i>intent quality</i> as well. Users who reached the paywall after onboarding were more informed and more likely to convert, reinforcing the hypothesis that monetisation performs better as a continuation of learning rather than a gate.
+            </p>
           </div>
-        </div>
 
-        <!-- User Flow Mapping -->
-        <div class="mb-16">
-          <h2 class="text-h2 font-primary font-bold mb-6 text-main">
-            User Flow Mapping
-          </h2>
-          <p class="text-body font-primary text-main leading-relaxed mb-6">
-            I mapped the ideal learning journey for a first-time user, prioritising:
-          </p>
-          <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-8">
-            <li>Clear and early framing of the app's core value</li>
-            <li>Progressive disclosure of the main features of the app</li>
-            <li>Reduced cognitive load by limiting choices early in the journey</li>
-          </ul>
-          <img src="/portfolio/images/case-studies/onboarding/userflow.png" alt="User Flow Mapping"
-            class="w-full rounded-lg" />
-        </div>
+          <!-- Considerations & Next Steps -->
+          <div id="considerations" class="mb-16">
+            <h2 class="text-h2 font-primary font-bold mb-6 text-main">
+              Considerations & Next Steps
+            </h2>
+            <p class="text-body font-primary text-main leading-relaxed mb-6">
+              While the results validated the value-first approach, they also raised questions about optimisation opportunities within the flow. Future tests could explore shorter onboarding variants to reduce early drop-off while maintaining conversion levels.
+            </p>
+            <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-4">
+              <li><b>Product Hero Page</b></li>
+            </ul>
+            <p class="text-body font-primary text-main leading-relaxed ml-6 pl-2 mb-6">
+              Hypothesis: Removing the product hero page might improve completion time while maintaining or even improving conversion. Currently added for marketing purposes and to improve credibility, but its impact is still unclear.
+            </p>
 
-        <!-- Solution -->
-        <div class="mb-16">
-          <h2 class="text-h2 font-primary font-bold mb-6 text-main">
-            Key Design Decisions
-          </h2>
-          <p class="text-body font-primary text-main leading-relaxed mb-8">
-            The design decisions focused on addressing a specific problem identified during research: we were asking users to commit without properly guiding them on the benefits of subscribing. To resolve this, each step of the onboarding was intentionally designed to build understanding, reduce false engagement, and prepare users to make an informed decision at the paywall.
-          </p>
-          <h3 class="text-h3 font-primary font-bold mb-4 text-main">
-            Decision 1: Use progressive disclosure
-          </h3>
-          <p class="text-body font-primary text-main leading-relaxed mb-8">
-            Each section of the onboarding is introduced individually with limited copy and a single visual focus. This was intentional to prevent overwhelming first-time users while still building a clear mental model of the product's value.
-          </p>
-          <img src="/portfolio/images/case-studies/onboarding/solution1.png" alt="Onboarding - Landing page and hero page"
-            class="w-full rounded-lg my-8" />
-
-          <img src="/portfolio/images/case-studies/onboarding/solution2.png" alt="Onboarding - User Survey"
-            class="w-full rounded-lg my-8" />
-
-          <img src="/portfolio/images/case-studies/onboarding/solution3.png" alt="Onboarding - Core Features Overview"
-            class="w-full rounded-lg my-8" />
-
-          <h3 class="text-h3 font-primary font-bold mb-4 text-main">
-            Decision 2: Show core features instead of full product overview
-          </h3>
-          <p class="text-body font-primary text-main leading-relaxed mb-8">
-            We focused on three core paid features, <i>editing</i>, <i>signing</i>, and <i>text extraction</i>. These were selected based on user reviews, monetisation insights, and competitor analysis, ensuring users understood exactly what they would be paying for before encountering the paywall.
-          </p>
-          <img src="/portfolio/images/case-studies/onboarding/solution4.png" alt="Solution Overview - paywall"
-            class="w-full rounded-lg my-8" />
-          <h3 class="text-h3 font-primary font-bold mb-4 text-main">
-            Decision 3: Paywall placed at the end of first-time experience
-          </h3>
-          <p class="text-body font-primary text-main leading-relaxed mb-8">
-            Research showed that users were interacting with the CTA without fully processing information, leading to drop-off and misleading engagement metrics. By delaying the paywall until after users had seen core features, we reframed monetisation as a confirmation step rather than a barrier.
-          </p>
-          <p class="text-body font-primary text-main leading-relaxed mb-8">
-            The paywall highlights the key value points in a minimalistic design with title plus five bullet points, aligned with insights from previous experiments that showed simpler paywalls outperform more elaborate versions.
-          </p>
-        </div>
-
-        <!-- Results -->
-        <div class="mb-16">
-          <h2 class="text-h2 font-primary font-bold mb-6 text-main">
-            Results
-          </h2>
-          <div class="grid md:grid-cols-2 gap-8 mb-8">
-            <div class="p-4 bg-line rounded-lg">
-              <h3 class="text-h3 font-primary font-bold mb-4 text-main">
-                CTA Engagement
-              </h3>
-              <p class="text-body font-primary text-main leading-relaxed mb-2">
-                Adding onboarding led to a substantial increase in CTA interaction.
-              </p>
-              <p class="text-body font-primary font-bold text-main">+73% relative uplift</p>
-            </div>
-            <div class="p-4 bg-line rounded-lg">
-              <h3 class="text-h3 font-primary font-bold mb-4 text-main">
-                Purchase Conversion
-              </h3>
-              <p class="text-body font-primary text-main leading-relaxed mb-2">
-                Users were significantly more likely to convert after experiencing onboarding.
-              </p>
-              <p class="text-body font-primary font-bold text-main">+172% relative uplift</p>
-            </div>
+            <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-4">
+              <li><b>Survey Placement</b></li>
+            </ul>
+            <p class="text-body font-primary text-main leading-relaxed ml-6 pl-2 mb-8">
+              Hypothesis: The survey may increase engagement, but it adds two steps — testing with/without it will clarify trade-offs.
+            </p>
           </div>
-          <p class="text-body font-primary text-main leading-relaxed">
-            These results suggest that not only volume improved, but <i>intent quality</i> as well. Users who reached the paywall after onboarding were more informed and more likely to convert, reinforcing the hypothesis that monetisation performs better as a continuation of learning rather than a gate.
-          </p>
-        </div>
 
-        <!-- Considerations & Next Steps -->
-        <div class="mb-16">
-          <h2 class="text-h2 font-primary font-bold mb-6 text-main">
-            Considerations & Next Steps
-          </h2>
-          <p class="text-body font-primary text-main leading-relaxed mb-6">
-            While the results validated the value-first approach, they also raised questions about optimisation opportunities within the flow. Future tests could explore shorter onboarding variants to reduce early drop-off while maintaining conversion levels.
-          </p>
-          <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-4">
-            <li><b>Product Hero Page</b></li>
-          </ul>
-          <p class="text-body font-primary text-main leading-relaxed ml-6 pl-2 mb-6">
-            Hypothesis: Removing the product hero page might improve completion time while maintaining or even improving conversion. Currently added for marketing purposes and to improve credibility, but its impact is still unclear.
-          </p>
+          <!-- Constraints -->
+          <div id="constraints" class="mb-16">
+            <h2 class="text-h2 font-primary font-bold mb-6 text-main">
+              Constraints
+            </h2>
+            <h3 class="text-h3 font-primary font-bold mb-6 text-main">
+              Limited behavioural data at the start
+            </h3>
+            <p class="text-body font-primary text-main leading-relaxed mb-8">
+              We only had access to high-level funnel metrics and qualitative input such as user reviews. As user interviews were not part of the standard workflow at the time, decisions relied on behavioural signals, internal expertise, and established patterns rather than direct user research.
+            </p>
+            <h3 class="text-h3 font-primary font-bold mb-6 text-main">
+              Cross-functional dependencies
+            </h3>
+            <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-6">
+              <li><b>Animation & performance</b></li>
+            </ul>
+            <p class="text-body font-primary text-main leading-relaxed ml-6 pl-2 mb-6">
+              Feature animations were confirmed midway through the design process, which required close alignment between me, the video producer and the engineer. We validated the use of lightweight Lottie animations to ensure they enhanced clarity without negatively impacting performance or load times.
+            </p>
+            <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-6">
+              <li><b>Marketing requirements</b></li>
+            </ul>
+            <p class="text-body font-primary text-main leading-relaxed ml-6 pl-2 mb-8">
+              The onboarding flow also needed to accommodate existing marketing requirements, including notification prompts, which influenced both its structure and length. While these elements were included to meet current business needs, their placement within the onboarding experience remains an open question. In future iterations, I would validate their impact and explore alternative moments to introduce them.
+            </p>
+          </div>
 
-          <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-4">
-            <li><b>Survey Placement</b></li>
-          </ul>
-          <p class="text-body font-primary text-main leading-relaxed ml-6 pl-2 mb-8">
-            Hypothesis: The survey may increase engagement, but it adds two steps — testing with/without it will clarify trade-offs.
-          </p>
-        </div>
+          <!-- Summary -->
+          <div id="summary" class="mb-16">
+            <h2 class="text-h2 font-primary font-bold mb-6 text-main">
+              Summary
+            </h2>
+            <p class="text-body font-primary text-main leading-relaxed">
+              The redesigned onboarding created a clearer, value-driven first experience, increasing engagement and conversions. Showcasing the product's core value before making users face a paywall proved effective and informed similar initiatives across other apps.
+            </p>
+          </div>
 
-        <!-- Constraints -->
-        <div class="mb-16">
-          <h2 class="text-h2 font-primary font-bold mb-6 text-main">
-            Constraints
-          </h2>
-          <h3 class="text-h3 font-primary font-bold mb-6 text-main">
-            Limited behavioural data at the start
-          </h3>
-          <p class="text-body font-primary text-main leading-relaxed mb-8">
-            We only had access to high-level funnel metrics and qualitative input such as user reviews. As user interviews were not part of the standard workflow at the time, decisions relied on behavioural signals, internal expertise, and established patterns rather than direct user research.
-          </p>
-          <h3 class="text-h3 font-primary font-bold mb-6 text-main">
-            Cross-functional dependencies
-          </h3>
-          <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-6">
-            <li><b>Animation & performance</b></li>
-          </ul>
-          <p class="text-body font-primary text-main leading-relaxed ml-6 pl-2 mb-6">
-            Feature animations were confirmed midway through the design process, which required close alignment between me, the video producer and the engineer. We validated the use of lightweight Lottie animations to ensure they enhanced clarity without negatively impacting performance or load times.
-          </p>
-          <ul class="text-body font-primary text-main leading-relaxed space-y-2 list-disc ml-6 pl-2 mb-6">
-            <li><b>Marketing requirements</b></li>
-          </ul>
-          <p class="text-body font-primary text-main leading-relaxed ml-6 pl-2 mb-8">
-            The onboarding flow also needed to accommodate existing marketing requirements, including notification prompts, which influenced both its structure and length. While these elements were included to meet current business needs, their placement within the onboarding experience remains an open question. In future iterations, I would validate their impact and explore alternative moments to introduce them.
-          </p>
-        </div>
-
-        <!-- Summary -->
-        <div class="mb-16">
-          <h2 class="text-h2 font-primary font-bold mb-6 text-main">
-            Summary
-          </h2>
-          <p class="text-body font-primary text-main leading-relaxed">
-            The redesigned onboarding created a clearer, value-driven first experience, increasing engagement and conversions. Showcasing the product's core value before making users face a paywall proved effective and informed similar initiatives across other apps.
-          </p>
-        </div>
-
-        <!-- Navigation -->
-        <div class="pt-8">
-          <div class="flex justify-between items-center">
-            <a href="../GF-app/"
-              class="text-body font-primary text-grey hover:text-main transition duration-300">
-              ← Previous Project
-            </a>
-            <a href="../mobile-banking-app/"
-              class="text-body font-primary text-main hover:text-grey transition duration-300">
-              Next Project →
-            </a>
+          <!-- Navigation -->
+          <div class="pt-8">
+            <div class="flex justify-between items-center">
+              <a href="../GF-app/"
+                class="text-body font-primary text-grey hover:text-main transition duration-300">
+                ← Previous Project
+              </a>
+              <a href="../mobile-banking-app/"
+                class="text-body font-primary text-main hover:text-grey transition duration-300">
+                Next Project →
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -390,5 +450,45 @@ import "../../styles/global.css";
       </div>
     </div>
   </footer>
+
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Active section highlighting
+    const sections = document.querySelectorAll('[id]');
+    const navLinks = document.querySelectorAll('aside nav a[href^="#"]');
+
+    function updateActiveLink() {
+      let currentSection = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.scrollY >= sectionTop - 150) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('font-bold', 'text-main');
+        link.classList.add('text-grey');
+        if (link.getAttribute('href') === `#${currentSection}`) {
+          link.classList.add('font-bold', 'text-main');
+          link.classList.remove('text-grey');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveLink);
+    updateActiveLink();
+  </script>
 </body>
 </html>
