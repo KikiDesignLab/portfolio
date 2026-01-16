@@ -24,7 +24,7 @@ const Portfolio = () => {
               </li>
               <li>
                 <a
-                  href="#about"
+                  href="./about-me/"
                   className="text-nav font-mono text-grey hover:text-main transition duration-300"
                 >
                   About
@@ -35,13 +35,14 @@ const Portfolio = () => {
         </div>
       </header>
 
+      {/* Hero Section */}
       <section className="pt-9 lg:pt-60 bg-bg px-6 lg:px-12">
         <div className="container mx-auto flex flex-col text-left">
           <h1 className="text-hero font-hero mb-4 text-main">
             Hello,
           </h1>
           <p className="text-body font-primary text-main max-w-2xl">
-            I'm Fátima, a product designer shaped at the intersection of people and product
+            I'm Fátima, a product designer shaped at the intersection of people and product.
           </p>
         </div>
       </section>
@@ -54,11 +55,11 @@ const Portfolio = () => {
 
             {/* Project 1 */}
             <a
-              href="./case-study/GF-app/"
+              href="./case-study/gf-app/"
               className="group rounded-lg overflow-hidden relative block"
             >
               <img
-                src="/portfolio/images/projects/GF-app.png"
+                src="/portfolio/images/projects/gf-app.png"
                 alt="Find Me Gluten Free Redesign"
                 className="w-full aspect-[3/2] object-cover"
               />

@@ -1,0 +1,150 @@
+---
+import "../../src/styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Fátima Rodrigues</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="icon" type="image/svg+xml" href="/portfolio/Favicon-light.svg" />
+  <style>
+    /* Ensure background covers entire page */
+    html, body {
+      min-height: 100vh;
+      background: var(--bg-color, #ffffff);
+    }
+
+    /* Push footer to bottom */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .main-content {
+      flex: 1;
+    }
+
+    /* Image gallery styling */
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1rem;
+    }
+
+    .image-gallery img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    /* Desktop: fixed spacing between sections */
+    @media (min-width: 1024px) {
+      .image-gallery-section {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        padding: 0 3rem;
+      }
+    }
+
+    /* Mobile: gallery below paragraphs */
+    @media (max-width: 1023px) {
+      .image-gallery {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .image-gallery-section {
+        margin-top: 3rem;
+        padding: 0 1.5rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .image-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+      }
+    }
+</style>
+</head>
+
+<body class="bg-bg">
+  <div class="main-content">
+  <!-- Header -->
+  <header class="bg-bg py-4 px-6 lg:px-12 sticky top-0 z-50 border-b border-line">
+    <div class="container mx-auto flex justify-between items-center gap-4">
+      <a href="../../" class="text-nav font-mono text-main">
+        <span class="hidden sm:inline">Fátima Rodrigues</span>
+        <span class="sm:hidden">Fátima Rodrigues</span>
+      </a>
+      <nav>
+        <a href="../../" class="text-nav font-mono text-grey hover:text-main transition duration-300">
+          <span class="hidden sm:inline">Back to Portfolio</span>
+          <span class="sm:hidden">← Back</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Me Content -->
+  <section class="pt-9 bg-bg px-6 lg:px-12">
+    <div class="container mx-auto flex flex-col text-left">
+      <h1 class="text-h1 font-bold mb-6 text-main max-w-2xl">
+        <em>A Product Designer shaped at the intersection of people and product.</em>
+      </h1>
+      </p>
+      <p class="text-body font-primary text-main max-w-2xl mb-4">
+        I've always found myself at the intersection of listening to people and solving problems. Shaping things that surround me (gardering, home DYIs, my old tumblr) came naturally to me. I'm a learner at heart, so the move from People Business Partner felt only natural.
+      </p>
+      <p class="text-body font-primary text-main max-w-2xl mb-4">
+        I'm drawn to challenges where I can think deeply about a topic and merge aesthetics with functionality to craft clear, purposeful experiences.
+      </p>
+      <p class="text-body font-primary text-main max-w-2xl mb-4">
+        I lose sleep to books, painting and silly little side quests that include a lot of DYI.
+      </p>
+    </div>
+  </section>
+
+  <!-- Image Gallery Section -->
+  <section class="bg-bg image-gallery-section">
+    <div class="container mx-auto">
+      <div class="image-gallery">
+        <img src="/portfolio/images/about-me/me.jpg" alt="Image 1" />
+        <img src="/portfolio/images/about-me/painting.jpg" alt="Image 2" />
+        <img src="/portfolio/images/about-me/mycats.jpg" alt="Image 3" />
+        <img src="/portfolio/images/about-me/livros1.jpg" alt="Image 4" />
+        <img src="/portfolio/images/about-me/puzzle.jpg" alt="Image 5" />
+        <img src="/portfolio/images/about-me/nature.jpg" alt="Image 6" />
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-bg text-grey py-4 border-t border-line px-6 lg:px-12">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-left text-left md:text-left">
+      <p class="flex items-center gap-2 text-meta font-primary uppercase tracking-wider mb-4 md:mb-0">
+        Designed + coded with
+        <span class="text-main text-xl heartbeat-animation">♡</span>
+        by Fátima
+      </p>
+
+      <div class="flex space-x-6">
+        <a href="https://www.linkedin.com/in/fatimamnrodrigues/"
+          class="text-grey hover:text-main transition duration-300">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.behance.net/fmrodrigues"
+          class="text-grey hover:text-main transition duration-300">
+          <i class="fab fa-behance"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
