@@ -9,7 +9,7 @@ const Portfolio = () => {
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>Fátima Rodrigues | Portfolio</title>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-          <link rel="icon" type="image/svg+xml" href="/portfolio/Favicon-light.svg" />
+          <link rel="icon" type="image/svg+xml" href="/portfolio/favicon.svg" />
         </Helmet>
 
       {/* Header */}
