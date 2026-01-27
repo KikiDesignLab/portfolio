@@ -1,8 +1,17 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 const Portfolio = () => {
   return (
     <>
+      <Helmet>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Portfolio | Fátima Rodrigues</title>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+          <link rel="icon" type="image/svg+xml" href="/portfolio/Favicon-light.svg" />
+        </Helmet>
+
       {/* Header */}
       <header className="bg-bg py-4 px-6 lg:px-12 sticky top-0 z-50 border-b border-line">
         <div className="container mx-auto flex justify-between items-center">
@@ -84,6 +93,7 @@ const Portfolio = () => {
                 alt="Onboarding"
                 className="w-full aspect-[3/2] object-cover"
               />
+              {/* Info box */}
               <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mt-4 gap-2">
                 <p className="text-body font-primary text-main">
                   Onboarding Redesign
@@ -104,6 +114,7 @@ const Portfolio = () => {
                 alt="Mobile Banking App"
                 className="w-full aspect-[3/2] object-cover"
               />
+              {/* Info box */}
               <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mt-4 gap-2">
                 <p className="text-body font-primary text-main">
                   Mobile Banking App
