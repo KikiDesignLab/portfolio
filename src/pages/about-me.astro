@@ -39,6 +39,14 @@ import "../../src/styles/global.css";
       object-fit: cover;
       border-radius: 4px;
     }
+    .image-gallery-item {
+      cursor: pointer;
+    }
+
+    .image-tag {
+    transition: opacity 150ms ease-in-out;
+      z-index: 10;
+    }
 
     @media (min-width: 1024px) {
       .image-gallery-section {
@@ -111,13 +119,66 @@ import "../../src/styles/global.css";
   <section class="bg-bg image-gallery-section">
     <div class="container mx-auto">
       <div class="image-gallery">
-        <img src="/portfolio/images/about-me/me.png" alt="me" />
-        <img src="/portfolio/images/about-me/painting.png" alt="painting" />
-        <img src="/portfolio/images/about-me/mycats.png" alt="mycats" />
-        <img src="/portfolio/images/about-me/livros1.png" alt="books" />
-        <img src="/portfolio/images/about-me/dyi2.png" alt="dyi project" />
-        <img src="/portfolio/images/about-me/nature.png" alt="hiking" />
-      </div>
+        <!-- First image -->
+        <div class="image-gallery-item relative">
+          <img src="/portfolio/images/about-me/me.png" alt="This is me" />
+          <div class="image-tag absolute opacity-0 pointer-events-none">
+            <span class="tag-content">
+              <span>👋</span>
+              <span>This is me</span>
+            </span>
+          </div>
+        </div>
+        <!-- Second image -->
+        <div class="image-gallery-item relative">
+          <img src="/portfolio/images/about-me/painting.png" alt="Painting" />
+          <div class="image-tag absolute opacity-0 pointer-events-none">
+            <span class="tag-content">
+              <span>️️🖌️</span>
+              <span>Painting</span>
+            </span>
+          </div>
+        </div>
+        <!-- Third image -->
+        <div class="image-gallery-item relative">
+          <img src="/portfolio/images/about-me/mycats.png" alt="My cats" />
+          <div class="image-tag absolute opacity-0 pointer-events-none">
+            <span class="tag-content">
+              <span>️️🐈</span>
+              <span>My cats</span>
+            </span>
+          </div>
+        </div>
+        <!-- Fourth image -->
+        <div class="image-gallery-item relative">
+          <img src="/portfolio/images/about-me/livros1.png" alt="Books" />
+          <div class="image-tag absolute opacity-0 pointer-events-none">
+            <span class="tag-content">
+              <span>️️📚</span>
+              <span>Reading</span>
+            </span>
+          </div>
+        </div>
+        <!-- Fifth image -->
+        <div class="image-gallery-item relative">
+          <img src="/portfolio/images/about-me/dyi2.png" alt="Diy" />
+          <div class="image-tag absolute opacity-0 pointer-events-none">
+            <span class="tag-content">
+              <span>️️🔨</span>
+              <span>Recreating</span>
+            </span>
+          </div>
+        </div>
+         <!-- Sixth image -->
+        <div class="image-gallery-item relative">
+          <img src="/portfolio/images/about-me/nature.png" alt="Hiking" />
+          <div class="image-tag absolute opacity-0 pointer-events-none">
+            <span class="tag-content">
+              <span>️️🥾</span>
+              <span>Hiking</span>
+            </span>
+          </div>
+        </div>
     </div>
   </div>
   </section>
@@ -143,5 +204,34 @@ import "../../src/styles/global.css";
       </div>
     </div>
   </footer>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const galleryItems = document.querySelectorAll('.image-gallery-item');
+    
+    galleryItems.forEach(item => {
+      const img = item.querySelector('img');
+      const tag = item.querySelector('.image-tag');
+      
+      img.addEventListener('mouseenter', (e) => {
+        tag.style.opacity = '1';
+      });
+      
+      img.addEventListener('mousemove', (e) => {
+        const rect = item.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        tag.style.left = `${x + 15}px`;
+        tag.style.top = `${y + 15}px`;
+      });
+      
+      img.addEventListener('mouseleave', () => {
+        tag.style.opacity = '0';
+      });
+    });
+  });
+</script>
+
 </body>
 </html>

@@ -69,3 +69,22 @@ html {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.image-tag {
+  transition: opacity 150ms ease-in-out;
+  z-index: 10;
+  background-color: #2E3845;
+  color: #F5FAFF;
+  border-radius: 15px;
+  padding: 8px;
+  font-size: 0.875rem;
+  font-family: monospace;
+}
+
+.tag-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+
