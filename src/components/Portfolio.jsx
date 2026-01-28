@@ -96,7 +96,7 @@ const Portfolio = () => {
               {/* Info box */}
               <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mt-4 gap-2">
                 <p className="text-body font-primary text-main">
-                  Onboarding Redesign
+                  Onboarding for Monetisation
                 </p>
                 <span className="text-meta font-primary uppercase tracking-wider text-grey">
                   Scanner Air • 2025
